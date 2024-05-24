@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net" modified="2024-05-24T15:06:25.177Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0" etag="ITVhsfZxWmoP8KzWTVRE" version="24.4.8" type="device">
+  <diagram name="Seite-1" id="4A2YwwTTmII6rBf1Q2FR">
+    <mxGraphModel dx="1290" dy="691" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6ftq6j65stskF8XGJ8QF-1" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;strokeWidth=0;" parent="1" vertex="1">
+          <mxGeometry x="60" y="170" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6ftq6j65stskF8XGJ8QF-2" value="&lt;div&gt;Player arrives&amp;nbsp;&lt;/div&gt;&lt;div&gt;in elevator&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="25" y="130" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6ftq6j65stskF8XGJ8QF-3" value="Scene 2&lt;br&gt;&lt;div&gt;(Office)&lt;/div&gt;" style="shape=folder;align=center;verticalAlign=middle;fontStyle=0;tabWidth=100;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="190" y="110" width="950" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="6ftq6j65stskF8XGJ8QF-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="96.01996036459288" y="185.0344827586207" as="sourcePoint" />
+            <mxPoint x="190" y="186" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-1" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;strokeWidth=0;" parent="1" vertex="1">
+          <mxGeometry x="275" y="160" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="UIB05lLIntMKHFcyhaDu-2" edge="1" target="UIB05lLIntMKHFcyhaDu-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="UIB05lLIntMKHFcyhaDu-2" target="UIB05lLIntMKHFcyhaDu-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UIB05lLIntMKHFcyhaDu-2" target="Lgm5uu-BYtN0YzGv8uxh-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-2" value="Walk around inside the office" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="UIB05lLIntMKHFcyhaDu-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290.0003398874988" y="210" as="sourcePoint" />
+            <mxPoint x="290.0003398874988" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-4" value="Doors open up and player can walk inside the office" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="300" y="190" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-6" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" parent="1" vertex="1">
+          <mxGeometry x="230" y="580" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UIB05lLIntMKHFcyhaDu-14" target="UIB05lLIntMKHFcyhaDu-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-14" value="Listen to open door" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="770" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-16" value="Start voice audio" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="770" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="UIB05lLIntMKHFcyhaDu-25" target="UIB05lLIntMKHFcyhaDu-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="UIB05lLIntMKHFcyhaDu-25" target="UIB05lLIntMKHFcyhaDu-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1070" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-25" value="Click on door to restroom" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-27" value="Receive achievement" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-28" value="Go to boss office" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="750" y="300" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-29" value="Go to restroom" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="920" y="290" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Lgm5uu-BYtN0YzGv8uxh-5" target="Lgm5uu-BYtN0YzGv8uxh-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-5" value="Sit down to your desk" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lgm5uu-BYtN0YzGv8uxh-7" target="UIB05lLIntMKHFcyhaDu-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-7" value="Start animation" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-10" value="&lt;div&gt;Player gets tired and animation starts&amp;nbsp;&lt;/div&gt;&lt;div&gt;(Change to next scene)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="530" width="150" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

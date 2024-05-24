@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net" modified="2024-05-24T15:16:35.018Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0" etag="NnEKMu31OKvilFoVqaIg" version="24.4.8" type="device">
+  <diagram name="Seite-1" id="4A2YwwTTmII6rBf1Q2FR">
+    <mxGraphModel dx="1290" dy="691" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6ftq6j65stskF8XGJ8QF-1" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;strokeWidth=0;" parent="1" vertex="1">
+          <mxGeometry x="60" y="170" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6ftq6j65stskF8XGJ8QF-2" value="Player wakes up " style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="20" y="135" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6ftq6j65stskF8XGJ8QF-3" value="Scene 3&lt;br&gt;&lt;div&gt;(Dream:office)&lt;/div&gt;" style="shape=folder;align=center;verticalAlign=middle;fontStyle=0;tabWidth=100;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="190" y="110" width="600" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="6ftq6j65stskF8XGJ8QF-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="96.01996036459288" y="185.0344827586207" as="sourcePoint" />
+            <mxPoint x="190" y="186" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-1" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;strokeWidth=0;" parent="1" vertex="1">
+          <mxGeometry x="275" y="160" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="UIB05lLIntMKHFcyhaDu-2" target="UIB05lLIntMKHFcyhaDu-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-2" value="Walk around inside the office" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="UIB05lLIntMKHFcyhaDu-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290.0003398874988" y="210" as="sourcePoint" />
+            <mxPoint x="290.0003398874988" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-4" value="Player starts walking around after waking up on his desk" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="305" y="180" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UIB05lLIntMKHFcyhaDu-25" value="Go to elevator and leave" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="455" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.105;entryY=0.472;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="6ftq6j65stskF8XGJ8QF-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="290" as="sourcePoint" />
+            <mxPoint x="290" y="310" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-14" value="Player checks out" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.6;entryY=0.983;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Lgm5uu-BYtN0YzGv8uxh-14" target="UIB05lLIntMKHFcyhaDu-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="420" as="sourcePoint" />
+            <mxPoint x="690" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="527" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="UIB05lLIntMKHFcyhaDu-25" target="Lgm5uu-BYtN0YzGv8uxh-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="290" as="sourcePoint" />
+            <mxPoint x="680" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-17" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" vertex="1" parent="1">
+          <mxGeometry x="690" y="245" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-19" value="Player goes home" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="630" y="190" width="150" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
