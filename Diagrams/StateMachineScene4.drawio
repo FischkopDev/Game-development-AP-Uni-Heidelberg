@@ -1,17 +1,17 @@
-<mxfile host="app.diagrams.net" modified="2024-05-24T15:27:00.159Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0" etag="nAz9YeC9YEeNBchnOsUo" version="24.4.8" type="device">
+<mxfile host="app.diagrams.net" modified="2024-05-26T17:18:22.949Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0" etag="54-ynXTQR3H50LTCf1F0" version="24.4.8" type="device">
   <diagram name="Seite-1" id="4A2YwwTTmII6rBf1Q2FR">
-    <mxGraphModel dx="2117" dy="491" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2117" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="6ftq6j65stskF8XGJ8QF-1" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;strokeWidth=0;" parent="1" vertex="1">
-          <mxGeometry x="60" y="170" width="30" height="30" as="geometry" />
+          <mxGeometry x="70" y="170" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6ftq6j65stskF8XGJ8QF-2" value="Player spawns in front of car" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-10" y="135" width="170" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6ftq6j65stskF8XGJ8QF-3" value="Scene 4&lt;br&gt;&lt;div&gt;(Dream:home)&lt;/div&gt;" style="shape=folder;align=center;verticalAlign=middle;fontStyle=0;tabWidth=100;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="190" y="110" width="1050" height="570" as="geometry" />
+          <mxGeometry x="190" y="110" width="1050" height="940" as="geometry" />
         </mxCell>
         <mxCell id="6ftq6j65stskF8XGJ8QF-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -22,10 +22,10 @@
         <mxCell id="UIB05lLIntMKHFcyhaDu-1" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;strokeWidth=0;" parent="1" vertex="1">
           <mxGeometry x="275" y="160" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="UIB05lLIntMKHFcyhaDu-2" target="UIB05lLIntMKHFcyhaDu-25">
+        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="UIB05lLIntMKHFcyhaDu-2" target="UIB05lLIntMKHFcyhaDu-25" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="UIB05lLIntMKHFcyhaDu-2" value="Walk around inside the office" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="UIB05lLIntMKHFcyhaDu-2" value="See Smiler at the corner of your house while turing around-animation" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="240" y="230" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="UIB05lLIntMKHFcyhaDu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="UIB05lLIntMKHFcyhaDu-1" edge="1">
@@ -37,32 +37,169 @@
         <mxCell id="UIB05lLIntMKHFcyhaDu-4" value="Start animation" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="290" y="180" width="150" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="UIB05lLIntMKHFcyhaDu-25" value="Go to elevator and leave" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="UIB05lLIntMKHFcyhaDu-25" value="Walk around outside" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="455" y="230" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-14" value="Player checks out" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="240" y="360" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.6;entryY=0.983;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Lgm5uu-BYtN0YzGv8uxh-14" target="UIB05lLIntMKHFcyhaDu-25">
+        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="UIB05lLIntMKHFcyhaDu-25" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="640" y="420" as="sourcePoint" />
-            <mxPoint x="690" y="370" as="targetPoint" />
+            <mxPoint x="630" y="290" as="sourcePoint" />
+            <mxPoint x="690" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-1" value="Open door" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-2" value="Scene 4&lt;br&gt;&lt;div&gt;(Inside)&lt;/div&gt;" style="shape=folder;align=center;verticalAlign=middle;fontStyle=0;tabWidth=100;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="230" y="360" width="940" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=307.5;entryDy=30;entryPerimeter=0;" edge="1" parent="1" source="w5_11uPRbBjuEzUio9Y5-1" target="w5_11uPRbBjuEzUio9Y5-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w5_11uPRbBjuEzUio9Y5-6" target="Lgm5uu-BYtN0YzGv8uxh-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-6" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;strokeWidth=0;" vertex="1" parent="1">
+          <mxGeometry x="245" y="420" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Lgm5uu-BYtN0YzGv8uxh-14" target="w5_11uPRbBjuEzUio9Y5-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-14" value="Walk around inside" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="405" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w5_11uPRbBjuEzUio9Y5-8" target="w5_11uPRbBjuEzUio9Y5-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="w5_11uPRbBjuEzUio9Y5-8" target="w5_11uPRbBjuEzUio9Y5-15">
+          <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="527" y="390" />
+              <mxPoint x="420" y="760" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="UIB05lLIntMKHFcyhaDu-25" target="Lgm5uu-BYtN0YzGv8uxh-17">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="630" y="290" as="sourcePoint" />
-            <mxPoint x="680" y="240" as="targetPoint" />
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="w5_11uPRbBjuEzUio9Y5-8" target="w5_11uPRbBjuEzUio9Y5-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="660" />
+              <mxPoint x="260" y="660" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-17" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" vertex="1" parent="1">
-          <mxGeometry x="690" y="245" width="30" height="30" as="geometry" />
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="w5_11uPRbBjuEzUio9Y5-8" target="w5_11uPRbBjuEzUio9Y5-31">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Lgm5uu-BYtN0YzGv8uxh-19" value="Player goes home" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="630" y="190" width="150" height="40" as="geometry" />
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-8" value="walk inside your living room" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="555" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-10" value="Go through the door to your living room" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="480" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="w5_11uPRbBjuEzUio9Y5-11" target="w5_11uPRbBjuEzUio9Y5-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="635" />
+              <mxPoint x="420" y="635" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-11" value="Interact with picture on the left side" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-14" value="Going back to free movement you can see a person at the corner of your kitchen" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="640" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-15" value="turn off TV" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-17" value="After a while the TV starts playing noises" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="720" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-18" value="TV starts playing again after player is moving away" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="760" y="745" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w5_11uPRbBjuEzUio9Y5-15" target="w5_11uPRbBjuEzUio9Y5-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-20" value="1x" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="720" y="720" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w5_11uPRbBjuEzUio9Y5-21" target="w5_11uPRbBjuEzUio9Y5-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="710" />
+              <mxPoint x="330" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-21" value="Read letter on couche" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="625" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="w5_11uPRbBjuEzUio9Y5-23" target="w5_11uPRbBjuEzUio9Y5-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="790" />
+              <mxPoint x="410" y="615" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w5_11uPRbBjuEzUio9Y5-23" target="w5_11uPRbBjuEzUio9Y5-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-23" value="Chairs placed upside down with loud noices" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-26" value="Triggers loud noices and chair movement" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="700" width="105" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w5_11uPRbBjuEzUio9Y5-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-27" value="Chairs falling down" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-28" value="Player walks to dining area" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="325" y="840" width="105" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w5_11uPRbBjuEzUio9Y5-31" target="w5_11uPRbBjuEzUio9Y5-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-31" value="Player closes window in the kitchen" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="w5_11uPRbBjuEzUio9Y5-33" target="w5_11uPRbBjuEzUio9Y5-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-33" value="A figur walks from right to left outside the window" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w5_11uPRbBjuEzUio9Y5-35" target="w5_11uPRbBjuEzUio9Y5-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-35" value="Bathroom door is open now and light comes through" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w5_11uPRbBjuEzUio9Y5-37" target="w5_11uPRbBjuEzUio9Y5-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-37" value="Clicks on person laying in bed" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-39" value="Player enters bedroom" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="880" y="840" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="w5_11uPRbBjuEzUio9Y5-40" target="w5_11uPRbBjuEzUio9Y5-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-40" value="Woman is visible behind the window" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-42" value="&lt;div&gt;The woman starts knocking on window and the player is getting crazy.(visually)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Player receives information to leave the house and run outside&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="810" y="640" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="w5_11uPRbBjuEzUio9Y5-43" value="Player escapes through bathroom and closes the door to the bedroom" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="480" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
