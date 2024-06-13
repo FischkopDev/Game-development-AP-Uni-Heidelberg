@@ -1,0 +1,9 @@
+Player starts at home and can do various tasks, such as:
+- enter home (by clicking on the door):
+    - click on painting (by clicking on the painting in the living room which triggers other events i.e. apperance of shadow of women)
+    - turn off TV (by clicking on TV, which turns it off)
+    - pick up letter on sofa (by clicking on the letter laying on the sofa which triggers other events i.e. chairs falling down from ceiling)
+    - close slamming window (by clicking on window which will enable other tasks):
+        - click on women laying in bed (by clicking on the women in bed which will trigger an event i.e. shadow slamming on window):
+            - pick up restroom key and lock door (by clicking on key laying on the floor and clicking on the bathroom door):
+                - run outside and escape (by moving outside of the house)
