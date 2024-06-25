@@ -21,20 +21,16 @@ public class InteractionComponent : MonoBehaviour
 
     void Update()
     {
-        //Check the specific key
-        if (Input.GetKeyDown(KeyCode.E))
+
+      //send a ray to searched object
+        Ray directedRay = new Ray(interactor.position, interactor.forward);
+
+        //If the obejct is hit, execute the method
+        if (Physics.Raycast(directedRay, out RaycastHit hitInfo, InteractRange))
         {
-
-            //send a ray to searched object
-            Ray directedRay = new Ray(interactor.position, interactor.forward);
-
-            //If the obejct is hit, execute the method
-            if (Physics.Raycast(directedRay, out RaycastHit hitInfo, InteractRange))
-            {
-                if (hitInfo.collider.gameObject.TryGetComponent(out Interactable interactObj)) {
-                    interactObj.interact();
-                }
-            }
+            if (hitInfo.collider.gameObject.TryGetComponent(out Interactable interactObj)) {
+                interactObj.interact();
+            }    
         }
     }
 }
