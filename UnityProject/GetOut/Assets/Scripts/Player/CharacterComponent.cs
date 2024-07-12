@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterComponent : MonoBehaviour
 {
 
-    public PlayerMovement playerMovement;
+    //public PlayerMovement playerMovement;
     // Start is called before the first frame update
     void Start()
     {

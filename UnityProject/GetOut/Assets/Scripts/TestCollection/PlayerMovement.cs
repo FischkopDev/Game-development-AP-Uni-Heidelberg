@@ -18,10 +18,10 @@ public class PlayerMovement : MonoBehaviour {
     // Mouse look
     private float xRotation = 0f;
     private float yRotation = 0f;
-    [SerializeField] private float mouseSensitivity;
-    [SerializeField] private Transform mainCam;
+    [SerializeField] public float mouseSensitivity;
+    [SerializeField] public Transform mainCam;
 
-    private void Start() {
+    public void Start() {
         charController = GetComponent<CharacterController>();
 
         originalSlopeLimit = charController.slopeLimit;
@@ -32,36 +32,40 @@ public class PlayerMovement : MonoBehaviour {
         Cursor.visible = false;
     }
 
-    void Update() {
+    public void Update() {
         
         // Allow player control of mouse sensitivity
         if (Input.GetKeyDown(KeyCode.Equals)) mouseSensitivity = Mathf.Clamp(mouseSensitivity + 20, 20f, 1000f);
         if (Input.GetKeyDown(KeyCode.Minus)) mouseSensitivity = Mathf.Clamp(mouseSensitivity - 20, 20f, 1000f);
 
-        PlayerMove();
+        float x = Input.GetAxisRaw("Horizontal");
+        float z = Input.GetAxisRaw("Vertical");
+
+        PlayerMove(x , z);
     }
 
-    // Do camera rotation in LateUpdate, or you get stutter
-void LateUpdate() {
-    float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-    float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+    public void LateUpdate() {
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
-    // Apply pitch rotation (looking up and down)
-    xRotation -= mouseY;
-    yRotation += mouseX;
-    xRotation = Mathf.Clamp(xRotation, -80f, 70f); // Can't look too far up or down
+       rotationUpdate(mouseX, mouseY);
+    }
 
-    // Apply yaw rotation (looking left and right)
-    transform.Rotate(Vector3.up * mouseX);
-    transform.Rotate(Vector3.left * mouseY);
+    public void rotationUpdate(float mouseX, float mouseY){
+        // Apply pitch rotation (looking up and down)
+        xRotation -= mouseY;
+        yRotation += mouseX;
+        xRotation = Mathf.Clamp(xRotation, -80f, 70f); // Can't look too far up or down
 
-    // Combine both rotations
-    mainCam.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
-}
+        // Apply yaw rotation (looking left and right)
+        transform.Rotate(Vector3.up * mouseX);
+        transform.Rotate(Vector3.left * mouseY);
 
+        // Combine both rotations
+        mainCam.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
+    }
 
-
-    private void PlayerMove() {
+    public void PlayerMove(float x, float z) {
         isGrounded = charController.isGrounded;
         if (charController.isGrounded || charController.collisionFlags == CollisionFlags.Above) yVelocity = -0.1f;
 
@@ -72,8 +76,6 @@ void LateUpdate() {
             charController.slopeLimit = jumpSlopeLimit;
         }
 
-        float x = Input.GetAxisRaw("Horizontal");
-        float z = Input.GetAxisRaw("Vertical");
 
         Vector3 move = (transform.right * x + transform.forward * z).normalized;
         move = move * speed * Time.deltaTime;
