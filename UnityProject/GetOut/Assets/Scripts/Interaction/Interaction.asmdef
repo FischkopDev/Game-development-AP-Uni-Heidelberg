@@ -1,0 +1,6 @@
+{
+    "name": "Interaction",
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ]
+}
