@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -12,9 +13,13 @@ public class PlayerMovement : MonoBehaviour {
 
     // Start rotation at 0
     private float xRotation = 0f;
-    private float yRotation = 0f;
+    private float yRotation = -90f;
     [SerializeField] public float mouseSensitivity;
     [SerializeField] public Transform mainCam;
+
+    public Animator scene1Intro;
+
+    private bool disableMotion = true;
 
     public void Start() {
         charController = GetComponent<CharacterController>();
@@ -22,21 +27,26 @@ public class PlayerMovement : MonoBehaviour {
         // Hide mouse and lock to screen center
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        // Hide mouse and lock to screen center
+        scene1Intro.Play("Scene1_Intro");
     }
 
     /*
         For each iteration check if player input is captured. If so call @PlayerMove()
     */
     public void Update() {
-        
-        // Allow player control of mouse sensitivity
-        if (Input.GetKeyDown(KeyCode.Equals)) mouseSensitivity = Mathf.Clamp(mouseSensitivity + 20, 20f, 1000f);
-        if (Input.GetKeyDown(KeyCode.Minus)) mouseSensitivity = Mathf.Clamp(mouseSensitivity - 20, 20f, 1000f);
+        if(scene1Intro.GetCurrentAnimatorStateInfo(0).IsName("Intro_Done")){
+            scene1Intro.enabled = false;
+            disableMotion = false;
+
+        }
 
         float x = Input.GetAxisRaw("Horizontal");
         float z = Input.GetAxisRaw("Vertical");
 
         PlayerMove(x , z);
+
     }
 
     /*
@@ -46,7 +56,8 @@ public class PlayerMovement : MonoBehaviour {
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
-       rotationUpdate(mouseX, mouseY);
+        if(!disableMotion)
+            rotationUpdate(mouseX, mouseY);
     }
 
     /*

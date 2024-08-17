@@ -2,21 +2,22 @@ using UnityEngine;
 
 /*
     @description
-        Resulting action when interacting with a surrounding wine bottle
+        Resulting action when interacting with a surrounding objects to cleanup
+        the house.
 
     @author
         Timo Skrobanek
     @date
         17.8.2024
 */
-public class Bottle_Interactor : MonoBehaviour, Interactable
+public class Cleanup_Interactor : MonoBehaviour, Interactable
 {
 
     public void Interact(GameObject obj){
         if(Input.GetKeyDown(KeyCode.E)){
             //On interaction disable rendering
             obj.SetActive(false);
-            Debug.Log("Bottle disabled");
+            Debug.Log("Object disabled");
         }
     }
 
