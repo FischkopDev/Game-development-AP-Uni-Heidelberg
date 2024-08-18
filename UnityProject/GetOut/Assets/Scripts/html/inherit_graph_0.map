@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$interfaceInteractable.html" title="Handles the interact&#45;action between player and gameobjects." alt="" coords="17,56,117,83"/>
+<area shape="rect" id="node2" href="$classCleanup__Interactor.html" title="Handles the interaction logic for cleaning up or disabling objects in the game." alt="" coords="202,5,347,32"/>
+<area shape="rect" id="node3" href="$classCloth__Interactor.html" title="Handles the interactaction between player and cloths laying arround." alt="" coords="211,56,338,83"/>
+<area shape="rect" id="node4" href="$classScene1__Change__Interactor.html" title=" " alt="" coords="177,107,372,133"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,183,129,209"/>
+<area shape="rect" id="node6" href="$classCharacterComponent.html" title=" " alt="" coords="195,360,355,387"/>
+<area shape="rect" id="node7" href="$classInteractionComponent.html" title="Handles the interact&#45;action between player and gameobjects." alt="" coords="191,157,358,184"/>
+<area shape="rect" id="node8" href="$classPlayerMovement.html" title="Handles the movement logic for the player character in Unity." alt="" coords="208,208,341,235"/>
+<area shape="rect" id="node9" href="$classScene1AnimationManager.html" title=" " alt="" coords="178,259,371,285"/>
+<area shape="rect" id="node10" href="$classStateManager.html" title=" " alt="" coords="218,309,331,336"/>
+</map>

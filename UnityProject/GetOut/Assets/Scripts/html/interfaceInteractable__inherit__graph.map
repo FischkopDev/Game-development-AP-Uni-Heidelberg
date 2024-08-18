@@ -1,0 +1,6 @@
+<map id="Interactable" name="Interactable">
+<area shape="rect" id="node1" title="Handles the interact&#45;action between player and gameobjects." alt="" coords="188,5,288,32"/>
+<area shape="rect" id="node2" href="$classCleanup__Interactor.html" title="Handles the interaction logic for cleaning up or disabling objects in the game." alt="" coords="5,80,151,107"/>
+<area shape="rect" id="node3" href="$classCloth__Interactor.html" title="Handles the interactaction between player and cloths laying arround." alt="" coords="175,80,301,107"/>
+<area shape="rect" id="node4" href="$classScene1__Change__Interactor.html" title=" " alt="" coords="326,80,521,107"/>
+</map>
