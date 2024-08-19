@@ -1,0 +1,94 @@
+\hypertarget{classInteractionComponent}{}\doxysection{Interaction\+Component Class Reference}
+\label{classInteractionComponent}\index{InteractionComponent@{InteractionComponent}}
+
+
+Handles the interact-\/action between player and gameobjects.  
+
+
+
+
+Inheritance diagram for Interaction\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classInteractionComponent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Interaction\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classInteractionComponent__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classInteractionComponent_a4fb9437861b5215821829cc2496c9b26}{Check\+Interaction}} (Ray directed\+Ray)
+\begin{DoxyCompactList}\small\item\em Checks if the directed ray intersects with an interactable object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classInteractionComponent_acabe1e0c95db78b1b73b77b0c3bcec1b}\label{classInteractionComponent_acabe1e0c95db78b1b73b77b0c3bcec1b}} 
+Transform \mbox{\hyperlink{classInteractionComponent_acabe1e0c95db78b1b73b77b0c3bcec1b}{interactor}}
+\begin{DoxyCompactList}\small\item\em The Transform of the interactor (e.\+g., the player or camera). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classInteractionComponent_a77b1a69972d2432ac0388e11264ac6c2}\label{classInteractionComponent_a77b1a69972d2432ac0388e11264ac6c2}} 
+float \mbox{\hyperlink{classInteractionComponent_a77b1a69972d2432ac0388e11264ac6c2}{Interact\+Range}} = 5
+\begin{DoxyCompactList}\small\item\em The maximum range within which the player can interact with objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles the interact-\/action between player and gameobjects. 
+
+This component checks if the player is performing an interaction at the moment
+
+Features\+:
+\begin{DoxyItemize}
+\item Trigger for interaction
+\item Receive the hit object
+\item Check if the object is in a specific range for interaction
+\end{DoxyItemize}
+
+Requirements\+:
+\begin{DoxyItemize}
+\item Check each frame for interaction
+\end{DoxyItemize}
+
+How to Use\+: Give this component to the player in unity and add another class using @\+Interactable to any gameobject you\textquotesingle{}d like to interact with.
+
+\begin{DoxyAuthor}{Author}
+Timo Skrobanek 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+18.\+8.\+2024 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInteractionComponent_a4fb9437861b5215821829cc2496c9b26}\label{classInteractionComponent_a4fb9437861b5215821829cc2496c9b26}} 
+\index{InteractionComponent@{InteractionComponent}!CheckInteraction@{CheckInteraction}}
+\index{CheckInteraction@{CheckInteraction}!InteractionComponent@{InteractionComponent}}
+\doxysubsubsection{\texorpdfstring{CheckInteraction()}{CheckInteraction()}}
+{\footnotesize\ttfamily void Interaction\+Component.\+Check\+Interaction (\begin{DoxyParamCaption}\item[{Ray}]{directed\+Ray }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if the directed ray intersects with an interactable object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em directed\+Ray} & The ray cast from the interactor to check for interactions.\\
+\hline
+\end{DoxyParams}
+This method uses a raycast to detect if any objects within the interaction range are interactable. If an interactable object is detected, the interaction method on that object is called. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Interaction/Player\+Interaction\+Component.\+cs\end{DoxyCompactItemize}

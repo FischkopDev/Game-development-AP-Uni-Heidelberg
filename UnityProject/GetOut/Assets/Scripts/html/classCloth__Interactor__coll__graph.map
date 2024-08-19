@@ -1,0 +1,5 @@
+<map id="Cloth_Interactor" name="Cloth_Interactor">
+<area shape="rect" id="node1" title="Handles the interactaction between player and cloths laying arround." alt="" coords="72,80,199,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,129,32"/>
+<area shape="rect" id="node3" href="$interfaceInteractable.html" title="Handles the interact&#45;action between player and gameobjects." alt="" coords="153,5,253,32"/>
+</map>
