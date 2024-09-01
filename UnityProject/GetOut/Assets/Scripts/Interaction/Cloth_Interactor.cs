@@ -47,7 +47,7 @@ public class Cloth_Interactor : MonoBehaviour, Interactable
      * This method is intended to provide feedback or state information
      * about whether the object can be interacted with. Currently, it is not implemented.
      */
-    public void IsAccessable()
+    public void IsAccessable(GameObject obj)
     {
         // Implementation pending
     }

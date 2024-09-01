@@ -20,7 +20,7 @@ public class Scene1_Change_Interactor : MonoBehaviour, Interactable
         }
     }
 
-    public void IsAccessable(){
+    public void IsAccessable(GameObject obj){
 
     }
 

@@ -76,8 +76,13 @@ public class PlayerMovement : MonoBehaviour {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        // Start the intro scene animation
-        scene1Intro.Play("Scene1_Intro");
+        if(scene1Intro != null){
+            // Start the intro scene animation
+            scene1Intro.Play("Scene1_Intro");
+        }
+        else{
+            disableMotion = false;
+        }
     }
 
     /**
@@ -87,9 +92,11 @@ public class PlayerMovement : MonoBehaviour {
      * for movement and calls the PlayerMove() method to move the player accordingly.
      */
     public void Update() {
-        if(scene1Intro.GetCurrentAnimatorStateInfo(0).IsName("Intro_Done")){
-            scene1Intro.enabled = false;
-            disableMotion = false;
+        if(scene1Intro != null){
+            if(scene1Intro.GetCurrentAnimatorStateInfo(0).IsName("Intro_Done")){
+                scene1Intro.enabled = false;
+                disableMotion = false;
+            }
         }
 
         float x = Input.GetAxisRaw("Horizontal");

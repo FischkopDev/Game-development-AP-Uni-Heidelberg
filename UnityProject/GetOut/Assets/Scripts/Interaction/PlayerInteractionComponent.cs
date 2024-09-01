@@ -63,11 +63,12 @@ public class InteractionComponent : MonoBehaviour
         // Check if the ray hits any objects within the interaction range
         if (Physics.Raycast(directedRay, out RaycastHit hitInfo, InteractRange))
         {
+            
             // Check if the hit object has an Interactable component
             if (hitInfo.collider.gameObject.TryGetComponent(out Interactable interactObj))
             {
                 // Show that the object is in range to interact (this line is commented out)
-                // interactObj.IsAccessable();
+                 interactObj.IsAccessable(hitInfo.collider.gameObject);
 
                 // Execute interaction with the object
                 interactObj.Interact(hitInfo.collider.gameObject);

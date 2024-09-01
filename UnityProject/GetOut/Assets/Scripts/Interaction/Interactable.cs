@@ -36,5 +36,5 @@ interface Interactable
         @brief executed when the interaction with the given object is possible from a certain distance
         
     */
-    public void IsAccessable();
+    public void IsAccessable(GameObject obj);
 }
