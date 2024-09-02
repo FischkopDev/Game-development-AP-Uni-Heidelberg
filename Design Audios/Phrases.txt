@@ -1,0 +1,18 @@
+Phrases said by different characters ingame.
+
+Scene 1:
+	Player enters game after intro animation. The following sentence is said at this moment.
+		[Player]: "Ah shit. It's already late. I should grab up my stuff and go to work ... Maybe I should cleanup this place first"
+
+	During cleanup (3/4 Items collected)
+		[Player]: "Since I live alone in this house, everything is messed up but I'm ok with it"
+
+	When clicking on the door before everything is done
+		[Player]: "Before i go to work, lets change my cloths and clean the kitchen"
+
+
+Scene 2:
+	Listining to the office of your boss.
+		[NPC]: "Ich weiß nicht was ich machen soll. Ich kann ihn hier nicht länger beschäftigen... Er fehlt oft wegen Krankheit und erledigt seine Aufgaben hier wesentlich langsamer als seine Kollegen"
+			"Unserer Firma geht es wirtschaftlich gerade nicht gut und ich muss Stellen streichen. Ich verstehe dass er aktuell Probleme hat und ohne seine Ex-Frau zurecht kommen muss aber wir können
+			ihn nciht weiter durchfüttern"
