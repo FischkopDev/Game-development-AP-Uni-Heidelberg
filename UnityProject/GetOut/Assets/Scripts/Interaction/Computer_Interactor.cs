@@ -21,6 +21,7 @@
  * @version 1.0
  */
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Computer_Interactor : MonoBehaviour, Interactable
 {
@@ -38,6 +39,7 @@ public class Computer_Interactor : MonoBehaviour, Interactable
         {
             // TODO: Implement animation
             Debug.Log("interact with computer");
+            SceneManager.LoadScene("Scene3");
         }
     }
 
