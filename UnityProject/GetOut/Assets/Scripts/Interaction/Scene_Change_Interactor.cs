@@ -48,4 +48,7 @@ public class Scene1_Change_Interactor : MonoBehaviour, Interactable
     void ChangeToScene2(){
          SceneManager.LoadScene(sceneName);
     }
+
+        public void IsNotAccessable(){
+    }
 }

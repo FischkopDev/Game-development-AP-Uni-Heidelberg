@@ -24,6 +24,9 @@ using UnityEngine;
 
 public class Cloth_Interactor : MonoBehaviour, Interactable
 {
+
+    public AudioSource src;
+    private bool archived = false;
     /**
      * @brief Executes the interaction logic when the player interacts with this object.
      *
@@ -34,11 +37,13 @@ public class Cloth_Interactor : MonoBehaviour, Interactable
      */
     public void Interact(GameObject obj)
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && !archived)
         {
             // TODO: Implement animation
             Debug.Log("Change outfit");
-        }
+            src.Play();
+            archived = !archived;
+        }   
     }
 
     /**
@@ -50,5 +55,8 @@ public class Cloth_Interactor : MonoBehaviour, Interactable
     public void IsAccessable(GameObject obj)
     {
         // Implementation pending
+    }
+
+    public void IsNotAccessable(){
     }
 }

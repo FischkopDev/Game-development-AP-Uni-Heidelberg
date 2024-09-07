@@ -37,4 +37,6 @@ interface Interactable
         
     */
     public void IsAccessable(GameObject obj);
+
+    public void IsNotAccessable();
 }

@@ -1,21 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine;    
+    public class StateManager : MonoBehaviour {
+        //Achievements and their states
+        public int CleanedItems = 0; 
+        public bool outfit = false; 
 
-public class StateManager : MonoBehaviour
-{
-
-    public static int CleanedItems = 0; 
-    public static bool coffee = false; 
-    // Start is called before the first frame update
-    void Start()
-    {
+        public State state = State.SCENE1;
         
+        public bool ItemsLeftToCleanup(){
+            return CleanedItems < 5;
+        }
+
+        public bool changedOutfit(){
+            return outfit;
+        }
+
+        public void blockPlayerMovement(){
+            GameObject player = GameObject.Find("Main Camera");
+        }
+
+        
+    public enum State {
+        SCENE1 = 0,
+        SCENE1_READ_LETTER = 1,
+        SCENE1_INTRO_ANIMATION = 2,
+    }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}

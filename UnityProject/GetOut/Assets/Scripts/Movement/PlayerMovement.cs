@@ -92,7 +92,7 @@ public class PlayerMovement : MonoBehaviour {
      * for movement and calls the PlayerMove() method to move the player accordingly.
      */
     public void Update() {
-        if(scene1Intro != null){
+        if(scene1Intro != null){//TODO breakdown to one if
             if(scene1Intro.GetCurrentAnimatorStateInfo(0).IsName("Intro_Done")){
                 scene1Intro.enabled = false;
                 disableMotion = false;
@@ -133,10 +133,6 @@ public class PlayerMovement : MonoBehaviour {
         xRotation -= mouseY;
         yRotation += mouseX;
         xRotation = Mathf.Clamp(xRotation, -80f, 70f); // Can't look too far up or down
-
-        // Apply yaw rotation (looking left and right)
-        transform.Rotate(Vector3.up * mouseX);
-        transform.Rotate(Vector3.left * mouseY);
 
         // Combine both rotations
         mainCam.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);

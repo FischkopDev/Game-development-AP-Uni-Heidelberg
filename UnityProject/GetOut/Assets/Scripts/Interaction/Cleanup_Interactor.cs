@@ -26,6 +26,7 @@ public class Cleanup_Interactor : MonoBehaviour, Interactable
 {
 
     public GameObject key;
+    private bool keyVisibility = true;
     /**
      * @brief Executes the interaction logic when the player interacts with this object.
      *
@@ -41,6 +42,7 @@ public class Cleanup_Interactor : MonoBehaviour, Interactable
         {
             // On interaction, disable the object's rendering and functionality
             obj.SetActive(false);
+            key.GetComponent<MeshRenderer>().enabled = false;
             Debug.Log("Object disabled");
         }
     }
@@ -54,5 +56,10 @@ public class Cleanup_Interactor : MonoBehaviour, Interactable
     public void IsAccessable(GameObject obj)
     {
         key.GetComponent<MeshRenderer>().enabled = true;
+        keyVisibility = true;
+    }
+
+    public void IsNotAccessable(){
+
     }
 }

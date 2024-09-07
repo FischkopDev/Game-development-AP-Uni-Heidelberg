@@ -22,35 +22,41 @@
  */
 using UnityEngine;
 
-public class Letter_Interactor : MonoBehaviour, Interactable
-{
-    /**
-     * @brief Executes the interaction logic when the player interacts with this object.
-     *
-     * @param obj The GameObject that is being interacted with.
-     *
-     * This method checks if the interaction key (E) is pressed, and if so, it disables the 
-     * object, effectively removing it from the scene. A debug message is logged to confirm 
-     * the action.
-     */
-    public void Interact(GameObject obj)
+    public class Letter_Interactor : MonoBehaviour, Interactable
     {
-        if (Input.GetKeyDown(KeyCode.E))
+
+        public GameObject letter;
+        public GameObject stateManager;
+        /**
+        * @brief Executes the interaction logic when the player interacts with this object.
+        *
+        * @param obj The GameObject that is being interacted with.
+        *
+        * This method checks if the interaction key (E) is pressed, and if so, it disables the 
+        * object, effectively removing it from the scene. A debug message is logged to confirm 
+        * the action.
+        */
+        public void Interact(GameObject obj)
         {
-            // On interaction, disable the object's rendering and functionality
-            obj.SetActive(false);
-            Debug.Log("Object disabled");
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                // On interaction, disable the object's rendering and functionality
+                letter.SetActive(true);
+            }
+        }
+
+        /**
+        * @brief Indicates whether the object is accessible for interaction.
+        *
+        * This method is intended to provide feedback or state information
+        * about whether the object can be interacted with. Currently, it is not implemented.
+        */
+        public void IsAccessable(GameObject obj)
+        {
+            // Implementation pending
+        }
+
+            public void IsNotAccessable(){
         }
     }
 
-    /**
-     * @brief Indicates whether the object is accessible for interaction.
-     *
-     * This method is intended to provide feedback or state information
-     * about whether the object can be interacted with. Currently, it is not implemented.
-     */
-    public void IsAccessable(GameObject obj)
-    {
-        // Implementation pending
-    }
-}

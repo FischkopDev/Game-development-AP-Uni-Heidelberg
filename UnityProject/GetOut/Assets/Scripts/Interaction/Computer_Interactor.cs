@@ -51,4 +51,7 @@ public class Computer_Interactor : MonoBehaviour, Interactable
     {
         // Implementation pending
     }
+
+        public void IsNotAccessable(){
+    }
 }
