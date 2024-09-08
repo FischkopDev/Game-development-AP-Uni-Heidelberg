@@ -19,7 +19,7 @@ public class MainMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             // Lade die Hauptmenü-Szene
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene("MainMenu");
         }
    }
 
