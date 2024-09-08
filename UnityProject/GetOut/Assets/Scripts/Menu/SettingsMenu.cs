@@ -59,7 +59,7 @@ public class SettingsMenu : MonoBehaviour {
         resolutionDropdown.RefreshShownValue();
 
         //für bildschirm erkennung
-        PopulateScreenDropdown();
+        //PopulateScreenDropdown();
 
     }
 
@@ -69,7 +69,7 @@ public class SettingsMenu : MonoBehaviour {
     }
 
 
-    [DllImport("user32.dll")]
+    /*[DllImport("user32.dll")]
     static extern bool EnumDisplayDevices(string lpDevice, uint iDevNum, ref DISPLAY_DEVICE lpDisplayDevice, uint dwFlags);
 
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
@@ -134,6 +134,6 @@ public class SettingsMenu : MonoBehaviour {
         {
             Debug.LogError("Ungültiger Bildschirmindex: " + screenIndex);
         }
-    }
+    }*/
 
 }
