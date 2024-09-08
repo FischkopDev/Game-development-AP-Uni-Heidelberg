@@ -15,6 +15,8 @@ public class PlayerRotation : MonoBehaviour {
     /// @brief Reference to the main camera transform for rotating the camera.
     [SerializeField] public Transform mainCam;
 
+    private bool animation = false;
+
     public void Start(){
         // Hide mouse and lock to screen center
         Cursor.lockState = CursorLockMode.Locked;
@@ -28,10 +30,13 @@ public class PlayerRotation : MonoBehaviour {
      * rotationUpdate() to update the camera rotation, provided motion is not disabled.
      */
     public void LateUpdate() {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        if (!animation)
+        {
+            float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+            float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
-        rotationUpdate(mouseX, mouseY);
+            rotationUpdate(mouseX, mouseY);
+        }
     }
 
     /**
@@ -45,12 +50,12 @@ public class PlayerRotation : MonoBehaviour {
      */
     public void rotationUpdate(float mouseX, float mouseY){
         // Apply pitch rotation (looking up and down)
-        xRotation -= mouseY;
-        yRotation += mouseX;
-        xRotation = Mathf.Clamp(xRotation, -20f, 50f); // Can't look too far up or down
-        yRotation = Mathf.Clamp(yRotation, -60f, 60f); // Can't look too far up or down
+        yRotation -= mouseY;
+        xRotation += mouseX;
+        yRotation = Mathf.Clamp(yRotation, -20f, 50f); // Can't look too far up or down
+        xRotation = Mathf.Clamp(xRotation, -60f, 60f); // Can't look too far up or down
 
         // Combine both rotations
-        mainCam.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
+        mainCam.localRotation = Quaternion.Euler(yRotation, xRotation, 0f);
     }
 }

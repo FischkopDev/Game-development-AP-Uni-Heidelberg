@@ -38,11 +38,24 @@ using UnityEngine;
         */
         public void Interact(GameObject obj)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+        // Move the letter back along the Z-axis to make it appear farther away
+        letter.transform.position += new Vector3(0, 0, -1f); // Move the letter 1 unit farther from the camera
+
+        if (Input.GetKeyDown(KeyCode.E))
             {
                 // On interaction, disable the object's rendering and functionality
                 letter.SetActive(true);
-            }
+               
+        }
+
+        // After reading letter, press escape in order to continue with the game
+        if (Input.GetKeyDown(KeyCode.R))
+            {
+                letter.SetActive(false);
+                Cursor.lockState = CursorLockMode.Locked; // Locks the cursor again
+                Cursor.visible = false; // Hides the cursor
+        }
+
         }
 
         /**
