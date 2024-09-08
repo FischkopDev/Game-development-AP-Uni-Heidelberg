@@ -6188,7 +6188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactor: {fileID: 950946613}
-  InteractRange: 5
+  interactRange: 5
 --- !u!1 &968148718 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -516098083770646512, guid: 85aed87a6c9d68549b5f640623bdfd02, type: 3}
