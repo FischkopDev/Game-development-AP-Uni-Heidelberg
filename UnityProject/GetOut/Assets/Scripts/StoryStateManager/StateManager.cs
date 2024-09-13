@@ -24,5 +24,28 @@ using UnityEngine;
         SCENE1_READ_LETTER = 1,
         SCENE1_INTRO_ANIMATION = 2,
     }
+
+    // from here on for Save and Load
+    public static StateManager Instance {get; private set;}
+
+    public SaveData currentGameState;
+
+    void Awake()
+    {
+       if(Instance == null) 
+       {
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+       } 
+       else 
+       {
+        Destroy(gameObject);
+       }
     }
+
+    public void UpdateGameState(SaveData newGameState)
+    {
+        currentGameState = newGameState;
+    }
+}
 
