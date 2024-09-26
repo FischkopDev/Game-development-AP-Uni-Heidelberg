@@ -38,7 +38,8 @@ public class SaveLoadManager : MonoBehaviour
 
     public static SaveLoadManager Instance => instance;
 
-/*  Implementation without StateManager  
+/*  
+Implementation without StateManager  
         public void SaveGame() 
     {
         BinaryFormatter formatter = new BinaryFormatter();
