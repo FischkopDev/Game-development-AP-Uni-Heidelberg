@@ -10,14 +10,6 @@ public class SettingsMenu : MonoBehaviour {
     //note: slider goes from -80 to 0 because that's what our audio mixer does
     //for audio
     public AudioMixer audioMixer;
-    public void SetVolume(float volume) {
-        audioMixer.SetFloat("volume", volume);
-    }
-
-    // set game quality
-    public void SetQuality(int qualityIndex) {
-        QualitySettings.SetQualityLevel(qualityIndex);
-    }
 
     //for Resolution
      [SerializeField] private TMP_Dropdown resolutionDropdown;
@@ -27,6 +19,15 @@ public class SettingsMenu : MonoBehaviour {
 
     private float currentRefreshRate;
     private int currentResolutionIndex;
+
+    public void SetVolume(float volume) {
+        audioMixer.SetFloat("volume", volume);
+    }
+
+    // set game quality
+    public void SetQuality(int qualityIndex) {
+        QualitySettings.SetQualityLevel(qualityIndex);
+    }
 
 
     // Start is called before the first frame update

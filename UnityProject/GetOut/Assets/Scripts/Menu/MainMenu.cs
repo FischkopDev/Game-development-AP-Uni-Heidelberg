@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
    public void PlayGame() {
+    //TODO correct implementation for change to other scenes beside scene 1
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
    }
 
@@ -15,7 +16,7 @@ public class MainMenu : MonoBehaviour
    }
 
    void Update() {
-       // Überprüfe, ob die Escape-Taste gedrückt wurde
+       // Überprüfe, ob die R-Taste gedrückt wurde
         if (Input.GetKeyDown(KeyCode.R))
         {
             // Lade die Hauptmenü-Szene

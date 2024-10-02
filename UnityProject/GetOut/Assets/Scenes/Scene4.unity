@@ -13373,6 +13373,8 @@ MonoBehaviour:
   CleanedItems: 0
   outfit: 0
   state: 0
+  currentGameState:
+    lastSceneIndex: 0
 --- !u!4 &1423064950
 Transform:
   m_ObjectHideFlags: 0
@@ -18922,7 +18924,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 526289869668957506, guid: cebd6d3c202482847b619399684fd82a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -96.41
+      value: -106.483
       objectReference: {fileID: 0}
     - target: {fileID: 526289869668957506, guid: cebd6d3c202482847b619399684fd82a, type: 3}
       propertyPath: m_LocalPosition.y

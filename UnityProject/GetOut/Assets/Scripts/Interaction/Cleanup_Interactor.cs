@@ -44,6 +44,12 @@ public class Cleanup_Interactor : MonoBehaviour, Interactable
             obj.SetActive(false);
             key.GetComponent<MeshRenderer>().enabled = false;
             Debug.Log("Object disabled");
+            StateManager.cleanUp();
+
+            if(!StateManager.ItemsLeftToCleanup()){
+                StateManager.state = StateManager.State.SCENE1_CLEANUP_DONE;
+                Debug.Log("Cleanup task done");
+            }
         }
     }
 

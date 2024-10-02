@@ -26,7 +26,6 @@ public class Cloth_Interactor : MonoBehaviour, Interactable
 {
 
     public AudioSource src;
-    private bool archived = false;
     /**
      * @brief Executes the interaction logic when the player interacts with this object.
      *
@@ -37,12 +36,13 @@ public class Cloth_Interactor : MonoBehaviour, Interactable
      */
     public void Interact(GameObject obj)
     {
-        if (Input.GetKeyDown(KeyCode.E) && !archived)
+        if (Input.GetKeyDown(KeyCode.E) && !StateManager.outfitChanged() && !StateManager.ItemsLeftToCleanup())
         {
             // TODO: Implement animation
             Debug.Log("Change outfit");
             src.Play();
-            archived = !archived;
+
+            StateManager.changeOutfit();
         }   
     }
 

@@ -18,6 +18,7 @@ public class SaveLoadManager : MonoBehaviour
     private static SaveLoadManager instance;
     private SaveData currentSave;
     private string saveFilePath;
+     public static SaveLoadManager Instance => instance;
 
     void Awake() 
     {
@@ -35,8 +36,6 @@ public class SaveLoadManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    public static SaveLoadManager Instance => instance;
 
 /*  
 Implementation without StateManager  

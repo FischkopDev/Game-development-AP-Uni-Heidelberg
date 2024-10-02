@@ -79,6 +79,7 @@ public class PlayerMovement : MonoBehaviour {
         if(scene1Intro != null){
             // Start the intro scene animation
             scene1Intro.Play("Scene1_Intro");
+            StateManager.state = StateManager.State.SCENE1_INTRO_ANIMATION;
         }
         else{
             disableMotion = false;
@@ -96,6 +97,8 @@ public class PlayerMovement : MonoBehaviour {
             if(scene1Intro.GetCurrentAnimatorStateInfo(0).IsName("Intro_Done")){
                 scene1Intro.enabled = false;
                 disableMotion = false;
+
+                StateManager.stopIntroAnimation();
             }
         }
 

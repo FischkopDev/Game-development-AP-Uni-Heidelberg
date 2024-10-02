@@ -43,6 +43,7 @@ public class Computer_Interactor : MonoBehaviour, Interactable
             // TODO: Implement animation
             Debug.Log("interact with computer");
             key.GetComponent<MeshRenderer>().enabled = false;
+            StateManager.state = StateManager.State.SCENE3_SIT_DOWN;
             SceneManager.LoadScene("Scene3");
         }
     }

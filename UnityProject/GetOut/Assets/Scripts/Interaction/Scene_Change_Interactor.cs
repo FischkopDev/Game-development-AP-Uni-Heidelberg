@@ -27,12 +27,17 @@ using UnityEngine.SceneManagement;
 public class Scene1_Change_Interactor : MonoBehaviour, Interactable
 {
 
-    // @brief Target scene indicated by name
-    public String sceneName;
-
     public void Interact(GameObject obj){
         if(Input.GetKeyDown(KeyCode.E)){
-            ChangeToScene2();
+            if(StateManager.state == StateManager.State.SCENE1_COMPLETED){
+                ChangeScene("Scene2");
+             }   
+             else if(StateManager.state == StateManager.State.SCENE3_SIT_DOWN){
+                ChangeScene("Scene4");
+             } 
+             else{
+                Debug.Log("Change not allowed here: " + StateManager.state);
+             }
             Debug.Log("Change of scene");
         }
     }
@@ -45,8 +50,8 @@ public class Scene1_Change_Interactor : MonoBehaviour, Interactable
      * @brief Triggers the event to change the scene to @scenename
      *
      */
-    void ChangeToScene2(){
-         SceneManager.LoadScene(sceneName);
+    void ChangeScene(String name){
+        SceneManager.LoadScene(name);
     }
 
         public void IsNotAccessable(){

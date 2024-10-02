@@ -1,28 +1,64 @@
-using UnityEngine;    
-    public class StateManager : MonoBehaviour {
+using UnityEngine;
+using UnityEngine.SceneManagement;
+public class StateManager : MonoBehaviour {
         //Achievements and their states
-        public int CleanedItems = 0; 
-        public bool outfit = false; 
+        private static  int CleanedItems = 0; 
+        private static  bool outfit = false; 
+        private static bool introToggle = false;
 
-        public State state = State.SCENE1;
+        public static State state = State.SCENE1_INTRO_ANIMATION; //Has to be changed for debugging when starting from a different state!
+
+        public void Start(){
+            Debug.Log("State of game loading");
+            switch(SceneManager.GetActiveScene().buildIndex){
+                case 1:
+                    state = State.SCENE1_INTRO_ANIMATION;
+                    break;
+                case 2:
+                    state = State.SCENE2;
+                    Debug.Log("Loading Scene 2");
+                    break;
+            }
+        }
         
-        public bool ItemsLeftToCleanup(){
-            return CleanedItems < 5;
+        public static bool ItemsLeftToCleanup(){
+            return CleanedItems < 3;
         }
 
-        public bool changedOutfit(){
+        public static void cleanUp(){
+            CleanedItems++;
+        }
+
+        public static void changeOutfit(){
+            outfit = true;
+            state = State.SCENE1_COMPLETED;
+        }
+        public static bool outfitChanged(){
             return outfit;
         }
 
-        public void blockPlayerMovement(){
-            GameObject player = GameObject.Find("Main Camera");
+        public static bool scene1Complete(){
+            return !ItemsLeftToCleanup() && outfitChanged();
+        }
+
+        public static void stopIntroAnimation(){
+            if(!introToggle){
+                state = State.SCENE1;
+                introToggle = true;
+            }
         }
 
         
     public enum State {
         SCENE1 = 0,
-        SCENE1_READ_LETTER = 1,
-        SCENE1_INTRO_ANIMATION = 2,
+        SCENE1_INTRO_ANIMATION = 1,
+        SCENE1_CLEANUP_DONE = 2,
+        SCENE1__NOT_DRESSED = 3,
+        SCENE1_COMPLETED = 4,
+
+        SCENE2 = 5,
+        SCENE3_SIT_DOWN = 6,
+        SCENE2_COMPLETED = 7,
     }
 
     // from here on for Save and Load
