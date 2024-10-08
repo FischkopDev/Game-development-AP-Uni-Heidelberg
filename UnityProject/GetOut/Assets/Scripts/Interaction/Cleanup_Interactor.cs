@@ -26,6 +26,7 @@ public class Cleanup_Interactor : MonoBehaviour, Interactable
 {
 
     public GameObject key;
+    public AudioSource src;
     private bool keyVisibility = true;
     /**
      * @brief Executes the interaction logic when the player interacts with this object.
@@ -40,6 +41,7 @@ public class Cleanup_Interactor : MonoBehaviour, Interactable
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+            src.Play();
             // On interaction, disable the object's rendering and functionality
             obj.SetActive(false);
             key.GetComponent<MeshRenderer>().enabled = false;

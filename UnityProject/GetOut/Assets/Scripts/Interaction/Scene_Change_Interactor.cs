@@ -30,15 +30,17 @@ public class Scene1_Change_Interactor : MonoBehaviour, Interactable
     public void Interact(GameObject obj){
         if(Input.GetKeyDown(KeyCode.E)){
             if(StateManager.state == StateManager.State.SCENE1_COMPLETED){
+                Debug.Log("Switching to Scene 2");
+                StateManager.state = StateManager.State.SCENE2;
                 ChangeScene("Scene2");
              }   
              else if(StateManager.state == StateManager.State.SCENE3_SIT_DOWN){
+                Debug.Log("Switching to Scene 2");
                 ChangeScene("Scene4");
              } 
              else{
                 Debug.Log("Change not allowed here: " + StateManager.state);
              }
-            Debug.Log("Change of scene");
         }
     }
 

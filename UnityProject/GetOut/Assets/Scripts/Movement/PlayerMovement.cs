@@ -49,19 +49,13 @@ public class PlayerMovement : MonoBehaviour {
     private float xRotation = 0f;
 
     /// @brief Starting yaw (y-axis) rotation.
-    private float yRotation = -90f;
+    public float yRotation = -90f;
 
     /// @brief Sensitivity of mouse movement for camera rotation.
     [SerializeField] public float mouseSensitivity;
 
     /// @brief Reference to the main camera transform for rotating the camera.
     [SerializeField] public Transform mainCam;
-
-    /// @brief Reference to the animator component controlling the intro scene.
-    public Animator scene1Intro;
-
-    /// @brief Flag to disable player motion during the intro scene.
-    private bool disableMotion = true;
 
     /**
      * @brief Initializes the PlayerMovement script.
@@ -76,14 +70,6 @@ public class PlayerMovement : MonoBehaviour {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        if(scene1Intro != null){
-            // Start the intro scene animation
-            scene1Intro.Play("Scene1_Intro");
-            StateManager.state = StateManager.State.SCENE1_INTRO_ANIMATION;
-        }
-        else{
-            disableMotion = false;
-        }
     }
 
     /**
@@ -93,19 +79,12 @@ public class PlayerMovement : MonoBehaviour {
      * for movement and calls the PlayerMove() method to move the player accordingly.
      */
     public void Update() {
-        if(scene1Intro != null){//TODO breakdown to one if
-            if(scene1Intro.GetCurrentAnimatorStateInfo(0).IsName("Intro_Done")){
-                scene1Intro.enabled = false;
-                disableMotion = false;
+        if(StateManager.state != StateManager.State.SCENE1_INTRO_ANIMATION){
+            float x = Input.GetAxisRaw("Horizontal");
+            float z = Input.GetAxisRaw("Vertical");
 
-                StateManager.stopIntroAnimation();
-            }
+            PlayerMove(x , z);
         }
-
-        float x = Input.GetAxisRaw("Horizontal");
-        float z = Input.GetAxisRaw("Vertical");
-
-        PlayerMove(x , z);
     }
 
     /**
@@ -118,7 +97,7 @@ public class PlayerMovement : MonoBehaviour {
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
-        if(!disableMotion)
+        if(StateManager.state != StateManager.State.SCENE1_INTRO_ANIMATION)
             rotationUpdate(mouseX, mouseY);
     }
 
