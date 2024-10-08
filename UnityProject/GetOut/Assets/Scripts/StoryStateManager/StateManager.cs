@@ -6,7 +6,7 @@ public class StateManager : MonoBehaviour {
         private static  bool outfit = false; 
         private static bool introToggle = false;
 
-        public static State state = State.SCENE1_INTRO_ANIMATION; //Has to be changed for debugging when starting from a different state!
+        public static State state = State.SCENE4_INTRO; //Has to be changed for debugging when starting from a different state!
 
         public void Start(){
             Debug.Log("State of game loading");
@@ -17,6 +17,9 @@ public class StateManager : MonoBehaviour {
                 case 2:
                     state = State.SCENE2;
                     Debug.Log("Loading Scene 2");
+                    break;
+                case 4:
+                    state = State.SCENE4;
                     break;
             }
         }
@@ -57,8 +60,14 @@ public class StateManager : MonoBehaviour {
         SCENE1_COMPLETED = 4,
 
         SCENE2 = 5,
-        SCENE3_SIT_DOWN = 6,
         SCENE2_COMPLETED = 7,
+        SCENE3 = 6,
+
+        SCENE3_OUTRO = 8,
+        SCENE3_OUTRO_DONE = 9,
+        SCENE4_INTRO = 10,
+        SCENE4 = 11,
+
     }
 
     // from here on for Save and Load

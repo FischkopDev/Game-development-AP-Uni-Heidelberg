@@ -15,8 +15,6 @@ public class PlayerRotation : MonoBehaviour {
     /// @brief Reference to the main camera transform for rotating the camera.
     [SerializeField] public Transform mainCam;
 
-    private bool animation = false;
-
     public void Start(){
         // Hide mouse and lock to screen center
         Cursor.lockState = CursorLockMode.Locked;
@@ -30,7 +28,7 @@ public class PlayerRotation : MonoBehaviour {
      * rotationUpdate() to update the camera rotation, provided motion is not disabled.
      */
     public void LateUpdate() {
-        if (!animation)
+        if (StateManager.state != StateManager.State.SCENE3_OUTRO)
         {
             float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
             float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;

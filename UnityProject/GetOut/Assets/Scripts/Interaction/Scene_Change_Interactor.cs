@@ -34,7 +34,7 @@ public class Scene1_Change_Interactor : MonoBehaviour, Interactable
                 StateManager.state = StateManager.State.SCENE2;
                 ChangeScene("Scene2");
              }   
-             else if(StateManager.state == StateManager.State.SCENE3_SIT_DOWN){
+             else if(StateManager.state == StateManager.State.SCENE3){
                 Debug.Log("Switching to Scene 2");
                 ChangeScene("Scene4");
              } 
