@@ -31,6 +31,9 @@ public class UI_Updater : MonoBehaviour
             case StateManager.State.SCENE2:
                 task.SetText("I'm way too late, my boss is gonna kill me.");
                 break;
+            case StateManager.State.SCENE4:
+                task.SetText("Ok what the actual fuck was that? Maybe i should go inside and get some sleep...");
+                break;
         }
     }
 }
