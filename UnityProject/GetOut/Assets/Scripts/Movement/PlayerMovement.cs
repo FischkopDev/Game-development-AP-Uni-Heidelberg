@@ -97,8 +97,9 @@ public class PlayerMovement : MonoBehaviour {
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
-        if(StateManager.state != StateManager.State.SCENE1_INTRO_ANIMATION && StateManager.state != StateManager.State.SCENE4_INTRO)
+        if(StateManager.state != StateManager.State.SCENE1_INTRO_ANIMATION && StateManager.state != StateManager.State.SCENE4_INTRO){
             rotationUpdate(mouseX, mouseY);
+        }
     }
 
     /**

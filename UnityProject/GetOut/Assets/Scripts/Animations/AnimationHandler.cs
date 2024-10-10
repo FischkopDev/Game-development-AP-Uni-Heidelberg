@@ -52,7 +52,7 @@ public class AnimationHandler : MonoBehaviour {
         }
         else if(animator.GetCurrentAnimatorStateInfo(0).IsName("Scene4_Done")){
             animator.enabled = false;
-            StateManager.state = StateManager.State.SCENE4;
+            StateManager.StopIntroAnimationScene4();
         }
     }
 }

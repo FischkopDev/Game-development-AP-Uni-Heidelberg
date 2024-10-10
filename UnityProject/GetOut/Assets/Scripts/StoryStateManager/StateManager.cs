@@ -4,12 +4,12 @@ public class StateManager : MonoBehaviour {
         //Achievements and their states
         private static  int CleanedItems = 0; 
         private static  bool outfit = false; 
-        private static bool introToggle = false;
+        private static bool introToggle = false, intro4Toggle = false;
 
-        public static State state = State.SCENE4_INTRO; //Has to be changed for debugging when starting from a different state!
+        public static State state = State.SCENE1_INTRO_ANIMATION; //Has to be changed for debugging when starting from a different state!
 
         public void Start(){
-            Debug.Log("State of game loading");
+            Debug.Log("State of game loading: " + state);
             switch(SceneManager.GetActiveScene().buildIndex){
                 case 1:
                     state = State.SCENE1_INTRO_ANIMATION;
@@ -19,7 +19,7 @@ public class StateManager : MonoBehaviour {
                     Debug.Log("Loading Scene 2");
                     break;
                 case 4:
-                    state = State.SCENE4;
+                    state = State.SCENE4_INTRO;
                     break;
             }
         }
@@ -48,6 +48,13 @@ public class StateManager : MonoBehaviour {
             if(!introToggle){
                 state = State.SCENE1;
                 introToggle = true;
+            }
+        }
+
+        public static void StopIntroAnimationScene4(){
+            if(!intro4Toggle){
+                state = State.SCENE4;
+                intro4Toggle = true;
             }
         }
 
