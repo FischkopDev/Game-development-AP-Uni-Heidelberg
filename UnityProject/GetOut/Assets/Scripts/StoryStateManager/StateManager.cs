@@ -21,6 +21,9 @@ public class StateManager : MonoBehaviour {
                 case 4:
                     state = State.SCENE4_INTRO;
                     break;
+                case 5:
+                    state = State.SCENE5;
+                    break;
             }
         }
         
@@ -74,6 +77,8 @@ public class StateManager : MonoBehaviour {
         SCENE3_OUTRO_DONE = 9,
         SCENE4_INTRO = 10,
         SCENE4 = 11,
+        SCENE4_GHOST_APPEAR = 12,
+        SCENE5
 
     }
 

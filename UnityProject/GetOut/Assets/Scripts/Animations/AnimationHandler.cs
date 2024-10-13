@@ -4,6 +4,7 @@
  * @date 8.10.2024
  * @version 1.0
  */
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -53,6 +54,10 @@ public class AnimationHandler : MonoBehaviour {
         else if(animator.GetCurrentAnimatorStateInfo(0).IsName("Scene4_Done")){
             animator.enabled = false;
             StateManager.StopIntroAnimationScene4();
+        }
+        else if(animator.GetCurrentAnimatorStateInfo(0).IsName("Ghost_Appeared")){
+            animator.enabled = false;
+            StateManager.state = StateManager.State.SCENE4;
         }
     }
 }
