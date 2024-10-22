@@ -4,10 +4,13 @@ using UnityEngine;
 public class PlayerRotation : MonoBehaviour {
 
     /// @brief Starting pitch (x-axis) rotation.
-    private float xRotation = 0f;
+    //private float xRotation = 0f;
 
     /// @brief Starting yaw (y-axis) rotation.
-    private float yRotation = 0f;
+    //private float yRotation = 0f;
+
+    //updated:
+    private float pitch = 0f;
 
     /// @brief Sensitivity of mouse movement for camera rotation.
     [SerializeField] public float mouseSensitivity;
@@ -48,12 +51,23 @@ public class PlayerRotation : MonoBehaviour {
      */
     public void rotationUpdate(float mouseX, float mouseY){
         // Apply pitch rotation (looking up and down)
-        yRotation -= mouseY;
+        /*yRotation -= mouseY;
         xRotation += mouseX;
         yRotation = Mathf.Clamp(yRotation, -20f, 50f); // Can't look too far up or down
-        xRotation = Mathf.Clamp(xRotation, -60f, 60f); // Can't look too far up or down
+        xRotation = Mathf.Clamp(xRotation, -60f, 60f); // Can't look too far up or down*/
+
+        //updated version
+        pitch -= mouseY;
+        //limit looking up or down
+        pitch = Mathf.Clamp(pitch, -20f, 50f); 
+
+        // Rotate the camera around the y-axis (yaw) based on the horizontal mouse movement
+        mainCam.Rotate(Vector3.up * mouseX);
 
         // Combine both rotations
-        mainCam.localRotation = Quaternion.Euler(yRotation, xRotation, 0f);
+        //mainCam.localRotation = Quaternion.Euler(yRotation, xRotation, 0f);
+
+        //updated:
+        mainCam.localRotation = Quaternion.Euler(pitch, mainCam.localRotation.eulerAngles.y, 0f);
     }
 }
