@@ -27,6 +27,8 @@ using UnityEngine;
 
         public GameObject letter;
         public GameObject stateManager;
+        //added boolean because of letter bug
+        private bool isLetterOpen = false;
         /**
         * @brief Executes the interaction logic when the player interacts with this object.
         *
@@ -41,21 +43,25 @@ using UnityEngine;
         // Move the letter back along the Z-axis to make it appear farther away
         letter.transform.position += new Vector3(0, 0, -1f); // Move the letter 1 unit farther from the camera
 
-        if (Input.GetKeyDown(KeyCode.E))
-            {
+        if (Input.GetKeyDown(KeyCode.E) && !isLetterOpen)
+        {
                 // On interaction, disable the object's rendering and functionality
                 letter.SetActive(true);
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = false;
+                isLetterOpen = true;
                
         }
 
         // After reading letter, press escape in order to continue with the game
-        if (Input.GetKeyDown(KeyCode.R))
-            {
-                letter.SetActive(false);
-                Cursor.lockState = CursorLockMode.Locked; // Locks the cursor again
-                Cursor.visible = false; // Hides the cursor
+        if (isLetterOpen && (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Escape)))
+        {
+            // close letter and lock cursor
+            letter.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked; // Locks cursor
+            Cursor.visible = false; // Hide cursor
+            isLetterOpen = false;
         }
-
         }
 
         /**
