@@ -1,6 +1,31 @@
 
 using System;
 using UnityEngine;
+/**
+ * @class PlayerRotation
+ * @brief Handles the rotation logic for the player character in Unity.
+ *
+ * This script allows the player to rotate the camera inside a predefined angle.
+ * In Scene 3 of the game, the player is only allowed to move his head. With a few
+ * more requirements it's more efficient to have an disjoint script for head rotation.
+ *
+ * @details 
+ * Features:
+ * - Player rotation in x and y axes inside predefined angles
+ *
+ * Requirements:
+ * - This script should be attached to a GameObject with a Rigidbody component.
+ * - The GameObject should also have a Collider component for proper collision detection.
+ *
+ * How to Use:
+ * - Attach the PlayerMovement script to your player GameObject.
+ * - Configure rotation speed and limits.
+ * - Set the correct input axes in the Unity Input Manager (default is WASD or arrow keys).
+ *
+ * @author Timo Skrobanek
+ * @date 28.10.2024
+ * @version 2.0
+ */
 public class PlayerRotation : MonoBehaviour {
 
     /// @brief Starting pitch (x-axis) rotation.
