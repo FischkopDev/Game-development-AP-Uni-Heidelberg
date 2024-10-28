@@ -17,7 +17,7 @@ public class TriggerMovingPerson : MonoBehaviour
     public GameObject doorsClosed;
     private bool trigger = true;
 
- void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && trigger)
         {

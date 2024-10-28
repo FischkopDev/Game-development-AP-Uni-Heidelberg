@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class InteractionComponent : MonoBehaviour
@@ -7,6 +8,11 @@ public class InteractionComponent : MonoBehaviour
 
     /// @brief The maximum range within which the player can interact with objects.
     public float interactRange = 5f;
+
+    /// <summary>
+    ///  @brief the last interactable object. Needed for user interface
+    /// </summary>
+    private Interactable interactObj;
 
     /**
      * @brief Called once per frame to check for interactions.
@@ -42,9 +48,19 @@ public class InteractionComponent : MonoBehaviour
             {
                 // Optional: Show that the object is in range to interact
                 interactObj.IsAccessable(hitInfo.collider.gameObject);
+                this.interactObj = interactObj;
 
                 // Execute interaction with the object
                 interactObj.Interact(hitInfo.collider.gameObject);
+            }
+            //if there's no hit, (try to) hide the last stored ui element
+            else{
+                try{
+                    this.interactObj.IsNotAccessable();
+                }catch (Exception)
+                {
+                    //DO nothing here, just catch this case
+                }
             }
         }
     }

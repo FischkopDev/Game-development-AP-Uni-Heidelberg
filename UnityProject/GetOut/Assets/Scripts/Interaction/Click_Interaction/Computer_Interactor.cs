@@ -27,7 +27,6 @@ public class Computer_Interactor : MonoBehaviour, Interactable
 {
 
     public GameObject key;
-    private bool keyVisibility = true;
     /**
      * @brief Executes the interaction logic when the player interacts with this object.
      *
@@ -43,6 +42,7 @@ public class Computer_Interactor : MonoBehaviour, Interactable
             // TODO: Implement animation
             Debug.Log("interact with computer");
             key.GetComponent<MeshRenderer>().enabled = false;
+            
             StateManager.state = StateManager.State.SCENE3;
             SceneManager.LoadScene("Scene3");
         }
@@ -59,6 +59,7 @@ public class Computer_Interactor : MonoBehaviour, Interactable
         key.GetComponent<MeshRenderer>().enabled = true;
     }
 
-        public void IsNotAccessable(){
+    public void IsNotAccessable(){
+        key.GetComponent<MeshRenderer>().enabled = false;
     }
 }

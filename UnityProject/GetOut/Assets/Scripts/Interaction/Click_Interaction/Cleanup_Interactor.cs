@@ -27,7 +27,6 @@ public class Cleanup_Interactor : MonoBehaviour, Interactable
 
     public GameObject key;
     public AudioSource src;
-    private bool keyVisibility = true;
     /**
      * @brief Executes the interaction logic when the player interacts with this object.
      *
@@ -64,10 +63,9 @@ public class Cleanup_Interactor : MonoBehaviour, Interactable
     public void IsAccessable(GameObject obj)
     {
         key.GetComponent<MeshRenderer>().enabled = true;
-        keyVisibility = true;
     }
 
     public void IsNotAccessable(){
-
+        key.GetComponent<MeshRenderer>().enabled = false;
     }
 }

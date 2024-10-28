@@ -10,7 +10,7 @@ public class TriggerGhostVoice : MonoBehaviour
 
     public AudioSource src;
     private bool trigger = true;
- void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && trigger)
         {
