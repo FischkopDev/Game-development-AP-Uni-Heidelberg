@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -37,36 +36,6 @@ public class SaveLoadManager : MonoBehaviour
         }
     }
 
-/*  
-Implementation without StateManager  
-        public void SaveGame() 
-    {
-        BinaryFormatter formatter = new BinaryFormatter();
-        using (FileStream stream = new FileStream(saveFilePath, FileMode.Create)) 
-        {
-            // get scene index in order to save the last scene
-            currentSave.lastSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            formatter.Serialize(stream, currentSave);
-        }
-    }
-
-    public void LoadGame() 
-    {
-        if(File.Exists(saveFilePath)) 
-        {
-            BinaryFormatter formatter = new BinaryFormatter();
-            using (FileStream stream = new FileStream(saveFilePath, FileMode.Open)) 
-            {
-                currentSave = (SaveData)formatter.Deserialize(stream);
-                SceneManager.LoadScene(currentSave.lastSceneIndex);
-            }
-        }
-        else 
-        {
-            currentSave = new SaveData();
-        }
-    }
-*/
 
 //Implementation with StateManager
 public void SaveGame()

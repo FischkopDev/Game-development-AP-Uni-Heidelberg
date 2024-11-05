@@ -18,6 +18,9 @@ public class StateManager : MonoBehaviour {
                     state = State.SCENE2;
                     Debug.Log("Loading Scene 2");
                     break;
+                case 3:
+                    state = State.SCENE3;
+                    break;
                 case 4:
                     state = State.SCENE4_INTRO;
                     break;
