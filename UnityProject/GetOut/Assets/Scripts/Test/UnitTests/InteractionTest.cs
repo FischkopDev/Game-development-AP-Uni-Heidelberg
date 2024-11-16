@@ -9,48 +9,53 @@ public class InteractionTest
     [SetUp]
     public void Setup()
     {
-
+        // Setup a new GameObject with the InteractionComponent
+        player = new GameObject("Player");
+        interactionComponent = player.AddComponent<InteractionComponent>();
     }
 
     [TearDown]
     public void Teardown()
     {
+        // Clean up after tests
         GameObject.Destroy(player);
     }
 
     [Test]
     public void CheckInteractionFailed()
     {
-        InteractionComponent interaction = new InteractionComponent();
-        
+        // Arrange
         GameObject myObject = new GameObject("Interactor");
         Transform myTransform = myObject.transform;
-        myTransform.position = new Vector3(1,1,1);
-        myTransform.rotation = Quaternion.Euler(0f, 90f, 0f);//Rotated by 90° so no interaction
+        myTransform.position = new Vector3(1, 1, 1);
+        myTransform.rotation = Quaternion.Euler(0f, 90f, 0f); // Rotated by 90° so no interaction
 
-        interaction.SetInteractor(myTransform);
+        interactionComponent.SetInteractor(myTransform);
 
-        Ray directedRay = new Ray(interaction.GetInteractor().position, interaction.GetInteractor().forward);
+        // Act
+        Ray directedRay = new Ray(interactionComponent.GetInteractor().position, interactionComponent.GetInteractor().forward);
+        bool result = interactionComponent.CheckInteraction(directedRay);
 
-        Assert.AreEqual(interaction.CheckInteraction(directedRay), false);
+        // Assert
+        Assert.IsFalse(result);
     }
 
-        [Test]
-    public void CheckInteractionSuccessfull()
+    [Test]
+    public void CheckInteractionSuccessful()
     {
-        InteractionComponent interaction = new InteractionComponent();
-        
+        // Arrange
         GameObject myObject = new GameObject("Interactor");
         Transform myTransform = myObject.transform;
-        myTransform.position = new Vector3(0,0,0);
-        myTransform.rotation = Quaternion.Euler(0f, 0f, 0f);//Rotated by 90° so no interaction
+        myTransform.position = new Vector3(0, 0, 0);
+        myTransform.rotation = Quaternion.Euler(0f, 0f, 0f); // Aligned for interaction
 
-        interaction.SetInteractor(myTransform);
+        interactionComponent.SetInteractor(myTransform);
 
-        Ray directedRay = new Ray(interaction.GetInteractor().position, interaction.GetInteractor().forward);
+        // Act
+        Ray directedRay = new Ray(interactionComponent.GetInteractor().position, interactionComponent.GetInteractor().forward);
+        bool result = interactionComponent.CheckInteraction(directedRay);
 
-        Assert.AreEqual(interaction.CheckInteraction(directedRay), true);
+        // Assert
+        Assert.IsTrue(result);
     }
 }
-
-

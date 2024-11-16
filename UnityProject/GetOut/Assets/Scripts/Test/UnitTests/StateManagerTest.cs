@@ -37,18 +37,18 @@ public class StateManagerTest : MonoBehaviour
     {
         Assert.AreEqual(StateManager.ItemsLeftToCleanup(), StateManager.CleanedItems < 3); // There are items left to clean up (CleanedItems < 3)
     }
-
-
+    
     [Test]
     public void TestChangeOutfit()
     {
-        // Act
-        StateManager.changeOutfit();
-        
-        // Assert
-        Assert.IsTrue(StateManager.Outfit == true); // Outfit should be true after changeOutfit is called
-        Assert.AreEqual(StateManager.state, StateManager.State.SCENE1_COMPLETED); // State should change to SCENE1_COMPLETED
+    // Act
+    StateManager.changeOutfit();
+    
+    // Assert
+    Assert.IsTrue(StateManager.Outfit, "Outfit should be true after calling changeOutfit.");
+    Assert.AreEqual(StateManager.State.SCENE1_COMPLETED, StateManager.state, "State should change to SCENE1_COMPLETED after calling changeOutfit.");
     }
+
 
     [Test]
     public void TestScene1Complete()
@@ -63,13 +63,12 @@ public class StateManagerTest : MonoBehaviour
     [Test]
     public void TestStopIntroAnimation()
     {
+    // Act
+    StateManager.stopIntroAnimation();
 
-        // Act
-        StateManager.stopIntroAnimation();
-
-        // Assert
-        Assert.AreEqual(StateManager.state, StateManager.State.SCENE1); // State should be SCENE1
-        Assert.IsTrue(StateManager.IntroToggle); // introToggle should be true
+    // Assert
+    Assert.AreEqual(StateManager.State.SCENE1, StateManager.state, "State should change to SCENE1 after calling stopIntroAnimation.");
+    Assert.IsTrue(StateManager.IntroToggle, "IntroToggle should be true after calling stopIntroAnimation.");
     }
 
    

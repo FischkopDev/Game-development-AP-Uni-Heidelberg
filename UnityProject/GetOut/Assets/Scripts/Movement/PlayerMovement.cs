@@ -28,6 +28,7 @@
  * @date 18.8.2024
  * @version 1.0
  */
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -173,5 +174,10 @@ public class PlayerMovement : MonoBehaviour {
     public float GetMouseSensitivity()
     {
         return mouseSensitivity;
+    }
+
+    public object GetVelocity()
+    {
+        throw new NotImplementedException();
     }
 }

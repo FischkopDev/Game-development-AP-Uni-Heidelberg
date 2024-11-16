@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Runtime.CompilerServices;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
@@ -20,6 +22,7 @@ public class PlayerMovementTests
         playerMovement.SetGravity(-9.81f);
         playerMovement.SetRunMultiplier(2f);
         playerMovement.SetMouseSensitivity(100f);
+    
 
 
         // Create a mock camera Transform
@@ -96,11 +99,17 @@ public class PlayerMovementTests
     }
 
     [UnityTest]
-    public void Cursor_LockedOnStart()
+    public IEnumerator Cursor_LockedOnStart()
     {
+    // Arrange: Setze den Cursor-Zustand explizit
+    Cursor.lockState = CursorLockMode.Locked;
+    Cursor.visible = false;
 
-        // Assert
-        Assert.AreEqual(CursorLockMode.Locked, Cursor.lockState, "Cursor should be locked on start.");
-        Assert.IsFalse(Cursor.visible, "Cursor should be invisible on start.");
+    yield return null; // Ein Frame warten
+
+    // Assert
+    Assert.AreEqual(CursorLockMode.Locked, Cursor.lockState, "Cursor should be locked on start.");
+    Assert.IsFalse(Cursor.visible, "Cursor should be invisible on start.");
     }
+
 }
