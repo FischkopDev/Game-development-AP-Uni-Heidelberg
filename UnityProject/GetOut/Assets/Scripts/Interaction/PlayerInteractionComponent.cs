@@ -12,7 +12,7 @@ public class InteractionComponent : MonoBehaviour
     /// <summary>
     ///  @brief the last interactable object. Needed for user interface
     /// </summary>
-    private Interactable interactObj;
+     private Interactable interactObj;
 
     /**
      * @brief Called once per frame to check for interactions.
@@ -38,7 +38,7 @@ public class InteractionComponent : MonoBehaviour
      * are interactable. If an interactable object is detected, the interaction method
      * on that object is called.
      */
-    public void CheckInteraction(Ray directedRay)
+    public bool CheckInteraction(Ray directedRay)
     {
         // Check if the ray hits any objects within the interaction range
         if (Physics.Raycast(directedRay, out RaycastHit hitInfo, interactRange))
@@ -52,16 +52,52 @@ public class InteractionComponent : MonoBehaviour
 
                 // Execute interaction with the object
                 interactObj.Interact(hitInfo.collider.gameObject);
+                return true;
             }
             //if there's no hit, (try to) hide the last stored ui element
             else{
                 try{
                     this.interactObj.IsNotAccessable();
+                    return true;
                 }catch (Exception)
                 {
-                    //DO nothing here, just catch this case
+                    return false;
                 }
             }
         }
+        return false;
+    }
+
+
+     // Getter und Setter
+    public Transform GetInteractor()
+    {
+        return interactor;
+    }
+
+    public void SetInteractor(Transform value)
+    {
+        interactor = value;
+    }
+
+    public float GetInteractRange()
+    {
+        return interactRange;
+    }
+
+    public void SetInteractRange(float value)
+    {
+        interactRange = value;
+    }
+
+
+    internal Interactable GetInteractObj()
+    {
+        return interactObj;
+    }
+
+    internal void SetInteractObj(Interactable value)
+    {
+        interactObj = value;
     }
 }

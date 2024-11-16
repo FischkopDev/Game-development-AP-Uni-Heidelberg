@@ -149,4 +149,29 @@ public class PlayerMovement : MonoBehaviour {
         charController.Move(move);
     }
 
+    //Getter and Setter
+    public void SetGravity(float value) => gravity = value;
+    public void SetRunMultiplier(float value) => runMultiplier = value;
+    public void SetMouseSensitivity(float value) => mouseSensitivity = value;
+
+// Getter-Methoden
+    public float GetSpeed()
+    {
+        return speed;
+    }
+
+    public float GetGravity()
+    {
+        return gravity;
+    }
+
+    public float GetRunMultiplier()
+    {
+        return runMultiplier;
+    }
+
+    public float GetMouseSensitivity()
+    {
+        return mouseSensitivity;
+    }
 }

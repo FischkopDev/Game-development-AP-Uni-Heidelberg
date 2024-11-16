@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class StateManager : MonoBehaviour {
         //Achievements and their states
-        private static  int CleanedItems = 0; 
+        private static  int cleanedItems = 0; 
         private static  bool outfit = false; 
         private static bool introToggle = false, intro4Toggle = false;
 
@@ -28,6 +28,13 @@ public class StateManager : MonoBehaviour {
                     state = State.SCENE5;
                     break;
             }
+        }
+
+        public static void startScene1(){
+            state = State.SCENE1_INTRO_ANIMATION;
+            CleanedItems = 0;
+            outfit = false;
+            introToggle = false;
         }
         
         public static bool ItemsLeftToCleanup(){
@@ -107,5 +114,13 @@ public class StateManager : MonoBehaviour {
     {
         currentGameState = newGameState;
     }
+
+
+    public static int CleanedItems { get; private set; } = cleanedItems;
+    public static bool Outfit { get; private set; } = outfit;
+    public static bool IntroToggle { get; private set; } = introToggle;
+    public static bool Intro4Toggle { get; private set; } = intro4Toggle;
+
+
 }
 
