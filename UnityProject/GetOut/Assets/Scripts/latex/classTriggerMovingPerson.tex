@@ -1,0 +1,104 @@
+\hypertarget{classTriggerMovingPerson}{}\doxysection{Trigger\+Moving\+Person Class Reference}
+\label{classTriggerMovingPerson}\index{TriggerMovingPerson@{TriggerMovingPerson}}
+
+
+Handles triggering animations, sounds, and object states when the player enters a specific area.  
+
+
+
+
+Inheritance diagram for Trigger\+Moving\+Person\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classTriggerMovingPerson__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Trigger\+Moving\+Person\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classTriggerMovingPerson__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Audio\+Source \mbox{\hyperlink{classTriggerMovingPerson_add2678e2faa40e6f214bb9204683be7b}{src}}
+\item 
+Game\+Object \mbox{\hyperlink{classTriggerMovingPerson_ad0f8b65c74d756e25cd57f896681ff0d}{table\+Upside\+Down}}
+\item 
+Game\+Object \mbox{\hyperlink{classTriggerMovingPerson_ab4626c8c0749db39ca7177aaf92848ec}{table}}
+\item 
+Animator \mbox{\hyperlink{classTriggerMovingPerson_a62e5ddc272bf559c07b78343be257a2a}{anim}}
+\item 
+Game\+Object \mbox{\hyperlink{classTriggerMovingPerson_aa7261459d05b400bc6b99101eab6d8fe}{doors\+Open}}
+\item 
+Game\+Object \mbox{\hyperlink{classTriggerMovingPerson_a5cd354a7e5072a9230a38ab633ab65d4}{doors\+Closed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles triggering animations, sounds, and object states when the player enters a specific area. 
+
+This class initiates a sequence of actions when the player enters the trigger zone\+: it updates the game state, plays an audio clip, enables an animation, and toggles visibility of objects (e.\+g., tables and doors).
+
+The script ensures that the sequence is only triggered once upon the first entry of the player into the trigger zone.
+
+\begin{DoxyAuthor}{Author}
+Timo Skrobanek 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10.\+10.\+2024 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTriggerMovingPerson_a62e5ddc272bf559c07b78343be257a2a}\label{classTriggerMovingPerson_a62e5ddc272bf559c07b78343be257a2a}} 
+\index{TriggerMovingPerson@{TriggerMovingPerson}!anim@{anim}}
+\index{anim@{anim}!TriggerMovingPerson@{TriggerMovingPerson}}
+\doxysubsubsection{\texorpdfstring{anim}{anim}}
+{\footnotesize\ttfamily Animator Trigger\+Moving\+Person.\+anim}
+
+Animator component that controls the movement of a character or object. \mbox{\Hypertarget{classTriggerMovingPerson_a5cd354a7e5072a9230a38ab633ab65d4}\label{classTriggerMovingPerson_a5cd354a7e5072a9230a38ab633ab65d4}} 
+\index{TriggerMovingPerson@{TriggerMovingPerson}!doorsClosed@{doorsClosed}}
+\index{doorsClosed@{doorsClosed}!TriggerMovingPerson@{TriggerMovingPerson}}
+\doxysubsubsection{\texorpdfstring{doorsClosed}{doorsClosed}}
+{\footnotesize\ttfamily Game\+Object Trigger\+Moving\+Person.\+doors\+Closed}
+
+Game\+Object representing closed doors that will be toggled on. \mbox{\Hypertarget{classTriggerMovingPerson_aa7261459d05b400bc6b99101eab6d8fe}\label{classTriggerMovingPerson_aa7261459d05b400bc6b99101eab6d8fe}} 
+\index{TriggerMovingPerson@{TriggerMovingPerson}!doorsOpen@{doorsOpen}}
+\index{doorsOpen@{doorsOpen}!TriggerMovingPerson@{TriggerMovingPerson}}
+\doxysubsubsection{\texorpdfstring{doorsOpen}{doorsOpen}}
+{\footnotesize\ttfamily Game\+Object Trigger\+Moving\+Person.\+doors\+Open}
+
+Game\+Object representing open doors that will be toggled off. \mbox{\Hypertarget{classTriggerMovingPerson_add2678e2faa40e6f214bb9204683be7b}\label{classTriggerMovingPerson_add2678e2faa40e6f214bb9204683be7b}} 
+\index{TriggerMovingPerson@{TriggerMovingPerson}!src@{src}}
+\index{src@{src}!TriggerMovingPerson@{TriggerMovingPerson}}
+\doxysubsubsection{\texorpdfstring{src}{src}}
+{\footnotesize\ttfamily Audio\+Source Trigger\+Moving\+Person.\+src}
+
+Audio source for playing a sound effect upon triggering. \mbox{\Hypertarget{classTriggerMovingPerson_ab4626c8c0749db39ca7177aaf92848ec}\label{classTriggerMovingPerson_ab4626c8c0749db39ca7177aaf92848ec}} 
+\index{TriggerMovingPerson@{TriggerMovingPerson}!table@{table}}
+\index{table@{table}!TriggerMovingPerson@{TriggerMovingPerson}}
+\doxysubsubsection{\texorpdfstring{table}{table}}
+{\footnotesize\ttfamily Game\+Object Trigger\+Moving\+Person.\+table}
+
+Game\+Object representing the table in its original position. \mbox{\Hypertarget{classTriggerMovingPerson_ad0f8b65c74d756e25cd57f896681ff0d}\label{classTriggerMovingPerson_ad0f8b65c74d756e25cd57f896681ff0d}} 
+\index{TriggerMovingPerson@{TriggerMovingPerson}!tableUpsideDown@{tableUpsideDown}}
+\index{tableUpsideDown@{tableUpsideDown}!TriggerMovingPerson@{TriggerMovingPerson}}
+\doxysubsubsection{\texorpdfstring{tableUpsideDown}{tableUpsideDown}}
+{\footnotesize\ttfamily Game\+Object Trigger\+Moving\+Person.\+table\+Upside\+Down}
+
+Game\+Object representing the table in an upside-\/down state. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Interaction/\+Movement\+\_\+\+Interaction/Trigger\+Moving\+Person.\+cs\end{DoxyCompactItemize}

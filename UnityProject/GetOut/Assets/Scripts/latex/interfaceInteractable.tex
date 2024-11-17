@@ -1,0 +1,65 @@
+\hypertarget{interfaceInteractable}{}\doxysection{Interactable Class Reference}
+\label{interfaceInteractable}\index{Interactable@{Interactable}}
+
+
+Handles the interact-\/action between player and gameobjects.  
+
+
+
+
+Inheritance diagram for Interactable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{interfaceInteractable__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfaceInteractable_a83c900946b0af482e32275b795dcec8d}\label{interfaceInteractable_a83c900946b0af482e32275b795dcec8d}} 
+void {\bfseries Interact} (Game\+Object obj)
+\item 
+\mbox{\Hypertarget{interfaceInteractable_a106477f597fe303e45c8df2ed645d80b}\label{interfaceInteractable_a106477f597fe303e45c8df2ed645d80b}} 
+void {\bfseries Is\+Accessable} (Game\+Object obj)
+\item 
+\mbox{\Hypertarget{interfaceInteractable_a8ea8e0a05e29d94e476c6423d8862cce}\label{interfaceInteractable_a8ea8e0a05e29d94e476c6423d8862cce}} 
+void {\bfseries Is\+Not\+Accessable} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles the interact-\/action between player and gameobjects. 
+
+Using this interface a gameobject, has an interaction abbility
+
+Features\+:
+\begin{DoxyItemize}
+\item Trigger for interaction
+\item Receive the hit object
+\item Check if the object is in a specific range for interaction
+\end{DoxyItemize}
+
+Requirements\+:
+\begin{DoxyItemize}
+\item When the object including this interface is hit by the ray sent from the user @\+Interact() is executed
+\item When the object including this interface is in a predefined distance from the interactor @\+Is\+Accessable() is executed
+\end{DoxyItemize}
+
+How to Use\+: Extend a class by this interface and give it to the gameobject as component. Finally give the player @\+Player\+Interaction\+Component resulting in a working system.
+
+\begin{DoxyAuthor}{Author}
+Timo Skrobanek 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+18.\+8.\+2024 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Interaction/Interactable.\+cs\end{DoxyCompactItemize}

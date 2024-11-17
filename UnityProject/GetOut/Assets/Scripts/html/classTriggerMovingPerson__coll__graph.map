@@ -1,0 +1,4 @@
+<map id="TriggerMovingPerson" name="TriggerMovingPerson">
+<area shape="rect" id="node1" title="Handles triggering animations, sounds, and object states when the player enters a specific area." alt="" coords="5,80,164,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="23,5,147,32"/>
+</map>

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2492
     height: 1397
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Inspector
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 145
+  controlID: 140
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 144
+  controlID: 17
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 70
+  controlID: 18
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 71
+  controlID: 19
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -270,8 +270,8 @@ MonoBehaviour:
     y: 0
     width: 1678
     height: 930
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 17}
@@ -327,8 +327,8 @@ MonoBehaviour:
     y: 0
     width: 585
     height: 898
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -371,14 +371,14 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_Spl:
     ID: 178
-    splitterInitialOffset: 242
+    splitterInitialOffset: 319
     currentActiveSplitter: -1
     realSizes:
-    - 171
-    - 187
+    - 250
+    - 108
     relativeSizes:
-    - 0.47765362
-    - 0.5223464
+    - 0.698324
+    - 0.30167598
     minSizes:
     - 32
     - 32
@@ -402,7 +402,7 @@ MonoBehaviour:
       name: GetOut
       fullName: GetOut
       resultStatus: 2
-      duration: 0.0471812
+      duration: 0.0450974
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -418,7 +418,7 @@ MonoBehaviour:
       name: UnitTests.dll
       fullName: D:/Game-Development/PrototypeAP/Game-development-AP-Uni-Heidelberg/UnityProject/GetOut/Library/ScriptAssemblies/UnitTests.dll
       resultStatus: 2
-      duration: 0.0346071
+      duration: 0.0316879
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -429,12 +429,199 @@ MonoBehaviour:
       categories: []
       parentId: 1005
       parentUniqueId: '[GetOut][suite]'
-    - id: 1006
-      uniqueId: UnitTests.dll/[UnitTests][PlayerMovementTest][suite]
-      name: PlayerMovementTest
-      fullName: PlayerMovementTest
+    - id: 1001
+      uniqueId: UnitTests.dll/[UnitTests][InteractionTest][suite]
+      name: InteractionTest
+      fullName: InteractionTest
       resultStatus: 2
-      duration: 0.0318971
+      duration: 0.0327016
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1009
+      parentUniqueId: '[UnitTests][D:/Game-Development/PrototypeAP/Game-development-AP-Uni-Heidelberg/UnityProject/GetOut/Library/ScriptAssemblies/UnitTests.dll][suite]'
+    - id: 1002
+      uniqueId: UnitTests.dll/InteractionTest/[UnitTests][InteractionTest.CheckInteractionFailed]
+      name: CheckInteractionFailed
+      fullName: InteractionTest.CheckInteractionFailed
+      resultStatus: 1
+      duration: 0.0208754
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: UnitTests.dll/[UnitTests][InteractionTest][suite]
+    - id: 1003
+      uniqueId: UnitTests.dll/InteractionTest/[UnitTests][InteractionTest.CheckInteractionSuccessfull]
+      name: CheckInteractionSuccessfull
+      fullName: InteractionTest.CheckInteractionSuccessfull
+      resultStatus: 2
+      duration: 0.0197451
+      messages: "  Expected: False\r\n  But was:  True\r\n"
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 'at InteractionTest.CheckInteractionSuccessfull () [0x0006e] in
+        D:\Game-Development\PrototypeAP\Game-development-AP-Uni-Heidelberg\UnityProject\GetOut\Assets\Scripts\Test\UnitTests\InteractionTest.cs:52
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: UnitTests.dll/[UnitTests][InteractionTest][suite]
+    - id: 1001
+      uniqueId: UnitTests.dll/[UnitTests][PlayerMovementTests][suite]
+      name: PlayerMovementTests
+      fullName: PlayerMovementTests
+      resultStatus: 2
+      duration: 0.0360955
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1007
+      parentUniqueId: '[UnitTests][D:/Game-Development/PrototypeAP/Game-development-AP-Uni-Heidelberg/UnityProject/GetOut/Library/ScriptAssemblies/UnitTests.dll][suite]'
+    - id: 1005
+      uniqueId: UnitTests.dll/PlayerMovementTests/[UnitTests][PlayerMovementTests.CameraRotation_LimitedCorrectly]
+      name: CameraRotation_LimitedCorrectly
+      fullName: PlayerMovementTests.CameraRotation_LimitedCorrectly
+      resultStatus: 1
+      duration: 0.0131697
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: UnitTests.dll/[UnitTests][PlayerMovementTests][suite]
+    - id: 1027
+      uniqueId: UnitTests.dll/PlayerMovementTests/[UnitTests][PlayerMovementTests.Cursor_LockedOnStart]
+      name: Cursor_LockedOnStart
+      fullName: PlayerMovementTests.Cursor_LockedOnStart
+      resultStatus: 2
+      duration: 0
+      messages: Method marked with UnityTest must return IEnumerator.
+      output: 
+      stacktrace: 
+      notRunnable: 1
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1022
+      parentUniqueId: UnitTests.dll/[UnitTests][PlayerMovementTests][suite]
+    - id: 1004
+      uniqueId: UnitTests.dll/PlayerMovementTests/[UnitTests][PlayerMovementTests.Gravity_AppliedCorrectly]
+      name: Gravity_AppliedCorrectly
+      fullName: PlayerMovementTests.Gravity_AppliedCorrectly
+      resultStatus: 2
+      duration: 0.0076334
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at PlayerMovement.PlayerMove (System.Single x, System.Single
+        z) [0x0008c] in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Movement\\PlayerMovement.cs:149
+        \r\n  at PlayerMovementTests.Gravity_AppliedCorrectly () [0x0000c] in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Test\\UnitTests\\PlayerMovementTest.cs:77
+        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
+        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x0006a] in <51fded79cd284d4d911c5949aff4cb21>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: UnitTests.dll/[UnitTests][PlayerMovementTests][suite]
+    - id: 1002
+      uniqueId: UnitTests.dll/PlayerMovementTests/[UnitTests][PlayerMovementTests.PlayerMove_NormalMovement_WorksCorrectly]
+      name: PlayerMove_NormalMovement_WorksCorrectly
+      fullName: PlayerMovementTests.PlayerMove_NormalMovement_WorksCorrectly
+      resultStatus: 2
+      duration: 0.0007041
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at PlayerMovement.PlayerMove (System.Single x, System.Single
+        z) [0x0008c] in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Movement\\PlayerMovement.cs:149
+        \r\n  at PlayerMovementTests.PlayerMove_NormalMovement_WorksCorrectly ()
+        [0x0000c] in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Test\\UnitTests\\PlayerMovementTest.cs:47
+        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
+        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x0006a] in <51fded79cd284d4d911c5949aff4cb21>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: UnitTests.dll/[UnitTests][PlayerMovementTests][suite]
+    - id: 1003
+      uniqueId: UnitTests.dll/PlayerMovementTests/[UnitTests][PlayerMovementTests.PlayerMove_WithRunning_SpeedIncreases]
+      name: PlayerMove_WithRunning_SpeedIncreases
+      fullName: PlayerMovementTests.PlayerMove_WithRunning_SpeedIncreases
+      resultStatus: 2
+      duration: 0.0005552
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at PlayerMovement.PlayerMove (System.Single x, System.Single
+        z) [0x0008c] in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Movement\\PlayerMovement.cs:149
+        \r\n  at PlayerMovementTests.PlayerMove_WithRunning_SpeedIncreases () [0x0000c]
+        in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Test\\UnitTests\\PlayerMovementTest.cs:62
+        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
+        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x0006a] in <51fded79cd284d4d911c5949aff4cb21>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: UnitTests.dll/[UnitTests][PlayerMovementTests][suite]
+    - id: 1010
+      uniqueId: UnitTests.dll/[UnitTests][StateManagerTest][suite]
+      name: StateManagerTest
+      fullName: StateManagerTest
+      resultStatus: 2
+      duration: 0.0282359
       messages: One or more child tests had errors
       output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
         This is not allowed.  MonoBehaviours can only be added using AddComponent().
@@ -448,14 +635,33 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1009
+      parentId: 1012
       parentUniqueId: '[UnitTests][D:/Game-Development/PrototypeAP/Game-development-AP-Uni-Heidelberg/UnityProject/GetOut/Library/ScriptAssemblies/UnitTests.dll][suite]'
-    - id: 1008
-      uniqueId: UnitTests.dll/PlayerMovementTest/[UnitTests][PlayerMovementTest.PlayerMovementTestWithEnumeratorPasses]
-      name: PlayerMovementTestWithEnumeratorPasses
-      fullName: PlayerMovementTest.PlayerMovementTestWithEnumeratorPasses
+    - id: 1013
+      uniqueId: UnitTests.dll/StateManagerTest/[UnitTests][StateManagerTest.TestChangeOutfit]
+      name: TestChangeOutfit
+      fullName: StateManagerTest.TestChangeOutfit
+      resultStatus: 2
+      duration: 0.0129152
+      messages: "  Expected: True\r\n  But was:  False\r\n"
+      output: 
+      stacktrace: 'at StateManagerTest.TestChangeOutfit () [0x00005] in D:\Game-Development\PrototypeAP\Game-development-AP-Uni-Heidelberg\UnityProject\GetOut\Assets\Scripts\Test\UnitTests\StateManagerTest.cs:49
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: UnitTests.dll/[UnitTests][StateManagerTest][suite]
+    - id: 1012
+      uniqueId: UnitTests.dll/StateManagerTest/[UnitTests][StateManagerTest.TestItemsLeftToCleanup]
+      name: TestItemsLeftToCleanup
+      fullName: StateManagerTest.TestItemsLeftToCleanup
       resultStatus: 1
-      duration: 0.0131956
+      duration: 0.006672
       messages: 
       output: 
       stacktrace: 
@@ -465,52 +671,73 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1006
-      parentUniqueId: UnitTests.dll/[UnitTests][PlayerMovementTest][suite]
-    - id: 1002
-      uniqueId: UnitTests.dll/PlayerMovementTest/[UnitTests][PlayerMovementTest.Test_Rotation]
-      name: Test_Rotation
-      fullName: PlayerMovementTest.Test_Rotation
+      parentId: 1010
+      parentUniqueId: UnitTests.dll/[UnitTests][StateManagerTest][suite]
+    - id: 1014
+      uniqueId: UnitTests.dll/StateManagerTest/[UnitTests][StateManagerTest.TestScene1Complete]
+      name: TestScene1Complete
+      fullName: StateManagerTest.TestScene1Complete
       resultStatus: 2
-      duration: 0.0033869
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      duration: 0.0004492
+      messages: "  Expected: True\r\n  But was:  False\r\n"
       output: 
-      stacktrace: "  at PlayerMovement.rotationUpdate (System.Single mouseX, System.Single
-        mouseY) [0x00037] in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Movement\\PlayerMovement.cs:121
-        \r\n  at PlayerMovementTest.Test_Rotation () [0x0001f] in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Test\\UnitTests\\PlayerMovementTest.cs:21
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <51fded79cd284d4d911c5949aff4cb21>:0 "
+      stacktrace: 'at StateManagerTest.TestScene1Complete () [0x00005] in D:\Game-Development\PrototypeAP\Game-development-AP-Uni-Heidelberg\UnityProject\GetOut\Assets\Scripts\Test\UnitTests\StateManagerTest.cs:60
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
-      parentUniqueId: UnitTests.dll/[UnitTests][PlayerMovementTest][suite]
-    m_ResultText: "Test_Rotation (0.003s)\n---\nSystem.NullReferenceException : Object
-      reference not set to an instance of an object\n---\nat PlayerMovement.rotationUpdate
-      (System.Single mouseX, System.Single mouseY) [0x00037] in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Movement\\PlayerMovement.cs:121
-      \r\n  at PlayerMovementTest.Test_Rotation () [0x0001f] in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Test\\UnitTests\\PlayerMovementTest.cs:21
-      \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x0006a] in <51fded79cd284d4d911c5949aff4cb21>:0"
-    m_ResultStacktrace: "  at PlayerMovement.rotationUpdate (System.Single mouseX,
-      System.Single mouseY) [0x00037] in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Movement\\PlayerMovement.cs:121
-      \r\n  at PlayerMovementTest.Test_Rotation () [0x0001f] in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Test\\UnitTests\\PlayerMovementTest.cs:21
-      \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x0006a] in <51fded79cd284d4d911c5949aff4cb21>:0 "
+      parentId: 1010
+      parentUniqueId: UnitTests.dll/[UnitTests][StateManagerTest][suite]
+    - id: 1011
+      uniqueId: UnitTests.dll/StateManagerTest/[UnitTests][StateManagerTest.TestStartScene1]
+      name: TestStartScene1
+      fullName: StateManagerTest.TestStartScene1
+      resultStatus: 1
+      duration: 0.0010964
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: UnitTests.dll/[UnitTests][StateManagerTest][suite]
+    - id: 1015
+      uniqueId: UnitTests.dll/StateManagerTest/[UnitTests][StateManagerTest.TestStopIntroAnimation]
+      name: TestStopIntroAnimation
+      fullName: StateManagerTest.TestStopIntroAnimation
+      resultStatus: 2
+      duration: 0.0003713
+      messages: "  Expected: True\r\n  But was:  False\r\n"
+      output: 
+      stacktrace: 'at StateManagerTest.TestStopIntroAnimation () [0x0001a] in D:\Game-Development\PrototypeAP\Game-development-AP-Uni-Heidelberg\UnityProject\GetOut\Assets\Scripts\Test\UnitTests\StateManagerTest.cs:72
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: UnitTests.dll/[UnitTests][StateManagerTest][suite]
+    m_ResultText: "TestChangeOutfit (0.013s)\n---\nExpected: True\r\n  But was: 
+      False\n---\nat StateManagerTest.TestChangeOutfit () [0x00005] in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Test\\UnitTests\\StateManagerTest.cs:49"
+    m_ResultStacktrace: 'at StateManagerTest.TestChangeOutfit () [0x00005] in D:\Game-Development\PrototypeAP\Game-development-AP-Uni-Heidelberg\UnityProject\GetOut\Assets\Scripts\Test\UnitTests\StateManagerTest.cs:49
+
+'
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a1c63aa0
-      m_LastClickedID: -1606760799
-      m_ExpandedIDs: 9247e3d2c3de32d48c5cc01effffff7f
+      scrollPos: {x: 0, y: 26}
+      m_SelectedIDs: 89925857
+      m_LastClickedID: 1465422473
+      m_ExpandedIDs: 9247e3d2c3de32d40969fd018c5cc01e521970310f63ca7effffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -793,7 +1020,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 6a01ffffba01ffff4e03ffff2efbffff
+      m_ExpandedIDs: de38f9ff2e39f9ffba3af9ffec26faff3c27faff0029faff8015fbffd015fbff5c17fbff222bfcff722bfcfffc2cfcffe819fdff381afdffc21bfdff6807feffb807feff4209feff6cfdfeffbcfdfeffa6fffeff2efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1332,9 +1559,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -103.24452, y: 21.453178, z: -145.92302}
+    m_Target: {x: -93.880264, y: 21.477938, z: -140.89702}
     speed: 2
-    m_Value: {x: -103.24452, y: 21.453178, z: -145.92302}
+    m_Value: {x: -93.880264, y: 21.477938, z: -140.89702}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1380,9 +1607,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.070670635, y: 0.21776392, z: -0.023645595, w: 0.9764964}
+    m_Target: {x: 0.058257837, y: -0.41880107, z: 0.018396316, w: 0.9096126}
     speed: 2
-    m_Value: {x: 0.07044137, y: 0.21705747, z: -0.023568885, w: 0.97332853}
+    m_Value: {x: 0.05806879, y: -0.41744205, z: 0.01833662, w: 0.90666085}
   m_Size:
     m_Target: 0.20141801
     speed: 2
@@ -1470,10 +1697,10 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 232}
-    m_SelectedIDs: 384d0100
-    m_LastClickedID: 85304
-    m_ExpandedIDs: 00000000c04b0100c24b0100c44b0100c64b0100c84b0100304d010000ca9a3b
+    scrollPos: {x: 0, y: 248}
+    m_SelectedIDs: 364d0100
+    m_LastClickedID: 85302
+    m_ExpandedIDs: 00000000be4b0100c04b0100c24b0100c44b0100c64b01002e4d0100364d010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1501,7 +1728,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c04b0100c24b0100c44b0100c64b0100c84b0100
+    m_ExpandedIDs: 00000000be4b0100c04b0100c24b0100c44b0100c64b0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1545,7 +1772,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 2}
+      m_ClientGUIView: {fileID: 12}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
