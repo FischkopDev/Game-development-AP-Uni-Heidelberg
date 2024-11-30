@@ -33,13 +33,13 @@ public class UI_Updater : MonoBehaviour
                 task.SetText("");
                 break;
             case StateManager.State.SCENE4:
-                task.SetText("Ok what the actual fuck was that? Maybe i should go to the kitchen and drink something");
+                task.SetText("Ok what the actual fuck was that? Maybe I should go to the kitchen and drink something");
                 break;
             case StateManager.State.SCENE4_GHOST_APPEAR:
                 task.SetText("What whas that again? Thats enough... Maybe sleeping is a good idea");
                 break;
             case StateManager.State.SCENE5:
-                task.SetText("Why are you sleeping at work? I know you had a hard time with your wife and the house but keep focused otherwise I cant keep you employed here");
+                task.SetText("[Chef]: Why are you sleeping at work? I know you had a hard time with your wife and the house but keep focused otherwise I cant keep you employed here");
                 break;
         }
     }
