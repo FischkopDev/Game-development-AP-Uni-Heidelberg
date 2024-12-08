@@ -53,7 +53,7 @@ public class FileEncryptionTests
     public void TestFileCreationAndEncryption()
     {
         // Beispiel-Daten zum Speichern
-        string originalData = "This is a test for encryption!";
+        string originalData = "Das ist ein Test zur Verschlüsselung";
         byte[] dataToEncrypt = System.Text.Encoding.UTF8.GetBytes(originalData);
 
         // Verschlüsselte Daten erstellen
@@ -81,12 +81,69 @@ public class FileEncryptionTests
     File.WriteAllText(filePath, testContent);
 
     // Überprüfen, ob die Datei erstellt wurde
-    Assert.IsTrue(File.Exists(filePath), "❌ Datei wurde nicht erstellt!");
-    Debug.Log($"✅ Datei erstellt unter: {filePath}");
+    Assert.IsTrue(File.Exists(filePath), "Datei wurde nicht erstellt!");
+    Debug.Log($"Datei erstellt unter: {filePath}");
 
     // Überprüfen, ob die Datei Daten enthält
     string readContent = File.ReadAllText(filePath);
-    Assert.AreEqual(testContent, readContent, "❌ Dateiinhalt stimmt nicht überein!");
+    Assert.AreEqual(testContent, readContent, "Dateiinhalt stimmt nicht überein!");
     }
+
+    [Test]
+    public void TestMissingFile_CreatesNewFile()
+    {
+    // Lösche die Datei, falls vorhanden
+    if (File.Exists(filePath))
+        File.Delete(filePath);
+
+    // Versuche, eine neue Datei zu erstellen
+    string newContent = "This is a new file!";
+    File.WriteAllText(filePath, newContent);
+
+    // Überprüfen, ob die Datei erstellt wurde
+    Assert.IsTrue(File.Exists(filePath), "Datei wurde nicht erstellt!");
+    string readContent = File.ReadAllText(filePath);
+    Assert.AreEqual(newContent, readContent, "Dateiinhalt stimmt nicht überein!");
+    }
+
+    [Test]
+    public void TestEmptyFile_HandlesGracefully()
+    {
+    // Erstelle eine leere Datei
+    File.WriteAllBytes(filePath, new byte[0]);
+
+    // Datei-Inhalt prüfen
+    byte[] readData = File.ReadAllBytes(filePath);
+    Assert.IsNotNull(readData, "Datei-Inhalt sollte nicht null sein!");
+    Assert.AreEqual(0, readData.Length, "Datei sollte leer sein!");
+    }
+
+    [Test]
+    public void TestCorruptedFile_HandlesGracefully()
+    {
+    // Erstelle eine beschädigte Datei
+    File.WriteAllBytes(filePath, new byte[] { 0xFF, 0xAA, 0xBB });
+
+    // Datei lesen und überprüfen
+    byte[] readData = File.ReadAllBytes(filePath);
+    Assert.IsNotNull(readData, "Datei-Inhalt sollte nicht null sein!");
+    Assert.AreEqual(3, readData.Length, "Datei-Inhalt hat unerwartete Größe!");
+    }
+
+    [Test]
+    public void TestLargeFile_SaveAndLoad()
+    {
+    string largeData = new string('A', 1000000); // 1 Million Zeichen
+    byte[] dataToEncrypt = Encoding.UTF8.GetBytes(largeData);
+
+    // Verschlüsselte Daten erstellen und speichern
+    byte[] encryptedData = EncryptionHelper.Encrypt(dataToEncrypt);
+    File.WriteAllBytes(filePath, encryptedData);
+
+    // Datei lesen und entschlüsseln
+    byte[] readData = File.ReadAllBytes(filePath);
+    Assert.AreEqual(encryptedData.Length, readData.Length, "Dateigröße stimmt nicht überein!");
+    }
+
 
 }
