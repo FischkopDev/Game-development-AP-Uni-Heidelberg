@@ -63,11 +63,11 @@ public class FileEncryptionTests
         File.WriteAllBytes(filePath, encryptedData);
 
         // Überprüfen, ob die Datei erstellt wurde
-        Assert.IsTrue(File.Exists(filePath), "Datei wurde nicht erstellt!");
+        Assert.IsTrue(File.Exists(filePath), "Datei wurde nicht erstellt");
 
         // Datei-Inhalt auslesen und prüfen, ob sie verschlüsselt ist
         byte[] readData = File.ReadAllBytes(filePath);
-        Assert.AreNotEqual(dataToEncrypt, readData, "Datei ist nicht verschlüsselt!");
+        Assert.AreNotEqual(dataToEncrypt, readData, "Datei ist nicht verschlüsselt");
 
         Debug.Log($"Datei erfolgreich erstellt und verschlüsselt: {filePath}");
         Debug.Log($"Datei befindet sich im Ordner: {Application.persistentDataPath}");
@@ -81,12 +81,12 @@ public class FileEncryptionTests
     File.WriteAllText(filePath, testContent);
 
     // Überprüfen, ob die Datei erstellt wurde
-    Assert.IsTrue(File.Exists(filePath), "Datei wurde nicht erstellt!");
+    Assert.IsTrue(File.Exists(filePath), "Datei wurde nicht erstellt");
     Debug.Log($"Datei erstellt unter: {filePath}");
 
     // Überprüfen, ob die Datei Daten enthält
     string readContent = File.ReadAllText(filePath);
-    Assert.AreEqual(testContent, readContent, "Dateiinhalt stimmt nicht überein!");
+    Assert.AreEqual(testContent, readContent, "Dateiinhalt stimmt nicht überein");
     }
 
     [Test]
@@ -97,13 +97,13 @@ public class FileEncryptionTests
         File.Delete(filePath);
 
     // Versuche, eine neue Datei zu erstellen
-    string newContent = "This is a new file!";
+    string newContent = "Das ist eine neue Datei";
     File.WriteAllText(filePath, newContent);
 
     // Überprüfen, ob die Datei erstellt wurde
-    Assert.IsTrue(File.Exists(filePath), "Datei wurde nicht erstellt!");
+    Assert.IsTrue(File.Exists(filePath), "Datei wurde nicht erstellt");
     string readContent = File.ReadAllText(filePath);
-    Assert.AreEqual(newContent, readContent, "Dateiinhalt stimmt nicht überein!");
+    Assert.AreEqual(newContent, readContent, "Dateiinhalt stimmt nicht überein");
     }
 
     [Test]
@@ -114,8 +114,8 @@ public class FileEncryptionTests
 
     // Datei-Inhalt prüfen
     byte[] readData = File.ReadAllBytes(filePath);
-    Assert.IsNotNull(readData, "Datei-Inhalt sollte nicht null sein!");
-    Assert.AreEqual(0, readData.Length, "Datei sollte leer sein!");
+    Assert.IsNotNull(readData, "Datei-Inhalt sollte nicht null sein");
+    Assert.AreEqual(0, readData.Length, "Datei sollte leer sein");
     }
 
     [Test]
@@ -126,8 +126,8 @@ public class FileEncryptionTests
 
     // Datei lesen und überprüfen
     byte[] readData = File.ReadAllBytes(filePath);
-    Assert.IsNotNull(readData, "Datei-Inhalt sollte nicht null sein!");
-    Assert.AreEqual(3, readData.Length, "Datei-Inhalt hat unerwartete Größe!");
+    Assert.IsNotNull(readData, "Datei-Inhalt sollte nicht null sein");
+    Assert.AreEqual(3, readData.Length, "Datei-Inhalt hat unerwartete Größe");
     }
 
     [Test]
@@ -142,7 +142,7 @@ public class FileEncryptionTests
 
     // Datei lesen und entschlüsseln
     byte[] readData = File.ReadAllBytes(filePath);
-    Assert.AreEqual(encryptedData.Length, readData.Length, "Dateigröße stimmt nicht überein!");
+    Assert.AreEqual(encryptedData.Length, readData.Length, "Dateigröße stimmt nicht überein");
     }
 
 
