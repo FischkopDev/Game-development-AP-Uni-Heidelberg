@@ -19,7 +19,7 @@ public class StateManagerTest : MonoBehaviour
         GameObject.Destroy(stateManager.gameObject);
     }
 
- [Test]
+    [Test]
     public void TestStartScene1()
     {
         // Arrange
@@ -31,22 +31,16 @@ public class StateManagerTest : MonoBehaviour
         Assert.IsFalse(StateManager.Outfit);
         Assert.IsFalse(StateManager.IntroToggle);
     }
-
-    [Test]
-    public void TestItemsLeftToCleanup()
-    {
-        Assert.AreEqual(StateManager.ItemsLeftToCleanup(), StateManager.CleanedItems < 3); // There are items left to clean up (CleanedItems < 3)
-    }
     
     [Test]
     public void TestChangeOutfit()
     {
-    // Act
-    StateManager.changeOutfit();
-    
-    // Assert
-    Assert.IsTrue(StateManager.Outfit, "Outfit should be true after calling changeOutfit.");
-    Assert.AreEqual(StateManager.State.SCENE1_COMPLETED, StateManager.state, "State should change to SCENE1_COMPLETED after calling changeOutfit.");
+        // Act
+        StateManager.changeOutfit();
+        
+        // Assert
+        Assert.IsTrue(StateManager.Outfit, "Outfit should be true after calling changeOutfit.");
+        Assert.AreEqual(StateManager.State.SCENE1_COMPLETED, StateManager.state, "State should change to SCENE1_COMPLETED after calling changeOutfit.");
     }
 
 

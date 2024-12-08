@@ -1,10 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.Audio;
 using TMPro;
-using System.Runtime.InteropServices;
 
 public class SettingsMenu : MonoBehaviour {
     //note: slider goes from -80 to 0 because that's what our audio mixer does
@@ -64,9 +61,11 @@ public class SettingsMenu : MonoBehaviour {
 
     }
 
-    public void SetResolution(int resolutionIndex) {
+    public Resolution SetResolution(int resolutionIndex) {
         Resolution resolution = filteredResolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, true);
+
+        return resolution;
     }
 
 
