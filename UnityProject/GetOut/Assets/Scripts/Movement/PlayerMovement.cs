@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour {
     /// @brief Multiplier for the player's speed when running.
     [SerializeField] private float runMultiplier = 2; // Multiply movement speed by 2 when player runs
 
-    private CharacterController charController; ///< Reference to the CharacterController component.
+    public CharacterController charController; ///< Reference to the CharacterController component.
     private float yVelocity; ///< Current vertical velocity due to gravity.
 
     /// @brief Starting pitch (x-axis) rotation.
@@ -84,7 +84,8 @@ public class PlayerMovement : MonoBehaviour {
             float x = Input.GetAxisRaw("Horizontal");
             float z = Input.GetAxisRaw("Vertical");
 
-            PlayerMove(x , z);
+            // Apply movement to player controller
+        charController.Move(PlayerMove(x , z));
         }
     }
 
@@ -131,7 +132,7 @@ public class PlayerMovement : MonoBehaviour {
      * This method calculates the player's movement vector based on the input axes and the player's orientation relative to the camera.
      * It also applies gravity to keep the player grounded and checks if the player is running to adjust the movement speed.
      */
-    public void PlayerMove(float x, float z) {
+    public Vector3 PlayerMove(float x, float z) {
         // Current position
         Vector3 move = (transform.right * x + transform.forward * z).normalized;
 
@@ -146,8 +147,7 @@ public class PlayerMovement : MonoBehaviour {
         yVelocity += gravity * Time.deltaTime;
         move.y = yVelocity * Time.deltaTime;
 
-        // Apply movement to player controller
-        charController.Move(move);
+        return move;
     }
 
     //Getter and Setter

@@ -1754,7 +1754,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Developed by:\n\nChristian Sch\xE4fer\nTimo Skrobanek\nAndrei Costeniuc\n\nsupervised
+  m_text: "Developed by:\n\nChristian Schaefer\nTimo Skrobanek\nAndrei Costeniuc\n\nsupervised
     by \nProf. J. Hesser (University of Heidelberg)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}

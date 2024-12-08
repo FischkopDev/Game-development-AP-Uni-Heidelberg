@@ -43,19 +43,33 @@ public class InteractionTest
     [Test]
     public void CheckInteractionSuccessful()
     {
-        // Arrange
-        GameObject myObject = new GameObject("Interactor");
-        Transform myTransform = myObject.transform;
-        myTransform.position = new Vector3(0, 0, 0);
-        myTransform.rotation = Quaternion.Euler(0f, 0f, 0f); // Aligned for interaction
+            // Arrange
+        // Create the interactor GameObject
+        GameObject interactorObject = new GameObject("Interactor");
+        Transform interactorTransform = interactorObject.transform;
+        interactorTransform.position = Vector3.zero; // Position at (0, 0, 0)
+        interactorTransform.rotation = Quaternion.identity; // Default rotation
 
-        interactionComponent.SetInteractor(myTransform);
+        // Create the target interactable object
+        GameObject targetObject = GameObject.CreatePrimitive(PrimitiveType.Cube); // Cube with a collider
+        targetObject.transform.position = new Vector3(0, 0, 5); // Place directly in front of the interactor
+        targetObject.AddComponent<Computer_Interactor>(); // Add the Interactable component
+
+        // Ensure the interaction component is properly initialized
+        interactionComponent.SetInteractor(interactorTransform);
+        interactionComponent.interactRange = 10f; // Set a range that includes the target
 
         // Act
-        Ray directedRay = new Ray(interactionComponent.GetInteractor().position, interactionComponent.GetInteractor().forward);
+        // Create a ray from the interactor, pointing forward
+        Ray directedRay = new Ray(interactorObject.transform.position, interactorObject.transform.forward);
         bool result = interactionComponent.CheckInteraction(directedRay);
 
         // Assert
         Assert.IsTrue(result);
+
+        // Cleanup
+        Object.DestroyImmediate(interactorObject);
+        Object.DestroyImmediate(targetObject);
     }
+
 }

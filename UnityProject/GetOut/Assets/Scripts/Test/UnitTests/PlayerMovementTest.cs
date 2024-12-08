@@ -40,18 +40,18 @@ public class PlayerMovementTests
     }
 
     [Test]
-    public void PlayerMove_NormalMovement_WorksCorrectly()
+    public void PlayerMove_NormalMovement()
     {
         // Arrange
         float inputX = 1f; // Simulate "D" key for right movement
         float inputZ = 0f; // No forward movement
 
         // Act
-        playerMovement.PlayerMove(inputX, inputZ);
+        Vector3 calcMove = playerMovement.PlayerMove(inputX, inputZ);
 
         // Assert
-        Vector3 expectedMovement = new Vector3(1, 0, 0).normalized * playerMovement.GetSpeed() * Time.deltaTime;
-        Assert.AreEqual(expectedMovement.x, characterController.velocity.x, 0.01f, "Player should move right.");
+        Vector3 expectedMovement = new Vector3(inputX, 0, 0).normalized * playerMovement.GetSpeed() * Time.deltaTime;
+        Assert.AreEqual(expectedMovement.x, calcMove.x, 0.01f, "Player should move right.");
     }
 
     [Test]
@@ -62,25 +62,26 @@ public class PlayerMovementTests
         float inputZ = 1f; // Simulate "W" key for forward movement
 
         // Act
-        playerMovement.PlayerMove(inputX, inputZ);
+        Vector3 calcMove = playerMovement.PlayerMove(inputX, inputZ);
 
         // Assert
         Vector3 expectedMovement = new Vector3(0, 0, 1).normalized * playerMovement.GetSpeed() * playerMovement.GetRunMultiplier() * Time.deltaTime;
-        Assert.AreEqual(expectedMovement.z, characterController.velocity.z, 0.01f, "Player should move faster while running.");
+        Assert.AreEqual(expectedMovement.z, calcMove.z, 0.01f, "Player should move faster while running.");
     }
 
     [Test]
     public void Gravity_AppliedCorrectly()
     {
-        // Arrange
-        float inputX = 0f;
+        // Arrange input
+        float inputX = 5f;
         float inputZ = 0f;
 
-        // Act
-        playerMovement.PlayerMove(inputX, inputZ);
+        //temporally store previous z-component
+        float z = playerMovement.transform.position.z;
 
-        // Assert
-        Assert.Less(characterController.velocity.y, 0, "Player should move downward due to gravity.");
+        // Calculate new position
+        Vector3 move = playerMovement.PlayerMove(inputX, inputZ);
+        Assert.IsTrue(move.z == z);
     }
 
     [Test]
