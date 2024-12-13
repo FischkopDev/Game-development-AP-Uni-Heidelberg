@@ -88,7 +88,9 @@ public class StateManager : MonoBehaviour {
         SCENE4_INTRO = 10,
         SCENE4 = 11,
         SCENE4_GHOST_APPEAR = 12,
-        SCENE5
+        SCENE5,
+
+        ESCAPE_MENU = 13
 
     }
 
