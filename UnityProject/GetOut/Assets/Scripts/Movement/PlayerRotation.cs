@@ -29,10 +29,10 @@ using UnityEngine;
 public class PlayerRotation : MonoBehaviour {
 
     /// @brief Starting pitch (x-axis) rotation.
-    //private float xRotation = 0f;
+    private float xRotation = 0f;
 
     /// @brief Starting yaw (y-axis) rotation.
-    //private float yRotation = 0f;
+    private float yRotation = 0f;
 
     //updated:
     private float pitch = 0f;
@@ -73,19 +73,14 @@ public class PlayerRotation : MonoBehaviour {
      * 
      * This method updates the player's camera rotation by applying pitch and yaw rotations. The camera's pitch rotation
      * (looking up and down) is clamped to prevent extreme angles.
-     */
-    public void rotationUpdate(float mouseX, float mouseY){
+     */    
+     public void rotationUpdate(float mouseX, float mouseY){
         // Apply pitch rotation (looking up and down)
+        xRotation -= mouseY;
+        yRotation += mouseX;
+        xRotation = Mathf.Clamp(xRotation, -80f, 70f); // Can't look too far up or down
 
-        //updated version
-        pitch -= mouseY;
-        //limit looking up or down
-        pitch = Mathf.Clamp(pitch, -20f, 50f); 
-
-        // Rotate the camera around the y-axis (yaw) based on the horizontal mouse movement
-        mainCam.Rotate(Vector3.up * mouseX);
-
-        //updated:
-        mainCam.localRotation = Quaternion.Euler(pitch, mainCam.localRotation.eulerAngles.y, 0f);
+        // Combine both rotations
+        mainCam.localEulerAngles = new Vector3(xRotation, yRotation, 0);
     }
 }

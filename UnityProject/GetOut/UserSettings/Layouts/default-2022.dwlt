@@ -19,64 +19,12 @@ MonoBehaviour:
     width: 2492
     height: 1397
   m_ShowMode: 4
-  m_Title: Inspector
-  m_RootView: {fileID: 4}
+  m_Title: Project
+  m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 898
-    width: 585
-    height: 449
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 14}
-  m_Panes:
-  - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 13}
-  - {fileID: 2}
-  m_Position:
-    serializedVersion: 2
-    x: 1907
-    y: 0
-    width: 585
-    height: 1347
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 8096, y: 16192}
-  vertical: 1
-  controlID: 106
-  draggingID: 0
---- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,9 +37,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+  - {fileID: 3}
   - {fileID: 5}
-  - {fileID: 7}
-  - {fileID: 6}
+  - {fileID: 4}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -104,7 +52,7 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &5
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &6
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,6 +95,58 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 6}
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 2492
+    height: 1347
+  m_MinSize: {x: 300, y: 100}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 49
+  draggingID: 0
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 7}
+  - {fileID: 10}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1907
+    height: 1347
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 50
+  draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,59 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 8}
-  - {fileID: 3}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 30
-    width: 2492
-    height: 1347
-  m_MinSize: {x: 300, y: 100}
-  m_MaxSize: {x: 24288, y: 16192}
-  vertical: 0
-  controlID: 105
-  draggingID: 0
---- !u!114 &8
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
   - {fileID: 9}
-  - {fileID: 12}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1907
-    height: 1347
-  m_MinSize: {x: 200, y: 100}
-  m_MaxSize: {x: 16192, y: 16192}
-  vertical: 1
-  controlID: 41
-  draggingID: 0
---- !u!114 &9
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 10}
-  - {fileID: 11}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -223,9 +171,9 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 42
+  controlID: 51
   draggingID: 0
---- !u!114 &10
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -246,12 +194,12 @@ MonoBehaviour:
     height: 930
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 16}
+  - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &11
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -272,15 +220,15 @@ MonoBehaviour:
     height: 930
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 17}
   - {fileID: 15}
-  - {fileID: 18}
-  - {fileID: 19}
+  - {fileID: 13}
+  - {fileID: 16}
+  - {fileID: 17}
   m_Selected: 3
   m_LastSelected: 1
---- !u!114 &12
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -299,16 +247,17 @@ MonoBehaviour:
     y: 930
     width: 1907
     height: 417
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 20}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_ActualView: {fileID: 18}
   m_Panes:
+  - {fileID: 18}
+  - {fileID: 19}
   - {fileID: 20}
-  - {fileID: 21}
-  - {fileID: 22}
+  - {fileID: 12}
   m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &13
+  m_LastSelected: 3
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -323,19 +272,19 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 0
+    x: 1907
     y: 0
     width: 585
-    height: 898
+    height: 1347
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 23}
+  m_ActualView: {fileID: 21}
   m_Panes:
-  - {fileID: 23}
-  - {fileID: 24}
+  - {fileID: 21}
+  - {fileID: 22}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &14
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -355,10 +304,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1975
-    y: 971
-    width: 584
-    height: 428
+    x: 68
+    y: 1003
+    width: 1906
+    height: 396
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -370,22 +319,22 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
   m_Spl:
-    ID: 144
-    splitterInitialOffset: 319
+    ID: 5062
+    splitterInitialOffset: 252
     currentActiveSplitter: -1
     realSizes:
-    - 250
-    - 108
+    - 183
+    - 143
     relativeSizes:
-    - 0.698324
-    - 0.30167598
+    - 0.5613497
+    - 0.4386503
     minSizes:
     - 32
     - 32
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 358
+    lastTotalSize: 326
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -395,14 +344,14 @@ MonoBehaviour:
     oldSplitSize: 0
   m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 14}
+    m_Window: {fileID: 12}
     m_NewResultList:
     - id: 1005
       uniqueId: '[GetOut][suite]'
       name: GetOut
       fullName: GetOut
       resultStatus: 2
-      duration: 0.073757
+      duration: 0.0988687
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -418,7 +367,7 @@ MonoBehaviour:
       name: UnitTests.dll
       fullName: D:/Game-Development/PrototypeAP/Game-development-AP-Uni-Heidelberg/UnityProject/GetOut/Library/ScriptAssemblies/UnitTests.dll
       resultStatus: 2
-      duration: 0.0643656
+      duration: 0.086412
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -434,7 +383,7 @@ MonoBehaviour:
       name: InteractionTest
       fullName: InteractionTest
       resultStatus: 2
-      duration: 0.0298841
+      duration: 0.0404875
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -450,7 +399,7 @@ MonoBehaviour:
       name: CheckInteractionFailed
       fullName: InteractionTest.CheckInteractionFailed
       resultStatus: 1
-      duration: 0.0132953
+      duration: 0.0167281
       messages: 
       output: 
       stacktrace: 
@@ -467,11 +416,11 @@ MonoBehaviour:
       name: CheckInteractionSuccessful
       fullName: InteractionTest.CheckInteractionSuccessful
       resultStatus: 2
-      duration: 0.0036946
+      duration: 0.0042669
       messages: "  Expected: True\r\n  But was:  False\r\n"
       output: 
-      stacktrace: 'at InteractionTest.CheckInteractionSuccessful () [0x00083] in
-        D:\Game-Development\PrototypeAP\Game-development-AP-Uni-Heidelberg\UnityProject\GetOut\Assets\Scripts\Test\UnitTests\InteractionTest.cs:59
+      stacktrace: 'at InteractionTest.CheckInteractionSuccessful () [0x00099] in
+        D:\Game-Development\PrototypeAP\Game-development-AP-Uni-Heidelberg\UnityProject\GetOut\Assets\Scripts\Test\UnitTests\InteractionTest.cs:68
 
 '
       notRunnable: 0
@@ -482,13 +431,46 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: UnitTests.dll/[UnitTests][InteractionTest][suite]
+    - id: 1004
+      uniqueId: UnitTests.dll/[UnitTests][MenuTest][suite]
+      name: MenuTest
+      fullName: MenuTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1017
+      parentUniqueId: '[UnitTests][D:/Game-Development/PrototypeAP/Game-development-AP-Uni-Heidelberg/UnityProject/GetOut/Library/ScriptAssemblies/UnitTests.dll][suite]'
+    - id: 1005
+      uniqueId: UnitTests.dll/MenuTest/[UnitTests][MenuTest.SetVolume]
+      name: SetVolume
+      fullName: MenuTest.SetVolume
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: UnitTests.dll/[UnitTests][MenuTest][suite]
     - id: 1001
       uniqueId: UnitTests.dll/[UnitTests][PlayerMovementTests][suite]
       name: PlayerMovementTests
       fullName: PlayerMovementTests
-      resultStatus: 2
-      duration: 0.0190904
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.0271165
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -503,7 +485,7 @@ MonoBehaviour:
       name: CameraRotation_LimitedCorrectly
       fullName: PlayerMovementTests.CameraRotation_LimitedCorrectly
       resultStatus: 1
-      duration: 0.0015804
+      duration: 0.0017822
       messages: 
       output: 
       stacktrace: 
@@ -520,7 +502,7 @@ MonoBehaviour:
       name: Cursor_LockedOnStart
       fullName: PlayerMovementTests.Cursor_LockedOnStart
       resultStatus: 1
-      duration: 0.0116616
+      duration: 0.0172957
       messages: 
       output: 
       stacktrace: 
@@ -536,18 +518,11 @@ MonoBehaviour:
       uniqueId: UnitTests.dll/PlayerMovementTests/[UnitTests][PlayerMovementTests.Gravity_AppliedCorrectly]
       name: Gravity_AppliedCorrectly
       fullName: PlayerMovementTests.Gravity_AppliedCorrectly
-      resultStatus: 2
-      duration: 0.0019674
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0009714
+      messages: 
       output: 
-      stacktrace: "  at PlayerMovement.PlayerMove (System.Single x, System.Single
-        z) [0x0008c] in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Movement\\PlayerMovement.cs:150
-        \r\n  at PlayerMovementTests.Gravity_AppliedCorrectly () [0x0000c] in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Test\\UnitTests\\PlayerMovementTest.cs:80
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <51fded79cd284d4d911c5949aff4cb21>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -556,48 +531,32 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: UnitTests.dll/[UnitTests][PlayerMovementTests][suite]
-    - id: 1002
-      uniqueId: UnitTests.dll/PlayerMovementTests/[UnitTests][PlayerMovementTests.PlayerMove_NormalMovement_WorksCorrectly]
-      name: PlayerMove_NormalMovement_WorksCorrectly
-      fullName: PlayerMovementTests.PlayerMove_NormalMovement_WorksCorrectly
-      resultStatus: 2
-      duration: 0.0005383
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+    - id: 1005
+      uniqueId: UnitTests.dll/PlayerMovementTests/[UnitTests][PlayerMovementTests.PlayerMove_NormalMovement]
+      name: PlayerMove_NormalMovement
+      fullName: PlayerMovementTests.PlayerMove_NormalMovement
+      resultStatus: 1
+      duration: 0.001544
+      messages: 
       output: 
-      stacktrace: "  at PlayerMovement.PlayerMove (System.Single x, System.Single
-        z) [0x0008c] in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Movement\\PlayerMovement.cs:150
-        \r\n  at PlayerMovementTests.PlayerMove_NormalMovement_WorksCorrectly ()
-        [0x0000c] in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Test\\UnitTests\\PlayerMovementTest.cs:50
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <51fded79cd284d4d911c5949aff4cb21>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1001
+      parentId: 1004
       parentUniqueId: UnitTests.dll/[UnitTests][PlayerMovementTests][suite]
     - id: 1003
       uniqueId: UnitTests.dll/PlayerMovementTests/[UnitTests][PlayerMovementTests.PlayerMove_WithRunning_SpeedIncreases]
       name: PlayerMove_WithRunning_SpeedIncreases
       fullName: PlayerMovementTests.PlayerMove_WithRunning_SpeedIncreases
-      resultStatus: 2
-      duration: 0.0005931
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
+      resultStatus: 1
+      duration: 0.0004473
+      messages: 
       output: 
-      stacktrace: "  at PlayerMovement.PlayerMove (System.Single x, System.Single
-        z) [0x0008c] in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Movement\\PlayerMovement.cs:150
-        \r\n  at PlayerMovementTests.PlayerMove_WithRunning_SpeedIncreases () [0x0000c]
-        in D:\\Game-Development\\PrototypeAP\\Game-development-AP-Uni-Heidelberg\\UnityProject\\GetOut\\Assets\\Scripts\\Test\\UnitTests\\PlayerMovementTest.cs:65
-        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
-        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
-        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
-        System.Globalization.CultureInfo culture) [0x0006a] in <51fded79cd284d4d911c5949aff4cb21>:0 "
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -611,7 +570,7 @@ MonoBehaviour:
       name: StateManagerTest
       fullName: StateManagerTest
       resultStatus: 2
-      duration: 0.0127225
+      duration: 0.0151172
       messages: One or more child tests had errors
       output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
         This is not allowed.  MonoBehaviours can only be added using AddComponent().
@@ -632,7 +591,7 @@ MonoBehaviour:
       name: TestChangeOutfit
       fullName: StateManagerTest.TestChangeOutfit
       resultStatus: 2
-      duration: 0.0008969
+      duration: 0.0008765
       messages: "  Outfit should be true after calling changeOutfit.\r\n  Expected:
         True\r\n  But was:  False\r\n"
       output: 
@@ -647,29 +606,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1010
       parentUniqueId: UnitTests.dll/[UnitTests][StateManagerTest][suite]
-    - id: 1012
-      uniqueId: UnitTests.dll/StateManagerTest/[UnitTests][StateManagerTest.TestItemsLeftToCleanup]
-      name: TestItemsLeftToCleanup
-      fullName: StateManagerTest.TestItemsLeftToCleanup
-      resultStatus: 1
-      duration: 0.0008779
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1010
-      parentUniqueId: UnitTests.dll/[UnitTests][StateManagerTest][suite]
     - id: 1014
       uniqueId: UnitTests.dll/StateManagerTest/[UnitTests][StateManagerTest.TestScene1Complete]
       name: TestScene1Complete
       fullName: StateManagerTest.TestScene1Complete
       resultStatus: 2
-      duration: 0.000317
+      duration: 0.0004125
       messages: "  Expected: True\r\n  But was:  False\r\n"
       output: 
       stacktrace: 'at StateManagerTest.TestScene1Complete () [0x00005] in D:\Game-Development\PrototypeAP\Game-development-AP-Uni-Heidelberg\UnityProject\GetOut\Assets\Scripts\Test\UnitTests\StateManagerTest.cs:60
@@ -688,7 +630,7 @@ MonoBehaviour:
       name: TestStartScene1
       fullName: StateManagerTest.TestStartScene1
       resultStatus: 1
-      duration: 0.0009642
+      duration: 0.0008009
       messages: 
       output: 
       stacktrace: 
@@ -705,7 +647,7 @@ MonoBehaviour:
       name: TestStopIntroAnimation
       fullName: StateManagerTest.TestStopIntroAnimation
       resultStatus: 2
-      duration: 0.0003855
+      duration: 0.0004446
       messages: "  IntroToggle should be true after calling stopIntroAnimation.\r\n 
         Expected: True\r\n  But was:  False\r\n"
       output: 
@@ -720,12 +662,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1010
       parentUniqueId: UnitTests.dll/[UnitTests][StateManagerTest][suite]
-    m_ResultText: Cursor_LockedOnStart (0.012s)
+    m_ResultText: PlayerMove_WithRunning_SpeedIncreases (0.000s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 26}
-      m_SelectedIDs: da365715
-      m_LastClickedID: 358037210
+      scrollPos: {x: 0, y: 93}
+      m_SelectedIDs: 2b48941a
+      m_LastClickedID: 445925419
       m_ExpandedIDs: 9247e3d2c3de32d40969fd018c5cc01e521970310f63ca7effffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -754,7 +696,7 @@ MonoBehaviour:
       - Uncategorized
     m_SelectedOption: 0
   m_EditModeTestListGUI:
-    m_Window: {fileID: 14}
+    m_Window: {fileID: 12}
     m_NewResultList:
     - id: 1000
       uniqueId: '[GetOut][suite]'
@@ -870,7 +812,7 @@ MonoBehaviour:
       selectedCategoryMask: 0
       availableCategories:
       - Uncategorized
---- !u!114 &15
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -970,7 +912,7 @@ MonoBehaviour:
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &16
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1006,26 +948,26 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 152}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 14d4f0ffb6d4f0ff9ce1f0ff6efaf0ff9c13f1ffdab2f6ff9c8df8ff3299fdffe8b8fdffee0bfeffba17feffbe17feffc217feffde5dfeff265ffeff6a62feff627cfefffef9ffff2efbfffff4ffffff6254010064490300642c0700
+      m_ExpandedIDs: 680aebffb20aebfff40cebff1a26ebff6426ebffa628ebff1e42ebff6842ebffe443ebffe65debff305eebffac5febff2479ebff6e79ebffea7aebff6294ebffac94ebff2896ebffa0afebffeaafebff66b1ebffdecaebff28cbebffa4ccebff1ce6ebff66e6ebffe2e7ebff7401ecffbe01ecff0004ecff781decffc21decfffa1fecffe638ecff3039ecffaa3aecff2254ecff6c54ecffde55ecffa06fecffec6fecff7271ecfffa8aecff468becffd68cecffcca6ecff18a7ecffa8a8ecff08c4ecffdcafedff28b0edffb6b1edff549deeffa09deeff2e9feeffb08aeffffc8aefff8a8cefff0e78f0ff5a78f0ffe879f0ff6e65f1ffba65f1ff4467f1ffc652f2ff1253f2ff9c54f2ff1e40f3ff6a40f3ffc042f3ff5e2ef4ffaa2ef4fff830f4ff3c4dfaff34b2faff2404fbff6c05fbffb008fbffbe0ffbffd02afbff9e43fbff1a60fbff6c4bfcffb84bfcff064efcff9873feffaaafffff3adeffff2edfffff80dfffffcadfffff2ee1ffff2efbfffff87f000004800000fa8800006c930500
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: ParkingGround
-        m_OriginalName: ParkingGround
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -995576
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 10}
+        m_ClientGUIView: {fileID: 8}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -1033,7 +975,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: e3c3dcea7f73f11428265cac32f0818f
---- !u!114 &17
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1067,7 +1009,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
---- !u!114 &18
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1190,9 +1132,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 95f85caeb1448c54db43ac6d9534f43b, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 036cacc277a35044d90107e06cbf486c, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -6959637696991335708, guid: 95f85caeb1448c54db43ac6d9534f43b, type: 2}
+  - m_Target: {fileID: 4105726706364796694, guid: 036cacc277a35044d90107e06cbf486c, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -1205,7 +1147,7 @@ MonoBehaviour:
   m_CurrentEditor: 0
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &19
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1503,9 +1445,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 1244, y: 10}
+      snapOffset: {x: -432, y: 10}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
+      snapCorner: 1
       id: UnityEditor.SceneViewCameraOverlay
       index: 9
       layout: 4
@@ -1541,16 +1483,16 @@ MonoBehaviour:
   m_WindowGUID: c11aae3452d93ac45911d4c4a75049dc
   m_Gizmos: 1
   m_OverrideSceneCullingMask: 6917529027641081856
-  m_SceneIsLit: 1
+  m_SceneIsLit: 0
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.0493102, y: 0.94505125, z: 2.344287}
+    m_Target: {x: 0.8167568, y: 1.1094574, z: 1.8930053}
     speed: 2
-    m_Value: {x: 1.0493102, y: 0.94505125, z: 2.344287}
+    m_Value: {x: 0.8167568, y: 1.1094574, z: 1.8930053}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1596,20 +1538,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.013329714, y: 0.9764255, z: -0.10966655, w: 0.20246421}
+    m_Target: {x: 0.049191874, y: 0.43678612, z: -0.034049753, w: 0.90129405}
     speed: 2
-    m_Value: {x: 0.013121949, y: 0.9735194, z: -0.10932608, w: 0.20033903}
+    m_Value: {x: 0.04902809, y: 0.43533185, z: -0.033936385, w: 0.8982932}
   m_Size:
-    m_Target: 0.6376284
+    m_Target: 0.40523654
     speed: 2
-    m_Value: 0.63763016
+    m_Value: 0.40523654
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1.0448004
-    m_SpeedNormalized: 0.5200002
+    m_Speed: 0.4478004
+    m_SpeedNormalized: 0.2200002
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -1627,7 +1569,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &20
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1687,9 +1629,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 143}
-    m_SelectedIDs: c46e0000
-    m_LastClickedID: 28356
-    m_ExpandedIDs: 000000009c6e00009e6e0000a06e0000a26e0000a46e000000ca9a3b
+    m_SelectedIDs: 16790000
+    m_LastClickedID: 30998
+    m_ExpandedIDs: 0000000086760000887600008a7600008c7600008e7600001679000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1717,7 +1659,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009c6e00009e6e0000a06e0000a26e0000a46e0000
+    m_ExpandedIDs: 0000000086760000887600008a7600008c7600008e760000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1744,7 +1686,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1761,7 +1703,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 12}
+      m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1773,7 +1715,7 @@ MonoBehaviour:
     m_GridSize: 76
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 260
---- !u!114 &21
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1807,7 +1749,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
---- !u!114 &22
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1989,7 +1931,7 @@ MonoBehaviour:
   m_ShowReferencedBuses: 1
   m_ShowBusConnections: 0
   m_ShowBusConnectionsOfSelection: 0
---- !u!114 &23
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2012,7 +1954,7 @@ MonoBehaviour:
     x: 1975
     y: 73
     width: 584
-    height: 877
+    height: 1326
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2036,7 +1978,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &24
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
