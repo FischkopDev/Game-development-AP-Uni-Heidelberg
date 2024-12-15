@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['endanimation_11',['EndAnimation',['../classEndAnimation.html',1,'']]]
+  ['endanimation_12',['EndAnimation',['../classEndAnimation.html',1,'']]],
+  ['escapemenu_13',['EscapeMenu',['../classEscapeMenu.html',1,'']]]
 ];

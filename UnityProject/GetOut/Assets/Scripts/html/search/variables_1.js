@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['doorsclosed_87',['doorsClosed',['../classTriggerMovingPerson.html#a5cd354a7e5072a9230a38ab633ab65d4',1,'TriggerMovingPerson']]],
-  ['doorsopen_88',['doorsOpen',['../classTriggerMovingPerson.html#aa7261459d05b400bc6b99101eab6d8fe',1,'TriggerMovingPerson']]]
+  ['charcontroller_96',['charController',['../classPlayerMovement.html#af90089732655dd239c1deba1cde419ca',1,'PlayerMovement']]]
 ];

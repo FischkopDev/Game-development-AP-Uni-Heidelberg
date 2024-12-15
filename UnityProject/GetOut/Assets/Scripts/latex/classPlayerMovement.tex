@@ -7,8 +7,7 @@ Handles the movement logic for the player character in Unity.
 
 
 
-Inheritance diagram for Player\+Movement\+:
-\nopagebreak
+Inheritance diagram for Player\+Movement\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -17,8 +16,7 @@ Inheritance diagram for Player\+Movement\+:
 \end{figure}
 
 
-Collaboration diagram for Player\+Movement\+:
-\nopagebreak
+Collaboration diagram for Player\+Movement\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -36,7 +34,7 @@ void \mbox{\hyperlink{classPlayerMovement_a018dc533779c72318c9cdd6da8377dad}{Lat
 \begin{DoxyCompactList}\small\item\em Handles camera rotation based on mouse input. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPlayerMovement_a5134862a45b5dc74f8c90adf884ee877}{rotation\+Update}} (float mouseX, float mouseY)
 \begin{DoxyCompactList}\small\item\em Updates the camera rotation based on mouse movement. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classPlayerMovement_aa403d7f6a6dc51e2a7504df382c11d5e}{Player\+Move}} (float x, float z)
+Vector3 \mbox{\hyperlink{classPlayerMovement_a097d6273b01667bd6cef520a61554b6c}{Player\+Move}} (float x, float z)
 \begin{DoxyCompactList}\small\item\em Moves the player based on input. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classPlayerMovement_aba2f3b4ad2e11f7f0157b4d0186de2e1}\label{classPlayerMovement_aba2f3b4ad2e11f7f0157b4d0186de2e1}} 
 void {\bfseries Set\+Gravity} (float value)
@@ -65,6 +63,9 @@ object {\bfseries Get\+Velocity} ()
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classPlayerMovement_af90089732655dd239c1deba1cde419ca}\label{classPlayerMovement_af90089732655dd239c1deba1cde419ca}} 
+Character\+Controller \mbox{\hyperlink{classPlayerMovement_af90089732655dd239c1deba1cde419ca}{char\+Controller}}
+\begin{DoxyCompactList}\small\item\em Reference to the Character\+Controller component. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classPlayerMovement_a62bfe7578d6d55c06eb2fe837df9b5bc}\label{classPlayerMovement_a62bfe7578d6d55c06eb2fe837df9b5bc}} 
 float \mbox{\hyperlink{classPlayerMovement_a62bfe7578d6d55c06eb2fe837df9b5bc}{y\+Rotation}} = -\/90f
 \begin{DoxyCompactList}\small\item\em Starting yaw (y-\/axis) rotation. \end{DoxyCompactList}\item 
@@ -126,11 +127,11 @@ Timo Skrobanek
 
 Handles camera rotation based on mouse input. 
 
-This method is called after all Update functions have been called. It captures mouse movement input and calls \mbox{\hyperlink{classPlayerMovement_a5134862a45b5dc74f8c90adf884ee877}{rotation\+Update()}} to update the camera rotation, provided motion is not disabled. \mbox{\Hypertarget{classPlayerMovement_aa403d7f6a6dc51e2a7504df382c11d5e}\label{classPlayerMovement_aa403d7f6a6dc51e2a7504df382c11d5e}} 
+This method is called after all Update functions have been called. It captures mouse movement input and calls \mbox{\hyperlink{classPlayerMovement_a5134862a45b5dc74f8c90adf884ee877}{rotation\+Update()}} to update the camera rotation, provided motion is not disabled. \mbox{\Hypertarget{classPlayerMovement_a097d6273b01667bd6cef520a61554b6c}\label{classPlayerMovement_a097d6273b01667bd6cef520a61554b6c}} 
 \index{PlayerMovement@{PlayerMovement}!PlayerMove@{PlayerMove}}
 \index{PlayerMove@{PlayerMove}!PlayerMovement@{PlayerMovement}}
 \doxysubsubsection{\texorpdfstring{PlayerMove()}{PlayerMove()}}
-{\footnotesize\ttfamily void Player\+Movement.\+Player\+Move (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily Vector3 Player\+Movement.\+Player\+Move (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -180,7 +181,7 @@ This method is called on the first frame when the script is enabled. It sets up 
 
 Handles player input for movement. 
 
-This method is called once per frame. It checks if the introductory animation has finished, then captures player input for movement and calls the \mbox{\hyperlink{classPlayerMovement_aa403d7f6a6dc51e2a7504df382c11d5e}{Player\+Move()}} method to move the player accordingly. 
+This method is called once per frame. It checks if the introductory animation has finished, then captures player input for movement and calls the \mbox{\hyperlink{classPlayerMovement_a097d6273b01667bd6cef520a61554b6c}{Player\+Move()}} method to move the player accordingly. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['playermove_24',['PlayerMove',['../classPlayerMovement.html#aa403d7f6a6dc51e2a7504df382c11d5e',1,'PlayerMovement']]],
-  ['playermovement_25',['PlayerMovement',['../classPlayerMovement.html',1,'']]],
-  ['playermovementtests_26',['PlayerMovementTests',['../classPlayerMovementTests.html',1,'']]],
-  ['playerrotation_27',['PlayerRotation',['../classPlayerRotation.html',1,'']]]
+  ['maincam_24',['mainCam',['../classPlayerMovement.html#ae75b1008b063c20e8ba533d337a4f3ec',1,'PlayerMovement.mainCam()'],['../classPlayerRotation.html#a26670f9d798b5c40cf57219530c4bfed',1,'PlayerRotation.mainCam()']]],
+  ['mainmenu_25',['MainMenu',['../classMainMenu.html',1,'']]],
+  ['mockscenemanager_26',['MockSceneManager',['../classSettingsMenuTest_1_1MockSceneManager.html',1,'SettingsMenuTest']]],
+  ['mousesensitivity_27',['mouseSensitivity',['../classPlayerMovement.html#ad405dbbb6330844d3a3a3a0fb6ff4d23',1,'PlayerMovement.mouseSensitivity()'],['../classPlayerRotation.html#a46e96095924f0d4b1b80a240f6b0bade',1,'PlayerRotation.mouseSensitivity()']]]
 ];

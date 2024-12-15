@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['interactor_89',['interactor',['../classInteractionComponent.html#acabe1e0c95db78b1b73b77b0c3bcec1b',1,'InteractionComponent']]],
-  ['interactrange_90',['interactRange',['../classInteractionComponent.html#a116f33f4bd5b0a5a0952599e34d110e6',1,'InteractionComponent']]]
+  ['doorsclosed_97',['doorsClosed',['../classTriggerMovingPerson.html#a5cd354a7e5072a9230a38ab633ab65d4',1,'TriggerMovingPerson']]],
+  ['doorsopen_98',['doorsOpen',['../classTriggerMovingPerson.html#aa7261459d05b400bc6b99101eab6d8fe',1,'TriggerMovingPerson']]]
 ];

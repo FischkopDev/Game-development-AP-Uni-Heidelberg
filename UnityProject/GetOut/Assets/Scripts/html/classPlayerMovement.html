@@ -105,9 +105,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5134862a45b5dc74f8c90adf884ee877"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayerMovement.html#a5134862a45b5dc74f8c90adf884ee877">rotationUpdate</a> (float mouseX, float mouseY)</td></tr>
 <tr class="memdesc:a5134862a45b5dc74f8c90adf884ee877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the camera rotation based on mouse movement.  <a href="classPlayerMovement.html#a5134862a45b5dc74f8c90adf884ee877">More...</a><br /></td></tr>
 <tr class="separator:a5134862a45b5dc74f8c90adf884ee877"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa403d7f6a6dc51e2a7504df382c11d5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayerMovement.html#aa403d7f6a6dc51e2a7504df382c11d5e">PlayerMove</a> (float x, float z)</td></tr>
-<tr class="memdesc:aa403d7f6a6dc51e2a7504df382c11d5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the player based on input.  <a href="classPlayerMovement.html#aa403d7f6a6dc51e2a7504df382c11d5e">More...</a><br /></td></tr>
-<tr class="separator:aa403d7f6a6dc51e2a7504df382c11d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097d6273b01667bd6cef520a61554b6c"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayerMovement.html#a097d6273b01667bd6cef520a61554b6c">PlayerMove</a> (float x, float z)</td></tr>
+<tr class="memdesc:a097d6273b01667bd6cef520a61554b6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the player based on input.  <a href="classPlayerMovement.html#a097d6273b01667bd6cef520a61554b6c">More...</a><br /></td></tr>
+<tr class="separator:a097d6273b01667bd6cef520a61554b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba2f3b4ad2e11f7f0157b4d0186de2e1"><td class="memItemLeft" align="right" valign="top"><a id="aba2f3b4ad2e11f7f0157b4d0186de2e1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGravity</b> (float value)</td></tr>
 <tr class="separator:aba2f3b4ad2e11f7f0157b4d0186de2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +135,10 @@ object&#160;</td><td class="memItemRight" valign="bottom"><b>GetVelocity</b> ()<
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:af90089732655dd239c1deba1cde419ca"><td class="memItemLeft" align="right" valign="top"><a id="af90089732655dd239c1deba1cde419ca"></a>
+CharacterController&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayerMovement.html#af90089732655dd239c1deba1cde419ca">charController</a></td></tr>
+<tr class="memdesc:af90089732655dd239c1deba1cde419ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the CharacterController component. <br /></td></tr>
+<tr class="separator:af90089732655dd239c1deba1cde419ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62bfe7578d6d55c06eb2fe837df9b5bc"><td class="memItemLeft" align="right" valign="top"><a id="a62bfe7578d6d55c06eb2fe837df9b5bc"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayerMovement.html#a62bfe7578d6d55c06eb2fe837df9b5bc">yRotation</a> = -90f</td></tr>
 <tr class="memdesc:a62bfe7578d6d55c06eb2fe837df9b5bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starting yaw (y-axis) rotation. <br /></td></tr>
@@ -200,8 +204,8 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 
 </div>
 </div>
-<a id="aa403d7f6a6dc51e2a7504df382c11d5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa403d7f6a6dc51e2a7504df382c11d5e">&#9670;&nbsp;</a></span>PlayerMove()</h2>
+<a id="a097d6273b01667bd6cef520a61554b6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a097d6273b01667bd6cef520a61554b6c">&#9670;&nbsp;</a></span>PlayerMove()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +214,7 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void PlayerMovement.PlayerMove </td>
+          <td class="memname">Vector3 PlayerMovement.PlayerMove </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -344,7 +348,7 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 </div><div class="memdoc">
 
 <p>Handles player input for movement. </p>
-<p>This method is called once per frame. It checks if the introductory animation has finished, then captures player input for movement and calls the <a class="el" href="classPlayerMovement.html#aa403d7f6a6dc51e2a7504df382c11d5e" title="Moves the player based on input.">PlayerMove()</a> method to move the player accordingly. </p>
+<p>This method is called once per frame. It checks if the introductory animation has finished, then captures player input for movement and calls the <a class="el" href="classPlayerMovement.html#a097d6273b01667bd6cef520a61554b6c" title="Moves the player based on input.">PlayerMove()</a> method to move the player accordingly. </p>
 
 </div>
 </div>

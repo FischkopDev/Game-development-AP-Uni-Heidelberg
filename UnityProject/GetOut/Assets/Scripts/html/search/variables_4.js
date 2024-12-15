@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['smiler_93',['smiler',['../classSmiler__JS.html#a81055cc9b4c2e21c4755442fa28beba6',1,'Smiler_JS']]],
-  ['src_94',['src',['../classTriggerGhostVoice.html#a9bcd301840d201e32672b38b5df98c5a',1,'TriggerGhostVoice.src()'],['../classTriggerMovingPerson.html#add2678e2faa40e6f214bb9204683be7b',1,'TriggerMovingPerson.src()']]]
+  ['maincam_101',['mainCam',['../classPlayerMovement.html#ae75b1008b063c20e8ba533d337a4f3ec',1,'PlayerMovement.mainCam()'],['../classPlayerRotation.html#a26670f9d798b5c40cf57219530c4bfed',1,'PlayerRotation.mainCam()']]],
+  ['mousesensitivity_102',['mouseSensitivity',['../classPlayerMovement.html#ad405dbbb6330844d3a3a3a0fb6ff4d23',1,'PlayerMovement.mouseSensitivity()'],['../classPlayerRotation.html#a46e96095924f0d4b1b80a240f6b0bade',1,'PlayerRotation.mouseSensitivity()']]]
 ];

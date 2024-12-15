@@ -1,26 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$interfaceInteractable.html" title="Handles the interact&#45;action between player and gameobjects." alt="" coords="17,157,117,184"/>
-<area shape="rect" id="node2" href="$classBed__Interactor.html" title=" " alt="" coords="216,107,333,133"/>
-<area shape="rect" id="node3" href="$classCleanup__Interactor.html" title="Handles the interaction logic for cleaning up or disabling objects in the game." alt="" coords="202,157,347,184"/>
-<area shape="rect" id="node4" href="$classCloth__Interactor.html" title="Handles the interactaction between player and cloths laying arround." alt="" coords="211,208,338,235"/>
-<area shape="rect" id="node5" href="$classComputer__Interactor.html" title="Handles the interactaction between player his computer in office." alt="" coords="197,259,353,285"/>
-<area shape="rect" id="node6" href="$classLetter__Interactor.html" title="Handles the interaction logic for readable items." alt="" coords="209,309,340,336"/>
-<area shape="rect" id="node7" href="$classScene1__Change__Interactor.html" title="Handles the change between scenes." alt="" coords="177,5,372,32"/>
-<area shape="rect" id="node8" href="$classSleep__Interactor.html" title=" " alt="" coords="211,56,339,83"/>
-<area shape="rect" id="node9" title=" " alt="" coords="5,537,129,564"/>
-<area shape="rect" id="node10" href="$classAnimationHandler.html" title="Behandelt die Animationen aller Szenen im Spiel und steuert diese abhängig vom aktuellen Spielstatus." alt="" coords="205,664,345,691"/>
-<area shape="rect" id="node11" href="$classEndAnimation.html" title="Handles the delay before transitioning to the credits scene after the end animation." alt="" coords="218,715,331,741"/>
-<area shape="rect" id="node12" href="$classInteractionComponent.html" title=" " alt="" coords="191,765,358,792"/>
-<area shape="rect" id="node13" href="$classMainMenu.html" title=" " alt="" coords="229,816,320,843"/>
-<area shape="rect" id="node14" href="$classPlayerMovement.html" title="Handles the movement logic for the player character in Unity." alt="" coords="208,867,341,893"/>
-<area shape="rect" id="node15" href="$classPlayerRotation.html" title="Handles the rotation logic for the player character in Unity." alt="" coords="215,917,334,944"/>
-<area shape="rect" id="node16" href="$classSaveLoadManager.html" title=" " alt="" coords="203,968,346,995"/>
-<area shape="rect" id="node17" href="$classSettingsMenu.html" title=" " alt="" coords="219,1019,330,1045"/>
-<area shape="rect" id="node18" href="$classSmiler__JS.html" title="Controls the visibility of the &quot;smiler&quot; GameObject based on game state." alt="" coords="233,1069,316,1096"/>
-<area shape="rect" id="node19" href="$classStartbutton.html" title=" " alt="" coords="227,360,322,387"/>
-<area shape="rect" id="node20" href="$classStateManager.html" title=" " alt="" coords="218,411,331,437"/>
-<area shape="rect" id="node21" href="$classStateManagerTest.html" title=" " alt="" coords="205,461,344,488"/>
-<area shape="rect" id="node22" href="$classTriggerGhostVoice.html" title="Plays a ghost voice sound effect when the player enters a specified trigger area." alt="" coords="205,512,344,539"/>
-<area shape="rect" id="node23" href="$classTriggerMovingPerson.html" title="Handles triggering animations, sounds, and object states when the player enters a specific area." alt="" coords="195,563,354,589"/>
-<area shape="rect" id="node24" href="$classUI__Updater.html" title=" " alt="" coords="227,613,322,640"/>
+<area shape="rect" id="node1" href="$classFileEncryptionTests.html" title=" " alt="" coords="5,5,152,32"/>
 </map>

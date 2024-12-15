@@ -35,6 +35,8 @@ public class EndAnimation : MonoBehaviour
         // Wait for 7 seconds in real time
         yield return new WaitForSecondsRealtime(7);
 
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SceneManager.LoadScene("Credits");
     }
 }
