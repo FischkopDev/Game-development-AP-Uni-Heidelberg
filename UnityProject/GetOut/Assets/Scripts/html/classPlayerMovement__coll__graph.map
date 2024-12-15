@@ -1,0 +1,4 @@
+<map id="PlayerMovement" name="PlayerMovement">
+<area shape="rect" id="node1" title="Handles the movement logic for the player character in Unity." alt="" coords="5,80,139,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="10,5,134,32"/>
+</map>

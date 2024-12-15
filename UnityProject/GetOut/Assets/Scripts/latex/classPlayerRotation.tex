@@ -1,0 +1,113 @@
+\hypertarget{classPlayerRotation}{}\doxysection{Player\+Rotation Class Reference}
+\label{classPlayerRotation}\index{PlayerRotation@{PlayerRotation}}
+
+
+Handles the rotation logic for the player character in Unity.  
+
+
+
+
+Inheritance diagram for Player\+Rotation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classPlayerRotation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Player\+Rotation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classPlayerRotation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPlayerRotation_aabf87ece23d64dda54a63694981a8cf3}\label{classPlayerRotation_aabf87ece23d64dda54a63694981a8cf3}} 
+void {\bfseries Start} ()
+\item 
+void \mbox{\hyperlink{classPlayerRotation_a1d5be4cb5f78c7e47561e0705d654619}{Late\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Handles camera rotation based on mouse input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayerRotation_aa32420ae4e6041696f35efc235a14908}{rotation\+Update}} (float mouseX, float mouseY)
+\begin{DoxyCompactList}\small\item\em Updates the camera rotation based on mouse movement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPlayerRotation_a46e96095924f0d4b1b80a240f6b0bade}\label{classPlayerRotation_a46e96095924f0d4b1b80a240f6b0bade}} 
+float \mbox{\hyperlink{classPlayerRotation_a46e96095924f0d4b1b80a240f6b0bade}{mouse\+Sensitivity}}
+\begin{DoxyCompactList}\small\item\em Sensitivity of mouse movement for camera rotation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlayerRotation_a26670f9d798b5c40cf57219530c4bfed}\label{classPlayerRotation_a26670f9d798b5c40cf57219530c4bfed}} 
+Transform \mbox{\hyperlink{classPlayerRotation_a26670f9d798b5c40cf57219530c4bfed}{main\+Cam}}
+\begin{DoxyCompactList}\small\item\em Reference to the main camera transform for rotating the camera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles the rotation logic for the player character in Unity. 
+
+This script allows the player to rotate the camera inside a predefined angle. In Scene 3 of the game, the player is only allowed to move his head. With a few more requirements it\textquotesingle{}s more efficient to have an disjoint script for head rotation.
+
+Features\+:
+\begin{DoxyItemize}
+\item Player rotation in x and y axes inside predefined angles
+\end{DoxyItemize}
+
+Requirements\+:
+\begin{DoxyItemize}
+\item This script should be attached to a Game\+Object with a Rigidbody component.
+\item The Game\+Object should also have a Collider component for proper collision detection.
+\end{DoxyItemize}
+
+How to Use\+:
+\begin{DoxyItemize}
+\item Attach the \mbox{\hyperlink{classPlayerMovement}{Player\+Movement}} script to your player Game\+Object.
+\item Configure rotation speed and limits.
+\item Set the correct input axes in the Unity Input Manager (default is WASD or arrow keys).
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Timo Skrobanek 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+28.\+10.\+2024 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlayerRotation_a1d5be4cb5f78c7e47561e0705d654619}\label{classPlayerRotation_a1d5be4cb5f78c7e47561e0705d654619}} 
+\index{PlayerRotation@{PlayerRotation}!LateUpdate@{LateUpdate}}
+\index{LateUpdate@{LateUpdate}!PlayerRotation@{PlayerRotation}}
+\doxysubsubsection{\texorpdfstring{LateUpdate()}{LateUpdate()}}
+{\footnotesize\ttfamily void Player\+Rotation.\+Late\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Handles camera rotation based on mouse input. 
+
+This method is called after all Update functions have been called. It captures mouse movement input and calls \mbox{\hyperlink{classPlayerRotation_aa32420ae4e6041696f35efc235a14908}{rotation\+Update()}} to update the camera rotation, provided motion is not disabled. \mbox{\Hypertarget{classPlayerRotation_aa32420ae4e6041696f35efc235a14908}\label{classPlayerRotation_aa32420ae4e6041696f35efc235a14908}} 
+\index{PlayerRotation@{PlayerRotation}!rotationUpdate@{rotationUpdate}}
+\index{rotationUpdate@{rotationUpdate}!PlayerRotation@{PlayerRotation}}
+\doxysubsubsection{\texorpdfstring{rotationUpdate()}{rotationUpdate()}}
+{\footnotesize\ttfamily void Player\+Rotation.\+rotation\+Update (\begin{DoxyParamCaption}\item[{float}]{mouseX,  }\item[{float}]{mouseY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates the camera rotation based on mouse movement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouseX} & Horizontal mouse movement. \\
+\hline
+{\em mouseY} & Vertical mouse movement.\\
+\hline
+\end{DoxyParams}
+This method updates the player\textquotesingle{}s camera rotation by applying pitch and yaw rotations. The camera\textquotesingle{}s pitch rotation (looking up and down) is clamped to prevent extreme angles. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Movement/Player\+Rotation.\+cs\end{DoxyCompactItemize}

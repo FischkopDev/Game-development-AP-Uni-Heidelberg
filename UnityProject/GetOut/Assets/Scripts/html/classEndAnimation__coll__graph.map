@@ -1,0 +1,4 @@
+<map id="EndAnimation" name="EndAnimation">
+<area shape="rect" id="node1" title="Handles the delay before transitioning to the credits scene after the end animation." alt="" coords="11,80,124,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,129,32"/>
+</map>

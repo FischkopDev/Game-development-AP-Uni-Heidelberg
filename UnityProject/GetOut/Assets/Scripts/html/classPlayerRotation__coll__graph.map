@@ -1,0 +1,4 @@
+<map id="PlayerRotation" name="PlayerRotation">
+<area shape="rect" id="node1" title="Handles the rotation logic for the player character in Unity." alt="" coords="8,80,127,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,129,32"/>
+</map>

@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2024-08-07T14:05:07.463Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" etag="H-Y1SxzQOH7pgmQst5Va" version="24.6.5" type="device">
+  <diagram name="Seite-1" id="mxeEtdUrf3RJi4FdpuKS">
+    <mxGraphModel dx="1146" dy="674" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aks5VRIOR7EgtgQ2GOXb-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="270" width="380" height="770" as="geometry" />
+        </mxCell>
+        <mxCell id="aks5VRIOR7EgtgQ2GOXb-9" value="&lt;b&gt;W0: Menu&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="230" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aks5VRIOR7EgtgQ2GOXb-10" value="W0.1: Main-Menu" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="100" y="290" width="200" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="aks5VRIOR7EgtgQ2GOXb-11" value="W0.2: Settings" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="100" y="510" width="200" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="aks5VRIOR7EgtgQ2GOXb-12" value="W0.3: Save-Game" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="100" y="730" width="200" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="aks5VRIOR7EgtgQ2GOXb-13" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="270" width="380" height="770" as="geometry" />
+        </mxCell>
+        <mxCell id="aks5VRIOR7EgtgQ2GOXb-14" value="&lt;b&gt;W1: In-Game&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="780" y="230" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aks5VRIOR7EgtgQ2GOXb-4" value="W1.1: Scene 1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="690" y="300" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="aks5VRIOR7EgtgQ2GOXb-15" value="W1.2: Scene 2+3" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="690" y="500" width="180" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="aks5VRIOR7EgtgQ2GOXb-16" value="W1.3: Scene 4" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="690" y="730" width="180" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="aks5VRIOR7EgtgQ2GOXb-17" value="W1.4: Scene 5" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="690" y="950" width="180" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,69 @@
+\hypertarget{classInteractionComponent}{}\doxysection{Interaction\+Component Class Reference}
+\label{classInteractionComponent}\index{InteractionComponent@{InteractionComponent}}
+
+
+Inheritance diagram for Interaction\+Component\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classInteractionComponent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Interaction\+Component\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classInteractionComponent__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classInteractionComponent_a6494c14e072762dc3801455bbb6f9bfc}{Check\+Interaction}} (Ray directed\+Ray)
+\begin{DoxyCompactList}\small\item\em Checks if the directed ray intersects with an interactable object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classInteractionComponent_a73ce07fe5f5a8e8ae6a0be0d3ff89756}\label{classInteractionComponent_a73ce07fe5f5a8e8ae6a0be0d3ff89756}} 
+Transform {\bfseries Get\+Interactor} ()
+\item 
+\mbox{\Hypertarget{classInteractionComponent_a947fc05b2e86db31e8d0ca5faf00656f}\label{classInteractionComponent_a947fc05b2e86db31e8d0ca5faf00656f}} 
+void {\bfseries Set\+Interactor} (Transform value)
+\item 
+\mbox{\Hypertarget{classInteractionComponent_a006259b18f3569a99bcf80625dba32a2}\label{classInteractionComponent_a006259b18f3569a99bcf80625dba32a2}} 
+float {\bfseries Get\+Interact\+Range} ()
+\item 
+\mbox{\Hypertarget{classInteractionComponent_a790a364ce2228e656d4486f12f2aecce}\label{classInteractionComponent_a790a364ce2228e656d4486f12f2aecce}} 
+void {\bfseries Set\+Interact\+Range} (float value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classInteractionComponent_acabe1e0c95db78b1b73b77b0c3bcec1b}\label{classInteractionComponent_acabe1e0c95db78b1b73b77b0c3bcec1b}} 
+Transform \mbox{\hyperlink{classInteractionComponent_acabe1e0c95db78b1b73b77b0c3bcec1b}{interactor}}
+\begin{DoxyCompactList}\small\item\em The Transform of the camera or the head where the raycast should start. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classInteractionComponent_a116f33f4bd5b0a5a0952599e34d110e6}\label{classInteractionComponent_a116f33f4bd5b0a5a0952599e34d110e6}} 
+float \mbox{\hyperlink{classInteractionComponent_a116f33f4bd5b0a5a0952599e34d110e6}{interact\+Range}} = 5f
+\begin{DoxyCompactList}\small\item\em The maximum range within which the player can interact with objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInteractionComponent_a6494c14e072762dc3801455bbb6f9bfc}\label{classInteractionComponent_a6494c14e072762dc3801455bbb6f9bfc}} 
+\index{InteractionComponent@{InteractionComponent}!CheckInteraction@{CheckInteraction}}
+\index{CheckInteraction@{CheckInteraction}!InteractionComponent@{InteractionComponent}}
+\doxysubsubsection{\texorpdfstring{CheckInteraction()}{CheckInteraction()}}
+{\footnotesize\ttfamily bool Interaction\+Component.\+Check\+Interaction (\begin{DoxyParamCaption}\item[{Ray}]{directed\+Ray }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if the directed ray intersects with an interactable object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em directed\+Ray} & The ray cast from the interactor to check for interactions.\\
+\hline
+\end{DoxyParams}
+This method uses a raycast to detect if any objects within the interaction range are interactable. If an interactable object is detected, the interaction method on that object is called. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Interaction/Player\+Interaction\+Component.\+cs\end{DoxyCompactItemize}

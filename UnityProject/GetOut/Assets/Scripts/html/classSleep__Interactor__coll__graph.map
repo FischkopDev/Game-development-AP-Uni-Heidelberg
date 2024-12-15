@@ -1,0 +1,6 @@
+<map id="Sleep_Interactor" name="Sleep_Interactor">
+<area shape="rect" id="node1" title=" " alt="" coords="95,171,223,197"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,129,32"/>
+<area shape="rect" id="node4" href="$classAnimationHandler.html" title="Behandelt die Animationen aller Szenen im Spiel und steuert diese abhängig vom aktuellen Spielstatus." alt="" coords="89,81,229,108"/>
+<area shape="rect" id="node3" href="$interfaceInteractable.html" title="Handles the interact&#45;action between player and gameobjects." alt="" coords="253,81,353,108"/>
+</map>
