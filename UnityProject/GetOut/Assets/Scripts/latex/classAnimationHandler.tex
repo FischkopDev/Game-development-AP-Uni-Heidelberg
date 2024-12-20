@@ -1,0 +1,102 @@
+\hypertarget{classAnimationHandler}{}\doxysection{Animation\+Handler Class Reference}
+\label{classAnimationHandler}\index{AnimationHandler@{AnimationHandler}}
+
+
+Behandelt die Animationen aller Szenen im Spiel und steuert diese abhängig vom aktuellen Spielstatus.  
+
+
+
+
+Inheritance diagram for Animation\+Handler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classAnimationHandler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Animation\+Handler\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classAnimationHandler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classAnimationHandler_a50efc2f0dcb59ecf7df12a43477f9543}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Initialisiert die Animationen beim Start des Spiels. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAnimationHandler_aace1ec0a2f95058652211d51412f613e}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Aktualisiert die Animationen in jeder Frame-\/\+Iteration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAnimationHandler_af06a3fbd7145e90641f02b437402f0b0}{Check\+State}} ()
+\begin{DoxyCompactList}\small\item\em Überprüft den aktuellen Spielstatus und startet die passende Animation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Animator \mbox{\hyperlink{classAnimationHandler_aa50883e9bd5b487d6aaeec52c56f6775}{animator}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Behandelt die Animationen aller Szenen im Spiel und steuert diese abhängig vom aktuellen Spielstatus. 
+
+Diese Klasse überprüft regelmäßig den Zustand des Spiels und startet entsprechende Animationen für verschiedene Szenen. Die Klasse verwendet einen Animator, um Übergänge und Animationen basierend auf den Zuständen im \mbox{\hyperlink{classStateManager}{State\+Manager}} zu steuern.
+
+\begin{DoxyAuthor}{Author}
+Timo Skrobanek 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+28.\+10.\+2024 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAnimationHandler_af06a3fbd7145e90641f02b437402f0b0}\label{classAnimationHandler_af06a3fbd7145e90641f02b437402f0b0}} 
+\index{AnimationHandler@{AnimationHandler}!CheckState@{CheckState}}
+\index{CheckState@{CheckState}!AnimationHandler@{AnimationHandler}}
+\doxysubsubsection{\texorpdfstring{CheckState()}{CheckState()}}
+{\footnotesize\ttfamily void Animation\+Handler.\+Check\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Überprüft den aktuellen Spielstatus und startet die passende Animation. 
+
+Diese Methode wechselt zwischen den verschiedenen Spielzuständen und spielt die jeweilige Animation basierend auf dem Zustand im \mbox{\hyperlink{classStateManager}{State\+Manager}}. \mbox{\Hypertarget{classAnimationHandler_a50efc2f0dcb59ecf7df12a43477f9543}\label{classAnimationHandler_a50efc2f0dcb59ecf7df12a43477f9543}} 
+\index{AnimationHandler@{AnimationHandler}!Start@{Start}}
+\index{Start@{Start}!AnimationHandler@{AnimationHandler}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Animation\+Handler.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialisiert die Animationen beim Start des Spiels. 
+
+Diese Methode überprüft den Spielstatus beim Start und startet ggf. die passende Animation. \mbox{\Hypertarget{classAnimationHandler_aace1ec0a2f95058652211d51412f613e}\label{classAnimationHandler_aace1ec0a2f95058652211d51412f613e}} 
+\index{AnimationHandler@{AnimationHandler}!Update@{Update}}
+\index{Update@{Update}!AnimationHandler@{AnimationHandler}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Animation\+Handler.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Aktualisiert die Animationen in jeder Frame-\/\+Iteration. 
+
+Diese Methode wird in jedem Frame aufgerufen und prüft, ob Animationen abgeschlossen sind, um entsprechende Maßnahmen zu ergreifen. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classAnimationHandler_aa50883e9bd5b487d6aaeec52c56f6775}\label{classAnimationHandler_aa50883e9bd5b487d6aaeec52c56f6775}} 
+\index{AnimationHandler@{AnimationHandler}!animator@{animator}}
+\index{animator@{animator}!AnimationHandler@{AnimationHandler}}
+\doxysubsubsection{\texorpdfstring{animator}{animator}}
+{\footnotesize\ttfamily Animator Animation\+Handler.\+animator}
+
+Animator, der die verschiedenen Szenen-\/\+Animationen steuert. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Animations/Animation\+Handler.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+Phrases said by different characters ingame.
+
+Scene 1:
+	Player enters game after intro animation. The following sentence is said at this moment.
+		[Player]: "Ah shit. It's already late. I have to go to work ...*sigh* but I have to cleanup this place first"
+
+	During cleanup (3/4 Items collected)
+		[Player]: "Since I live alone in this house, everything is messed up but I'm ok with it"
+
+	When clicking on the door before everything is done
+		[Player]: "I have to clean the living room and kitchen and get dressed before I can go to work"
+
+
+Scene 2:
+	Player leaves elevator into office
+		[Player]: "I'm way too late, my boss is gonna kill me."		
+	
+	Listening to the office of your boss.
+		[NPC]: "I don't know what to do with him, I just can't employ him any longer.... yeah yeah, he misses work too often 
+		because of his illness and completes his tasks much more slowly than his colleagues. You know, our company 
+		is not doing particularly well economically at the moment and I have to cut jobs... of course I understand
+		that he has a hard time with his recent divorce but I can't deal with him anymore."
+
+Scene 3:
+	Player sits at desk
+		[Player]: "*Sigh* I'm way too tired to work right now"
+
+	Computer starts acting strange
+		[Player]: "Huh? What's going on now?"
+
+	Player walks through office and nobody is there anymore
+		[Player]: "Why is everybody gone?"
+
+	Player tries to enter elevator without clocking out
+		[Player]: "I need to clock out first"
+
+	Player enters elevator
+		[Player]: "I don't feel good, I better get home soon"
+
+Scene 4:
+	Player sees the Smiley behind the house
+		[Player]: "What the hell is that?"
+	
+	Player sees the Smiley in the sky
+		[Player]: "What's going on here?"
+
+	Player enters house
+		[Player]: "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		

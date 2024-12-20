@@ -1,0 +1,106 @@
+\hypertarget{classCleanup__Interactor}{}\doxysection{Cleanup\+\_\+\+Interactor Class Reference}
+\label{classCleanup__Interactor}\index{Cleanup\_Interactor@{Cleanup\_Interactor}}
+
+
+Handles the interaction logic for cleaning up or disabling objects in the game.  
+
+
+
+
+Inheritance diagram for Cleanup\+\_\+\+Interactor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classCleanup__Interactor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Cleanup\+\_\+\+Interactor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classCleanup__Interactor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classCleanup__Interactor_a3808313b3ca7e66b72ea9870d269a499}{Interact}} (Game\+Object obj)
+\begin{DoxyCompactList}\small\item\em Executes the interaction logic when the player interacts with this object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCleanup__Interactor_a95e5cba5d9966d8cdc3e928d6c0f4d4a}{Is\+Accessable}} (Game\+Object obj)
+\begin{DoxyCompactList}\small\item\em Indicates whether the object is accessible for interaction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCleanup__Interactor_a7108dbe112fad56b93c62bef47dfad0e}\label{classCleanup__Interactor_a7108dbe112fad56b93c62bef47dfad0e}} 
+void {\bfseries Is\+Not\+Accessable} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCleanup__Interactor_a6a90e3fedf9c48909b8ec18fada8f6df}\label{classCleanup__Interactor_a6a90e3fedf9c48909b8ec18fada8f6df}} 
+Game\+Object {\bfseries key}
+\item 
+\mbox{\Hypertarget{classCleanup__Interactor_aedbb1ff65eb5223a02be68101c45cb99}\label{classCleanup__Interactor_aedbb1ff65eb5223a02be68101c45cb99}} 
+Audio\+Source {\bfseries src}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles the interaction logic for cleaning up or disabling objects in the game. 
+
+This component is designed to be attached to objects that should be disabled or \char`\"{}cleaned up\char`\"{} when the player interacts with them. It implements the \mbox{\hyperlink{interfaceInteractable}{Interactable}} interface.
+
+Features\+:
+\begin{DoxyItemize}
+\item Disable gameobjects when clicked
+\end{DoxyItemize}
+
+Requirements\+:
+\begin{DoxyItemize}
+\item Check each frame for interaction
+\item Make gameobjects invisible that got cleaned up
+\end{DoxyItemize}
+
+How to Use\+: Give this component to any gameobject you\textquotesingle{}d like to cleanup or make disappear when clicked.
+
+\begin{DoxyAuthor}{Author}
+Timo Skrobanek 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+18.\+8.\+2024 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCleanup__Interactor_a3808313b3ca7e66b72ea9870d269a499}\label{classCleanup__Interactor_a3808313b3ca7e66b72ea9870d269a499}} 
+\index{Cleanup\_Interactor@{Cleanup\_Interactor}!Interact@{Interact}}
+\index{Interact@{Interact}!Cleanup\_Interactor@{Cleanup\_Interactor}}
+\doxysubsubsection{\texorpdfstring{Interact()}{Interact()}}
+{\footnotesize\ttfamily void Cleanup\+\_\+\+Interactor.\+Interact (\begin{DoxyParamCaption}\item[{Game\+Object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Executes the interaction logic when the player interacts with this object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The Game\+Object that is being interacted with.\\
+\hline
+\end{DoxyParams}
+This method checks if the interaction key (E) is pressed, and if so, it disables the object, effectively removing it from the scene. A debug message is logged to confirm the action. \mbox{\Hypertarget{classCleanup__Interactor_a95e5cba5d9966d8cdc3e928d6c0f4d4a}\label{classCleanup__Interactor_a95e5cba5d9966d8cdc3e928d6c0f4d4a}} 
+\index{Cleanup\_Interactor@{Cleanup\_Interactor}!IsAccessable@{IsAccessable}}
+\index{IsAccessable@{IsAccessable}!Cleanup\_Interactor@{Cleanup\_Interactor}}
+\doxysubsubsection{\texorpdfstring{IsAccessable()}{IsAccessable()}}
+{\footnotesize\ttfamily void Cleanup\+\_\+\+Interactor.\+Is\+Accessable (\begin{DoxyParamCaption}\item[{Game\+Object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indicates whether the object is accessible for interaction. 
+
+This method is intended to provide feedback or state information about whether the object can be interacted with. Currently, it is not implemented. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Interaction/\+Click\+\_\+\+Interaction/Cleanup\+\_\+\+Interactor.\+cs\end{DoxyCompactItemize}

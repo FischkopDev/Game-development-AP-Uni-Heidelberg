@@ -1,0 +1,106 @@
+\hypertarget{classLetter__Interactor}{}\doxysection{Letter\+\_\+\+Interactor Class Reference}
+\label{classLetter__Interactor}\index{Letter\_Interactor@{Letter\_Interactor}}
+
+
+Handles the interaction logic for readable items.  
+
+
+
+
+Inheritance diagram for Letter\+\_\+\+Interactor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classLetter__Interactor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Letter\+\_\+\+Interactor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classLetter__Interactor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classLetter__Interactor_ab95cc3001d482e3d2b7a46e8eecaa0bf}{Interact}} (Game\+Object obj)
+\begin{DoxyCompactList}\small\item\em Executes the interaction logic when the player interacts with this object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLetter__Interactor_a3a4d55d1e198a5a2583d857461b1f2bd}{Is\+Accessable}} (Game\+Object obj)
+\begin{DoxyCompactList}\small\item\em Indicates whether the object is accessible for interaction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLetter__Interactor_aeae26d4c8707d48671507c2ee0d7ed7a}\label{classLetter__Interactor_aeae26d4c8707d48671507c2ee0d7ed7a}} 
+void {\bfseries Is\+Not\+Accessable} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLetter__Interactor_a4a75fc118e1caf86423c9bccf0d08aa6}\label{classLetter__Interactor_a4a75fc118e1caf86423c9bccf0d08aa6}} 
+Game\+Object {\bfseries letter}
+\item 
+\mbox{\Hypertarget{classLetter__Interactor_a84eaa35d71f4204361f10463308cce55}\label{classLetter__Interactor_a84eaa35d71f4204361f10463308cce55}} 
+Game\+Object {\bfseries state\+Manager}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles the interaction logic for readable items. 
+
+This component is designed to be attached to gameobject. Providing an id you\textquotesingle{}ll be able to read items.
+
+Features\+:
+\begin{DoxyItemize}
+\item Show text when clicking on an object containing this component
+\end{DoxyItemize}
+
+Requirements\+:
+\begin{DoxyItemize}
+\item Check if the item is clicked with \char`\"{}\+E\char`\"{}
+\item 
+\end{DoxyItemize}
+
+How to Use\+: Give this component to any gameobject you\textquotesingle{}d like to cleanup or make disappear when clicked.
+
+\begin{DoxyAuthor}{Author}
+Timo Skrobanek 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+18.\+8.\+2024 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLetter__Interactor_ab95cc3001d482e3d2b7a46e8eecaa0bf}\label{classLetter__Interactor_ab95cc3001d482e3d2b7a46e8eecaa0bf}} 
+\index{Letter\_Interactor@{Letter\_Interactor}!Interact@{Interact}}
+\index{Interact@{Interact}!Letter\_Interactor@{Letter\_Interactor}}
+\doxysubsubsection{\texorpdfstring{Interact()}{Interact()}}
+{\footnotesize\ttfamily void Letter\+\_\+\+Interactor.\+Interact (\begin{DoxyParamCaption}\item[{Game\+Object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Executes the interaction logic when the player interacts with this object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The Game\+Object that is being interacted with.\\
+\hline
+\end{DoxyParams}
+This method checks if the interaction key (E) is pressed, and if so, it disables the object, effectively removing it from the scene. A debug message is logged to confirm the action. \mbox{\Hypertarget{classLetter__Interactor_a3a4d55d1e198a5a2583d857461b1f2bd}\label{classLetter__Interactor_a3a4d55d1e198a5a2583d857461b1f2bd}} 
+\index{Letter\_Interactor@{Letter\_Interactor}!IsAccessable@{IsAccessable}}
+\index{IsAccessable@{IsAccessable}!Letter\_Interactor@{Letter\_Interactor}}
+\doxysubsubsection{\texorpdfstring{IsAccessable()}{IsAccessable()}}
+{\footnotesize\ttfamily void Letter\+\_\+\+Interactor.\+Is\+Accessable (\begin{DoxyParamCaption}\item[{Game\+Object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indicates whether the object is accessible for interaction. 
+
+This method is intended to provide feedback or state information about whether the object can be interacted with. Currently, it is not implemented. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Interaction/\+Click\+\_\+\+Interaction/Letter\+\_\+\+Interactor.\+cs\end{DoxyCompactItemize}

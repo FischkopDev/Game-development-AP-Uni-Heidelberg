@@ -1,0 +1,102 @@
+\hypertarget{classComputer__Interactor}{}\doxysection{Computer\+\_\+\+Interactor Class Reference}
+\label{classComputer__Interactor}\index{Computer\_Interactor@{Computer\_Interactor}}
+
+
+Handles the interactaction between player his computer in office.  
+
+
+
+
+Inheritance diagram for Computer\+\_\+\+Interactor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classComputer__Interactor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Computer\+\_\+\+Interactor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classComputer__Interactor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classComputer__Interactor_a8f794a4ac1ab6c4c8c8e470f6ecc9f74}{Interact}} (Game\+Object obj)
+\begin{DoxyCompactList}\small\item\em Executes the interaction logic when the player interacts with this object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComputer__Interactor_a8348383578cb217b0a0642539c2536fa}{Is\+Accessable}} (Game\+Object obj)
+\begin{DoxyCompactList}\small\item\em Indicates whether the object is accessible for interaction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComputer__Interactor_ac8708ec55759aa29eb36c65d7e5a35ed}\label{classComputer__Interactor_ac8708ec55759aa29eb36c65d7e5a35ed}} 
+void {\bfseries Is\+Not\+Accessable} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classComputer__Interactor_acb63c15cba6d7e2bb66d1609e3262e13}\label{classComputer__Interactor_acb63c15cba6d7e2bb66d1609e3262e13}} 
+Game\+Object {\bfseries key}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles the interactaction between player his computer in office. 
+
+Features\+:
+\begin{DoxyItemize}
+\item Trigger for interaction
+\item Receive the hit object
+\item Check if the object is in a specific range for interaction
+\end{DoxyItemize}
+
+Requirements\+:
+\begin{DoxyItemize}
+\item Check each frame for interaction
+\end{DoxyItemize}
+
+How to Use\+: Give this component to the player in unity and add another class using @\+Interactable to any gameobject you\textquotesingle{}d like to interact with.
+
+\begin{DoxyAuthor}{Author}
+Timo Skrobanek 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+1.\+9.\+2024 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComputer__Interactor_a8f794a4ac1ab6c4c8c8e470f6ecc9f74}\label{classComputer__Interactor_a8f794a4ac1ab6c4c8c8e470f6ecc9f74}} 
+\index{Computer\_Interactor@{Computer\_Interactor}!Interact@{Interact}}
+\index{Interact@{Interact}!Computer\_Interactor@{Computer\_Interactor}}
+\doxysubsubsection{\texorpdfstring{Interact()}{Interact()}}
+{\footnotesize\ttfamily void Computer\+\_\+\+Interactor.\+Interact (\begin{DoxyParamCaption}\item[{Game\+Object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Executes the interaction logic when the player interacts with this object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The Game\+Object that is being interacted with.\\
+\hline
+\end{DoxyParams}
+This method checks if the interaction key (E) is pressed, and if so, it triggers the logic to change the player\textquotesingle{}s outfit. The actual animation implementation is pending. \mbox{\Hypertarget{classComputer__Interactor_a8348383578cb217b0a0642539c2536fa}\label{classComputer__Interactor_a8348383578cb217b0a0642539c2536fa}} 
+\index{Computer\_Interactor@{Computer\_Interactor}!IsAccessable@{IsAccessable}}
+\index{IsAccessable@{IsAccessable}!Computer\_Interactor@{Computer\_Interactor}}
+\doxysubsubsection{\texorpdfstring{IsAccessable()}{IsAccessable()}}
+{\footnotesize\ttfamily void Computer\+\_\+\+Interactor.\+Is\+Accessable (\begin{DoxyParamCaption}\item[{Game\+Object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Indicates whether the object is accessible for interaction. 
+
+This method is intended to provide feedback or state information about whether the object can be interacted with. Currently, it is not implemented. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Interaction/\+Click\+\_\+\+Interaction/Computer\+\_\+\+Interactor.\+cs\end{DoxyCompactItemize}
