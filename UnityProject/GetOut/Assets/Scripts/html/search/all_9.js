@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['playermove_28',['PlayerMove',['../classPlayerMovement.html#a097d6273b01667bd6cef520a61554b6c',1,'PlayerMovement']]],
-  ['playermovement_29',['PlayerMovement',['../classPlayerMovement.html',1,'']]],
-  ['playermovementtests_30',['PlayerMovementTests',['../classPlayerMovementTests.html',1,'']]],
-  ['playerrotation_31',['PlayerRotation',['../classPlayerRotation.html',1,'']]]
+  ['key_60',['key',['../classCleanup__Interactor.html#a6a90e3fedf9c48909b8ec18fada8f6df',1,'Cleanup_Interactor.key()'],['../classComputer__Interactor.html#acb63c15cba6d7e2bb66d1609e3262e13',1,'Computer_Interactor.key()']]]
 ];

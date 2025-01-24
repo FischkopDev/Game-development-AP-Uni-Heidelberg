@@ -1,9 +1,22 @@
 var searchData=
 [
-  ['charcontroller_4',['charController',['../classPlayerMovement.html#af90089732655dd239c1deba1cde419ca',1,'PlayerMovement']]],
-  ['checkinteraction_5',['CheckInteraction',['../classInteractionComponent.html#a6494c14e072762dc3801455bbb6f9bfc',1,'InteractionComponent']]],
-  ['checkstate_6',['CheckState',['../classAnimationHandler.html#af06a3fbd7145e90641f02b437402f0b0',1,'AnimationHandler']]],
-  ['cleanup_5finteractor_7',['Cleanup_Interactor',['../classCleanup__Interactor.html',1,'']]],
-  ['cloth_5finteractor_8',['Cloth_Interactor',['../classCloth__Interactor.html',1,'']]],
-  ['computer_5finteractor_9',['Computer_Interactor',['../classComputer__Interactor.html',1,'']]]
+  ['camerarotation_5flimitedcorrectly_8',['CameraRotation_LimitedCorrectly',['../classPlayerMovementTests.html#adaeb3a10522c17821f3313bf77e60c43',1,'PlayerMovementTests']]],
+  ['canvas_9',['canvas',['../classEscapeMenu.html#a711be02232aab2ea7919b0fdcfd6d89d',1,'EscapeMenu']]],
+  ['changeoutfit_10',['changeOutfit',['../classStateManager.html#aea7bc526e5bf8432b079bfbd6edbb001',1,'StateManager']]],
+  ['changetomenu_11',['ChangeToMenu',['../classEscapeMenu.html#aea4170f567dd715b9ce09cda132f5eb4',1,'EscapeMenu']]],
+  ['charcontroller_12',['charController',['../classPlayerMovement.html#af90089732655dd239c1deba1cde419ca',1,'PlayerMovement']]],
+  ['checkinteraction_13',['CheckInteraction',['../classInteractionComponent.html#a6494c14e072762dc3801455bbb6f9bfc',1,'InteractionComponent']]],
+  ['checkinteractionfailed_14',['CheckInteractionFailed',['../classInteractionTest.html#a7a026729eaa0734c5df212378dd3d754',1,'InteractionTest']]],
+  ['checkinteractionsuccessful_15',['CheckInteractionSuccessful',['../classInteractionTest.html#a9646b14e816530c99061fc5c92eba596',1,'InteractionTest']]],
+  ['checkstate_16',['CheckState',['../classAnimationHandler.html#af06a3fbd7145e90641f02b437402f0b0',1,'AnimationHandler']]],
+  ['cleaneditems_17',['CleanedItems',['../classStateManager.html#ace689b5e03905c0b85079965ac096e57',1,'StateManager']]],
+  ['cleanup_18',['cleanUp',['../classStateManager.html#a36581a8d2eb654121128a1406271b12d',1,'StateManager']]],
+  ['cleanup_5finteractor_19',['Cleanup_Interactor',['../classCleanup__Interactor.html',1,'']]],
+  ['cleanup_5finteractor_2ecs_20',['Cleanup_Interactor.cs',['../Cleanup__Interactor_8cs.html',1,'']]],
+  ['cloth_5finteractor_21',['Cloth_Interactor',['../classCloth__Interactor.html',1,'']]],
+  ['cloth_5finteractor_2ecs_22',['Cloth_Interactor.cs',['../Cloth__Interactor_8cs.html',1,'']]],
+  ['computer_5finteractor_23',['Computer_Interactor',['../classComputer__Interactor.html',1,'']]],
+  ['computer_5finteractor_2ecs_24',['Computer_Interactor.cs',['../Computer__Interactor_8cs.html',1,'']]],
+  ['currentgamestate_25',['currentGameState',['../classStateManager.html#aa7e8175f97e81597457eac1cc63f3732',1,'StateManager']]],
+  ['cursor_5flockedonstart_26',['Cursor_LockedOnStart',['../classPlayerMovementTests.html#a1c31d946dfaff3e60dd24d2065d79641',1,'PlayerMovementTests']]]
 ];

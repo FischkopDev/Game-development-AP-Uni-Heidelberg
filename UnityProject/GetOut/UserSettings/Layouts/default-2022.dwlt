@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2492
     height: 1397
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 17
+  controlID: 110
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -256,7 +256,7 @@ MonoBehaviour:
   - {fileID: 20}
   - {fileID: 12}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 3
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -305,9 +305,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 68
-    y: 1003
+    y: 1001
     width: 1906
-    height: 396
+    height: 398
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -319,12 +319,12 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
   m_Spl:
-    ID: 151
+    ID: 120
     splitterInitialOffset: 293
     currentActiveSplitter: -1
     realSizes:
-    - 226
-    - 100
+    - 227
+    - 101
     relativeSizes:
     - 0.69325155
     - 0.30674845
@@ -334,7 +334,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 326
+    lastTotalSize: 328
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -350,9 +350,9 @@ MonoBehaviour:
       uniqueId: '[GetOut][suite]'
       name: GetOut
       fullName: GetOut
-      resultStatus: 2
-      duration: 0.0988687
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.0479983
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -366,9 +366,9 @@ MonoBehaviour:
       uniqueId: '[UnitTests][D:/Game-Development/PrototypeAP/Game-development-AP-Uni-Heidelberg/UnityProject/GetOut/Library/ScriptAssemblies/UnitTests.dll][suite]'
       name: UnitTests.dll
       fullName: D:/Game-Development/PrototypeAP/Game-development-AP-Uni-Heidelberg/UnityProject/GetOut/Library/ScriptAssemblies/UnitTests.dll
-      resultStatus: 2
-      duration: 0.086412
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.0347665
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -378,12 +378,133 @@ MonoBehaviour:
       categories: []
       parentId: 1005
       parentUniqueId: '[GetOut][suite]'
+    - id: 1010
+      uniqueId: UnitTests.dll/[UnitTests][FileEncryptionTests][suite]
+      name: FileEncryptionTests
+      fullName: FileEncryptionTests
+      resultStatus: 1
+      duration: 0.0310878
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1026
+      parentUniqueId: '[UnitTests][D:/Game-Development/PrototypeAP/Game-development-AP-Uni-Heidelberg/UnityProject/GetOut/Library/ScriptAssemblies/UnitTests.dll][suite]'
+    - id: 1015
+      uniqueId: UnitTests.dll/FileEncryptionTests/[UnitTests][FileEncryptionTests.TestCorruptedFile_HandlesGracefully]
+      name: TestCorruptedFile_HandlesGracefully
+      fullName: FileEncryptionTests.TestCorruptedFile_HandlesGracefully
+      resultStatus: 1
+      duration: 0.0229215
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: UnitTests.dll/[UnitTests][FileEncryptionTests][suite]
+    - id: 1014
+      uniqueId: UnitTests.dll/FileEncryptionTests/[UnitTests][FileEncryptionTests.TestEmptyFile_HandlesGracefully]
+      name: TestEmptyFile_HandlesGracefully
+      fullName: FileEncryptionTests.TestEmptyFile_HandlesGracefully
+      resultStatus: 1
+      duration: 0.0019611
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: UnitTests.dll/[UnitTests][FileEncryptionTests][suite]
+    - id: 1011
+      uniqueId: UnitTests.dll/FileEncryptionTests/[UnitTests][FileEncryptionTests.TestFileCreationAndEncryption]
+      name: TestFileCreationAndEncryption
+      fullName: FileEncryptionTests.TestFileCreationAndEncryption
+      resultStatus: 1
+      duration: 0.0161041
+      messages: 
+      output: "Datei erfolgreich erstellt und verschl\xFCsselt: C:/Users/Timo/AppData/LocalLow/DefaultCompany/GetOut/test_encrypted_file.txt\r\nDatei
+        befindet sich im Ordner: C:/Users/Timo/AppData/LocalLow/DefaultCompany/GetOut\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: UnitTests.dll/[UnitTests][FileEncryptionTests][suite]
+    - id: 1016
+      uniqueId: UnitTests.dll/FileEncryptionTests/[UnitTests][FileEncryptionTests.TestLargeFile_SaveAndLoad]
+      name: TestLargeFile_SaveAndLoad
+      fullName: FileEncryptionTests.TestLargeFile_SaveAndLoad
+      resultStatus: 1
+      duration: 0.0305863
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: UnitTests.dll/[UnitTests][FileEncryptionTests][suite]
+    - id: 1013
+      uniqueId: UnitTests.dll/FileEncryptionTests/[UnitTests][FileEncryptionTests.TestMissingFile_CreatesNewFile]
+      name: TestMissingFile_CreatesNewFile
+      fullName: FileEncryptionTests.TestMissingFile_CreatesNewFile
+      resultStatus: 1
+      duration: 0.0096699
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: UnitTests.dll/[UnitTests][FileEncryptionTests][suite]
+    - id: 1012
+      uniqueId: UnitTests.dll/FileEncryptionTests/[UnitTests][FileEncryptionTests.TestSimpleFileCreation]
+      name: TestSimpleFileCreation
+      fullName: FileEncryptionTests.TestSimpleFileCreation
+      resultStatus: 1
+      duration: 0.0184044
+      messages: 
+      output: 'Datei erstellt unter: C:/Users/Timo/AppData/LocalLow/DefaultCompany/GetOut/test_encrypted_file.txt
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1010
+      parentUniqueId: UnitTests.dll/[UnitTests][FileEncryptionTests][suite]
     - id: 1001
       uniqueId: UnitTests.dll/[UnitTests][InteractionTest][suite]
       name: InteractionTest
       fullName: InteractionTest
       resultStatus: 2
-      duration: 0.0404875
+      duration: 0.0103956
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -399,7 +520,7 @@ MonoBehaviour:
       name: CheckInteractionFailed
       fullName: InteractionTest.CheckInteractionFailed
       resultStatus: 1
-      duration: 0.0167281
+      duration: 0.002729
       messages: 
       output: 
       stacktrace: 
@@ -416,7 +537,7 @@ MonoBehaviour:
       name: CheckInteractionSuccessful
       fullName: InteractionTest.CheckInteractionSuccessful
       resultStatus: 2
-      duration: 0.0042669
+      duration: 0.0041826
       messages: "  Expected: True\r\n  But was:  False\r\n"
       output: 
       stacktrace: 'at InteractionTest.CheckInteractionSuccessful () [0x00099] in
@@ -431,45 +552,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: UnitTests.dll/[UnitTests][InteractionTest][suite]
-    - id: 1004
-      uniqueId: UnitTests.dll/[UnitTests][MenuTest][suite]
-      name: MenuTest
-      fullName: MenuTest
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1017
-      parentUniqueId: '[UnitTests][D:/Game-Development/PrototypeAP/Game-development-AP-Uni-Heidelberg/UnityProject/GetOut/Library/ScriptAssemblies/UnitTests.dll][suite]'
-    - id: 1005
-      uniqueId: UnitTests.dll/MenuTest/[UnitTests][MenuTest.SetVolume]
-      name: SetVolume
-      fullName: MenuTest.SetVolume
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: UnitTests.dll/[UnitTests][MenuTest][suite]
     - id: 1001
       uniqueId: UnitTests.dll/[UnitTests][PlayerMovementTests][suite]
       name: PlayerMovementTests
       fullName: PlayerMovementTests
       resultStatus: 1
-      duration: 0.0271165
+      duration: 0.0565918
       messages: 
       output: 
       stacktrace: 
@@ -485,7 +573,7 @@ MonoBehaviour:
       name: CameraRotation_LimitedCorrectly
       fullName: PlayerMovementTests.CameraRotation_LimitedCorrectly
       resultStatus: 1
-      duration: 0.0017822
+      duration: 0.0021448
       messages: 
       output: 
       stacktrace: 
@@ -502,7 +590,7 @@ MonoBehaviour:
       name: Cursor_LockedOnStart
       fullName: PlayerMovementTests.Cursor_LockedOnStart
       resultStatus: 1
-      duration: 0.0172957
+      duration: 0.0202266
       messages: 
       output: 
       stacktrace: 
@@ -519,7 +607,7 @@ MonoBehaviour:
       name: Gravity_AppliedCorrectly
       fullName: PlayerMovementTests.Gravity_AppliedCorrectly
       resultStatus: 1
-      duration: 0.0009714
+      duration: 0.0008354
       messages: 
       output: 
       stacktrace: 
@@ -536,7 +624,7 @@ MonoBehaviour:
       name: PlayerMove_NormalMovement
       fullName: PlayerMovementTests.PlayerMove_NormalMovement
       resultStatus: 1
-      duration: 0.001544
+      duration: 0.0011872
       messages: 
       output: 
       stacktrace: 
@@ -553,7 +641,7 @@ MonoBehaviour:
       name: PlayerMove_WithRunning_SpeedIncreases
       fullName: PlayerMovementTests.PlayerMove_WithRunning_SpeedIncreases
       resultStatus: 1
-      duration: 0.0004473
+      duration: 0.0004938
       messages: 
       output: 
       stacktrace: 
@@ -565,12 +653,81 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: UnitTests.dll/[UnitTests][PlayerMovementTests][suite]
+    - id: 1017
+      uniqueId: UnitTests.dll/[UnitTests][SettingsMenuTest][suite]
+      name: SettingsMenuTest
+      fullName: SettingsMenuTest
+      resultStatus: 1
+      duration: 0.0126644
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1026
+      parentUniqueId: '[UnitTests][D:/Game-Development/PrototypeAP/Game-development-AP-Uni-Heidelberg/UnityProject/GetOut/Library/ScriptAssemblies/UnitTests.dll][suite]'
+    - id: 1020
+      uniqueId: UnitTests.dll/SettingsMenuTest/[UnitTests][SettingsMenuTest.PlayGame_CallsLoadScene]
+      name: PlayGame_CallsLoadScene
+      fullName: SettingsMenuTest.PlayGame_CallsLoadScene
+      resultStatus: 1
+      duration: 0.0008044
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: UnitTests.dll/[UnitTests][SettingsMenuTest][suite]
+    - id: 1019
+      uniqueId: UnitTests.dll/SettingsMenuTest/[UnitTests][SettingsMenuTest.QuitGame_LogsQuitMessage]
+      name: QuitGame_LogsQuitMessage
+      fullName: SettingsMenuTest.QuitGame_LogsQuitMessage
+      resultStatus: 1
+      duration: 0.0023616
+      messages: 
+      output: 'QUIT!
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: UnitTests.dll/[UnitTests][SettingsMenuTest][suite]
+    - id: 1018
+      uniqueId: UnitTests.dll/SettingsMenuTest/[UnitTests][SettingsMenuTest.SceneExistsInBuildSettings]
+      name: SceneExistsInBuildSettings
+      fullName: SettingsMenuTest.SceneExistsInBuildSettings
+      resultStatus: 1
+      duration: 0.0010042
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1017
+      parentUniqueId: UnitTests.dll/[UnitTests][SettingsMenuTest][suite]
     - id: 1010
       uniqueId: UnitTests.dll/[UnitTests][StateManagerTest][suite]
       name: StateManagerTest
       fullName: StateManagerTest
       resultStatus: 2
-      duration: 0.0151172
+      duration: 0.0072894
       messages: One or more child tests had errors
       output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
         This is not allowed.  MonoBehaviours can only be added using AddComponent().
@@ -591,11 +748,11 @@ MonoBehaviour:
       name: TestChangeOutfit
       fullName: StateManagerTest.TestChangeOutfit
       resultStatus: 2
-      duration: 0.0008765
+      duration: 0.0012733
       messages: "  Outfit should be true after calling changeOutfit.\r\n  Expected:
         True\r\n  But was:  False\r\n"
       output: 
-      stacktrace: 'at StateManagerTest.TestChangeOutfit () [0x00005] in D:\Game-Development\PrototypeAP\Game-development-AP-Uni-Heidelberg\UnityProject\GetOut\Assets\Scripts\Test\UnitTests\StateManagerTest.cs:48
+      stacktrace: 'at StateManagerTest.TestChangeOutfit () [0x00005] in D:\Game-Development\PrototypeAP\Game-development-AP-Uni-Heidelberg\UnityProject\GetOut\Assets\Scripts\Test\UnitTests\StateManagerTest.cs:42
 
 '
       notRunnable: 0
@@ -611,10 +768,10 @@ MonoBehaviour:
       name: TestScene1Complete
       fullName: StateManagerTest.TestScene1Complete
       resultStatus: 2
-      duration: 0.0004125
+      duration: 0.00036
       messages: "  Expected: True\r\n  But was:  False\r\n"
       output: 
-      stacktrace: 'at StateManagerTest.TestScene1Complete () [0x00005] in D:\Game-Development\PrototypeAP\Game-development-AP-Uni-Heidelberg\UnityProject\GetOut\Assets\Scripts\Test\UnitTests\StateManagerTest.cs:60
+      stacktrace: 'at StateManagerTest.TestScene1Complete () [0x00005] in D:\Game-Development\PrototypeAP\Game-development-AP-Uni-Heidelberg\UnityProject\GetOut\Assets\Scripts\Test\UnitTests\StateManagerTest.cs:54
 
 '
       notRunnable: 0
@@ -630,7 +787,7 @@ MonoBehaviour:
       name: TestStartScene1
       fullName: StateManagerTest.TestStartScene1
       resultStatus: 1
-      duration: 0.0008009
+      duration: 0.0003687
       messages: 
       output: 
       stacktrace: 
@@ -647,11 +804,11 @@ MonoBehaviour:
       name: TestStopIntroAnimation
       fullName: StateManagerTest.TestStopIntroAnimation
       resultStatus: 2
-      duration: 0.0004446
+      duration: 0.0003878
       messages: "  IntroToggle should be true after calling stopIntroAnimation.\r\n 
         Expected: True\r\n  But was:  False\r\n"
       output: 
-      stacktrace: 'at StateManagerTest.TestStopIntroAnimation () [0x00024] in D:\Game-Development\PrototypeAP\Game-development-AP-Uni-Heidelberg\UnityProject\GetOut\Assets\Scripts\Test\UnitTests\StateManagerTest.cs:71
+      stacktrace: 'at StateManagerTest.TestStopIntroAnimation () [0x00024] in D:\Game-Development\PrototypeAP\Game-development-AP-Uni-Heidelberg\UnityProject\GetOut\Assets\Scripts\Test\UnitTests\StateManagerTest.cs:65
 
 '
       notRunnable: 0
@@ -662,13 +819,18 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1010
       parentUniqueId: UnitTests.dll/[UnitTests][StateManagerTest][suite]
-    m_ResultText: 
+    m_ResultText: 'TestSimpleFileCreation (0.018s)
+
+      ---
+
+      Datei erstellt
+      unter: C:/Users/Timo/AppData/LocalLow/DefaultCompany/GetOut/test_encrypted_file.txt'
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1c38a57f
-      m_LastClickedID: 2141534236
-      m_ExpandedIDs: 9247e3d2c3de32d40969fd018c5cc01e521970310f63ca7effffff7f
+      m_SelectedIDs: ab6d25ef
+      m_LastClickedID: -282759765
+      m_ExpandedIDs: 9247e3d2c3de32d40969fd018c5cc01e52197031c9cbac560f63ca7effffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -951,7 +1113,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: c21beaffc61beaff3a1ceaff4e1feaff521feaff681feaffe82aeaff142beaff182beaff342beaff382beaff3c2beafff856eaff1057eaff5257eaff5871eaffa072eaff8682eaff321ef4ff8623f4ff7a1af5ffbc1cf5ffd61cf5ffb835f5ff0038f5ff1238f5ff2c38f5ff3451f5ff2e78f9ffc884f9ffc883faffae8bfaffb490fdfff290fdff4a93fdffe0abfdffe6a1feff7cbafeff3ad3feff2cbdffff56bdffff30beffff42e1ffff2efbffffb0070200160902007a950e004a960e0072970e00
+      m_ExpandedIDs: 2efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1186,7 +1348,7 @@ MonoBehaviour:
       collapsed: 0
       displayed: 1
       snapOffset: {x: -166, y: -26.400024}
-      snapOffsetDelta: {x: 0, y: 0}
+      snapOffsetDelta: {x: -5, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -1483,16 +1645,16 @@ MonoBehaviour:
   m_WindowGUID: c11aae3452d93ac45911d4c4a75049dc
   m_Gizmos: 1
   m_OverrideSceneCullingMask: 6917529027641081856
-  m_SceneIsLit: 0
+  m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -92.30223, y: 21.378868, z: -140.88255}
+    m_Target: {x: -93.67611, y: 17.258373, z: -137.3509}
     speed: 2
-    m_Value: {x: -92.30223, y: 21.378868, z: -140.88255}
+    m_Value: {x: -93.67611, y: 17.258373, z: -137.3509}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1538,9 +1700,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.009556654, y: -0.96995217, z: 0.0026254724, w: 0.25650552}
+    m_Target: {x: -0.24610336, y: 0.31817016, z: -0.08190672, w: -0.91554666}
     speed: 2
-    m_Value: {x: 0.010273975, y: -0.96708894, z: 0.005534761, w: 0.25417078}
+    m_Value: {x: -0.24527895, y: 0.31710434, z: -0.081632346, w: -0.9124797}
   m_Size:
     m_Target: 4.7012634
     speed: 2
@@ -1614,7 +1776,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts/Menu
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1622,16 +1784,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 76
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts/Menu
   m_LastFoldersGridSize: 76
   m_LastProjectPath: D:\Game-Development\PrototypeAP\Game-development-AP-Uni-Heidelberg\UnityProject\GetOut
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 143}
-    m_SelectedIDs: 86790000
-    m_LastClickedID: 31110
-    m_ExpandedIDs: 000000002c7800002e78000030780000327800003478000000ca9a3b
+    scrollPos: {x: 0, y: 182}
+    m_SelectedIDs: a24e0100
+    m_LastClickedID: 85666
+    m_ExpandedIDs: 00000000324c0100344c0100364c0100384c01003a4c010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1659,7 +1821,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002c7800002e780000307800003278000034780000
+    m_ExpandedIDs: 00000000324c0100344c0100364c0100384c01003a4c0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1686,7 +1848,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

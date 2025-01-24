@@ -26,8 +26,7 @@ Collaboration diagram for Player\+Rotation\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classPlayerRotation_aabf87ece23d64dda54a63694981a8cf3}\label{classPlayerRotation_aabf87ece23d64dda54a63694981a8cf3}} 
-void {\bfseries Start} ()
+void \mbox{\hyperlink{classPlayerRotation_aabf87ece23d64dda54a63694981a8cf3}{Start}} ()
 \item 
 void \mbox{\hyperlink{classPlayerRotation_a1d5be4cb5f78c7e47561e0705d654619}{Late\+Update}} ()
 \begin{DoxyCompactList}\small\item\em Handles camera rotation based on mouse input. \end{DoxyCompactList}\item 
@@ -36,10 +35,8 @@ void \mbox{\hyperlink{classPlayerRotation_aa32420ae4e6041696f35efc235a14908}{rot
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classPlayerRotation_a46e96095924f0d4b1b80a240f6b0bade}\label{classPlayerRotation_a46e96095924f0d4b1b80a240f6b0bade}} 
 float \mbox{\hyperlink{classPlayerRotation_a46e96095924f0d4b1b80a240f6b0bade}{mouse\+Sensitivity}}
 \begin{DoxyCompactList}\small\item\em Sensitivity of mouse movement for camera rotation. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classPlayerRotation_a26670f9d798b5c40cf57219530c4bfed}\label{classPlayerRotation_a26670f9d798b5c40cf57219530c4bfed}} 
 Transform \mbox{\hyperlink{classPlayerRotation_a26670f9d798b5c40cf57219530c4bfed}{main\+Cam}}
 \begin{DoxyCompactList}\small\item\em Reference to the main camera transform for rotating the camera. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -106,8 +103,37 @@ Updates the camera rotation based on mouse movement.
 {\em mouseY} & Vertical mouse movement.\\
 \hline
 \end{DoxyParams}
-This method updates the player\textquotesingle{}s camera rotation by applying pitch and yaw rotations. The camera\textquotesingle{}s pitch rotation (looking up and down) is clamped to prevent extreme angles. 
+This method updates the player\textquotesingle{}s camera rotation by applying pitch and yaw rotations. The camera\textquotesingle{}s pitch rotation (looking up and down) is clamped to prevent extreme angles. \mbox{\Hypertarget{classPlayerRotation_aabf87ece23d64dda54a63694981a8cf3}\label{classPlayerRotation_aabf87ece23d64dda54a63694981a8cf3}} 
+\index{PlayerRotation@{PlayerRotation}!Start@{Start}}
+\index{Start@{Start}!PlayerRotation@{PlayerRotation}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Player\+Rotation.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classPlayerRotation_a26670f9d798b5c40cf57219530c4bfed}\label{classPlayerRotation_a26670f9d798b5c40cf57219530c4bfed}} 
+\index{PlayerRotation@{PlayerRotation}!mainCam@{mainCam}}
+\index{mainCam@{mainCam}!PlayerRotation@{PlayerRotation}}
+\doxysubsubsection{\texorpdfstring{mainCam}{mainCam}}
+{\footnotesize\ttfamily Transform Player\+Rotation.\+main\+Cam}
+
+
+
+Reference to the main camera transform for rotating the camera. 
+
+\mbox{\Hypertarget{classPlayerRotation_a46e96095924f0d4b1b80a240f6b0bade}\label{classPlayerRotation_a46e96095924f0d4b1b80a240f6b0bade}} 
+\index{PlayerRotation@{PlayerRotation}!mouseSensitivity@{mouseSensitivity}}
+\index{mouseSensitivity@{mouseSensitivity}!PlayerRotation@{PlayerRotation}}
+\doxysubsubsection{\texorpdfstring{mouseSensitivity}{mouseSensitivity}}
+{\footnotesize\ttfamily float Player\+Rotation.\+mouse\+Sensitivity}
+
+
+
+Sensitivity of mouse movement for camera rotation. 
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Movement/Player\+Rotation.\+cs\end{DoxyCompactItemize}
+Movement/\mbox{\hyperlink{PlayerRotation_8cs}{Player\+Rotation.\+cs}}\end{DoxyCompactItemize}

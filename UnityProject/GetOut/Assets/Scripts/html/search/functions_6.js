@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['update_93',['Update',['../classAnimationHandler.html#aace1ec0a2f95058652211d51412f613e',1,'AnimationHandler.Update()'],['../classPlayerMovement.html#aaf9b77d7177d538be9c1447d08191322',1,'PlayerMovement.Update()']]]
+  ['quitgame_269',['QuitGame',['../classMainMenu.html#a485db7cf60c0b93ecc87b9273bcce78b',1,'MainMenu']]],
+  ['quitgame_5flogsquitmessage_270',['QuitGame_LogsQuitMessage',['../classSettingsMenuTest.html#a9dfa9cdf850ab7d42ce1b78320bf2cc7',1,'SettingsMenuTest']]]
 ];

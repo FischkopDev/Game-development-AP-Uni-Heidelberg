@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rotationupdate_91',['rotationUpdate',['../classPlayerMovement.html#a5134862a45b5dc74f8c90adf884ee877',1,'PlayerMovement.rotationUpdate()'],['../classPlayerRotation.html#aa32420ae4e6041696f35efc235a14908',1,'PlayerRotation.rotationUpdate()']]]
+  ['outfitchanged_263',['outfitChanged',['../classStateManager.html#a0059a3aed67fab0a475c54d4b4a23329',1,'StateManager']]]
 ];
