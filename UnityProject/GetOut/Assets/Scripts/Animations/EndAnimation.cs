@@ -33,7 +33,7 @@ public class EndAnimation : MonoBehaviour
         Debug.Log("Waiting for end");
         
         // Wait for 7 seconds in real time
-        yield return new WaitForSecondsRealtime(7);
+        yield return new WaitForSecondsRealtime(15);
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;

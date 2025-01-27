@@ -8956,7 +8956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5628210d1fda7f541bff344a5ee06dd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 1027180878}
+  key: {fileID: 1219570578}
   src: {fileID: 1027180883}
 --- !u!65 &1027180882
 BoxCollider:
@@ -22983,7 +22983,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 542297780328601219, guid: 1246655ef3823af49b8a1b82daca0e68, type: 3}
       propertyPath: m_fontSize
-      value: 18
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 542297780328601219, guid: 1246655ef3823af49b8a1b82daca0e68, type: 3}
       propertyPath: m_fontAsset
@@ -23003,7 +23003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 542297780328601219, guid: 1246655ef3823af49b8a1b82daca0e68, type: 3}
       propertyPath: m_fontSizeBase
-      value: 18
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 542297780328601219, guid: 1246655ef3823af49b8a1b82daca0e68, type: 3}
       propertyPath: m_sharedMaterial
@@ -23100,6 +23100,18 @@ PrefabInstance:
     - target: {fileID: 5708498371425154504, guid: 1246655ef3823af49b8a1b82daca0e68, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5708498371425154504, guid: 1246655ef3823af49b8a1b82daca0e68, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 5708498371425154504, guid: 1246655ef3823af49b8a1b82daca0e68, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786263514048125415, guid: 1246655ef3823af49b8a1b82daca0e68, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -30.400024
       objectReference: {fileID: 0}
     - target: {fileID: 8225056752606532731, guid: 1246655ef3823af49b8a1b82daca0e68, type: 3}
       propertyPath: m_Name
