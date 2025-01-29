@@ -119,8 +119,13 @@ public class PlayerMovement : MonoBehaviour {
         yRotation += mouseX;
         xRotation = Mathf.Clamp(xRotation, -80f, 70f); // Can't look too far up or down
 
+        xRotation = Mathf.Lerp(xRotation, Mathf.Clamp(xRotation, -80f, 70f), Time.deltaTime * 10);
+
+
         // Combine both rotations
-        mainCam.localEulerAngles = new Vector3(xRotation, yRotation, 0);
+       Quaternion rotation = Quaternion.Euler(xRotation, yRotation, 0);
+        mainCam.localRotation = rotation;
+
     }
 
     /**

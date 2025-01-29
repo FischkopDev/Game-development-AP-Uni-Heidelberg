@@ -21,96 +21,260 @@ Collaboration diagram for State\+Manager\+:\nopagebreak
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7}\label{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7}} 
-enum class {\bfseries State} \{ \newline
-{\bfseries SCENE1} = 0
-, {\bfseries SCENE1\+\_\+\+INTRO\+\_\+\+ANIMATION} = 1
-, {\bfseries SCENE1\+\_\+\+CLEANUP\+\_\+\+DONE} = 2
-, {\bfseries SCENE1\+\_\+\+\_\+\+NOT\+\_\+\+DRESSED} = 3
+enum class \mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7}{State}} \{ \newline
+\mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a5b5d84048661b4305065278cf6494824}{SCENE1}} = 0
+, \mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7abd6c32082cbe316f4b68c458a877c7fd}{SCENE1\+\_\+\+INTRO\+\_\+\+ANIMATION}} = 1
+, \mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a37488e30c95988add96991b61c7d4788}{SCENE1\+\_\+\+CLEANUP\+\_\+\+DONE}} = 2
+, \mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a7751fa9aca58c9ad0b70ae8d8115d6e2}{SCENE1\+\_\+\+\_\+\+NOT\+\_\+\+DRESSED}} = 3
 , \newline
-{\bfseries SCENE1\+\_\+\+COMPLETED} = 4
-, {\bfseries SCENE2} = 5
-, {\bfseries SCENE2\+\_\+\+COMPLETED} = 7
-, {\bfseries SCENE3} = 6
+\mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7ae6ef4ec29720afbdddbcf667d0516da3}{SCENE1\+\_\+\+COMPLETED}} = 4
+, \mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7af755a43883c71f3666ade8599a2bb0c4}{SCENE2}} = 5
+, \mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7aa78a5d7cabe95fc260314ad85ec45158}{SCENE2\+\_\+\+COMPLETED}} = 7
+, \mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a61d61f16714fee69b9da4c732ca192c6}{SCENE3}} = 6
 , \newline
-{\bfseries SCENE3\+\_\+\+OUTRO} = 8
-, {\bfseries SCENE3\+\_\+\+OUTRO\+\_\+\+DONE} = 9
-, {\bfseries SCENE4\+\_\+\+INTRO} = 10
-, {\bfseries SCENE4} = 11
+\mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a8ddb79a681e7184bf617c5ad493a44e5}{SCENE3\+\_\+\+OUTRO}} = 8
+, \mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7ab293a9df5ab0d567f969c7577f44f572}{SCENE3\+\_\+\+OUTRO\+\_\+\+DONE}} = 9
+, \mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a9ab340cd8469dd9d082f6eb462167c33}{SCENE4\+\_\+\+INTRO}} = 10
+, \mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7aa7a98f2e572043c9d800f40164f2d983}{SCENE4}} = 11
 , \newline
-{\bfseries SCENE4\+\_\+\+GHOST\+\_\+\+APPEAR} = 12
-, {\bfseries SCENE5}
-, {\bfseries ESCAPE\+\_\+\+MENU} = 13
+\mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7ae4b2ae8da1a22c31dcbbaaab7db9ac6b}{SCENE4\+\_\+\+GHOST\+\_\+\+APPEAR}} = 12
+, \mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a031c43f11d2e4fa06103c7bcf581c2f2}{SCENE5}}
+, \mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a835fc24fd00dc504bf99d1a6a4035155}{ESCAPE\+\_\+\+MENU}} = 13
  \}
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classStateManager_ae77f30e726c1d89528b19ba4b41eed2e}\label{classStateManager_ae77f30e726c1d89528b19ba4b41eed2e}} 
-void {\bfseries Start} ()
+void \mbox{\hyperlink{classStateManager_ae77f30e726c1d89528b19ba4b41eed2e}{Start}} ()
 \item 
-\mbox{\Hypertarget{classStateManager_a077d6d14d27c5b0d5758b1a2aff45f35}\label{classStateManager_a077d6d14d27c5b0d5758b1a2aff45f35}} 
-void {\bfseries Update\+Game\+State} (\mbox{\hyperlink{classSaveData}{Save\+Data}} new\+Game\+State)
+void \mbox{\hyperlink{classStateManager_a077d6d14d27c5b0d5758b1a2aff45f35}{Update\+Game\+State}} (\mbox{\hyperlink{classSaveData}{Save\+Data}} new\+Game\+State)
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classStateManager_a9319e3154ac064718a041bc15153504c}\label{classStateManager_a9319e3154ac064718a041bc15153504c}} 
-static void {\bfseries start\+Scene1} ()
+static void \mbox{\hyperlink{classStateManager_a9319e3154ac064718a041bc15153504c}{start\+Scene1}} ()
 \item 
-\mbox{\Hypertarget{classStateManager_a7207c9f42361d4bc797f356234ec63b6}\label{classStateManager_a7207c9f42361d4bc797f356234ec63b6}} 
-static bool {\bfseries Items\+Left\+To\+Cleanup} ()
+static bool \mbox{\hyperlink{classStateManager_a7207c9f42361d4bc797f356234ec63b6}{Items\+Left\+To\+Cleanup}} ()
 \item 
-\mbox{\Hypertarget{classStateManager_a36581a8d2eb654121128a1406271b12d}\label{classStateManager_a36581a8d2eb654121128a1406271b12d}} 
-static void {\bfseries clean\+Up} ()
+static void \mbox{\hyperlink{classStateManager_a36581a8d2eb654121128a1406271b12d}{clean\+Up}} ()
 \item 
-\mbox{\Hypertarget{classStateManager_aea7bc526e5bf8432b079bfbd6edbb001}\label{classStateManager_aea7bc526e5bf8432b079bfbd6edbb001}} 
-static void {\bfseries change\+Outfit} ()
+static void \mbox{\hyperlink{classStateManager_aea7bc526e5bf8432b079bfbd6edbb001}{change\+Outfit}} ()
 \item 
-\mbox{\Hypertarget{classStateManager_a0059a3aed67fab0a475c54d4b4a23329}\label{classStateManager_a0059a3aed67fab0a475c54d4b4a23329}} 
-static bool {\bfseries outfit\+Changed} ()
+static bool \mbox{\hyperlink{classStateManager_a0059a3aed67fab0a475c54d4b4a23329}{outfit\+Changed}} ()
 \item 
-\mbox{\Hypertarget{classStateManager_a6564634c686f41addc91e3ee340d8a55}\label{classStateManager_a6564634c686f41addc91e3ee340d8a55}} 
-static bool {\bfseries scene1\+Complete} ()
+static bool \mbox{\hyperlink{classStateManager_a6564634c686f41addc91e3ee340d8a55}{scene1\+Complete}} ()
 \item 
-\mbox{\Hypertarget{classStateManager_a60e55d64c8d4d45ecd700bb26cb1a97e}\label{classStateManager_a60e55d64c8d4d45ecd700bb26cb1a97e}} 
-static void {\bfseries stop\+Intro\+Animation} ()
+static void \mbox{\hyperlink{classStateManager_a60e55d64c8d4d45ecd700bb26cb1a97e}{stop\+Intro\+Animation}} ()
 \item 
-\mbox{\Hypertarget{classStateManager_a476a1df0e7fd5062cbb78142efa82f90}\label{classStateManager_a476a1df0e7fd5062cbb78142efa82f90}} 
-static void {\bfseries Stop\+Intro\+Animation\+Scene4} ()
+static void \mbox{\hyperlink{classStateManager_a476a1df0e7fd5062cbb78142efa82f90}{Stop\+Intro\+Animation\+Scene4}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classStateManager_aa7e8175f97e81597457eac1cc63f3732}\label{classStateManager_aa7e8175f97e81597457eac1cc63f3732}} 
-\mbox{\hyperlink{classSaveData}{Save\+Data}} {\bfseries current\+Game\+State}
+\mbox{\hyperlink{classSaveData}{Save\+Data}} \mbox{\hyperlink{classStateManager_aa7e8175f97e81597457eac1cc63f3732}{current\+Game\+State}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classStateManager_a44d5226b6f941bc948dc920c70107aa4}\label{classStateManager_a44d5226b6f941bc948dc920c70107aa4}} 
-static State {\bfseries state} = State.\+SCENE1\+\_\+\+INTRO\+\_\+\+ANIMATION
+static \mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7}{State}} \mbox{\hyperlink{classStateManager_a44d5226b6f941bc948dc920c70107aa4}{state}} = \mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7abd6c32082cbe316f4b68c458a877c7fd}{State.\+SCENE1\+\_\+\+INTRO\+\_\+\+ANIMATION}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classStateManager_a4452ff456bd2a29e8e9303fbe64540da}\label{classStateManager_a4452ff456bd2a29e8e9303fbe64540da}} 
-static \mbox{\hyperlink{classStateManager}{State\+Manager}} {\bfseries Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+static \mbox{\hyperlink{classStateManager}{State\+Manager}} \mbox{\hyperlink{classStateManager_a4452ff456bd2a29e8e9303fbe64540da}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\mbox{\Hypertarget{classStateManager_ace689b5e03905c0b85079965ac096e57}\label{classStateManager_ace689b5e03905c0b85079965ac096e57}} 
-static int {\bfseries Cleaned\+Items} = cleaned\+Items\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+static int \mbox{\hyperlink{classStateManager_ace689b5e03905c0b85079965ac096e57}{Cleaned\+Items}} = cleaned\+Items\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\mbox{\Hypertarget{classStateManager_a6d6abe952965248f7e3bbedfaeaedd87}\label{classStateManager_a6d6abe952965248f7e3bbedfaeaedd87}} 
-static bool {\bfseries Outfit} = outfit\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+static bool \mbox{\hyperlink{classStateManager_a6d6abe952965248f7e3bbedfaeaedd87}{Outfit}} = outfit\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\mbox{\Hypertarget{classStateManager_af8713acf3e4f222938a5f5c7e7cbf5b0}\label{classStateManager_af8713acf3e4f222938a5f5c7e7cbf5b0}} 
-static bool {\bfseries Intro\+Toggle} = intro\+Toggle\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+static bool \mbox{\hyperlink{classStateManager_af8713acf3e4f222938a5f5c7e7cbf5b0}{Intro\+Toggle}} = intro\+Toggle\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\mbox{\Hypertarget{classStateManager_a46fd5966d1ddc7b397efb3fc0498a765}\label{classStateManager_a46fd5966d1ddc7b397efb3fc0498a765}} 
-static bool {\bfseries Intro4\+Toggle} = intro4\+Toggle\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+static bool \mbox{\hyperlink{classStateManager_a46fd5966d1ddc7b397efb3fc0498a765}{Intro4\+Toggle}} = intro4\+Toggle\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7}\label{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7}} 
+\index{StateManager@{StateManager}!State@{State}}
+\index{State@{State}!StateManager@{StateManager}}
+\doxysubsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7}{State\+Manager.\+State}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCENE1@{SCENE1}!StateManager@{StateManager}}\index{StateManager@{StateManager}!SCENE1@{SCENE1}}}\mbox{\Hypertarget{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a5b5d84048661b4305065278cf6494824}\label{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a5b5d84048661b4305065278cf6494824}} 
+SCENE1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCENE1\_INTRO\_ANIMATION@{SCENE1\_INTRO\_ANIMATION}!StateManager@{StateManager}}\index{StateManager@{StateManager}!SCENE1\_INTRO\_ANIMATION@{SCENE1\_INTRO\_ANIMATION}}}\mbox{\Hypertarget{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7abd6c32082cbe316f4b68c458a877c7fd}\label{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7abd6c32082cbe316f4b68c458a877c7fd}} 
+SCENE1\+\_\+\+INTRO\+\_\+\+ANIMATION&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCENE1\_CLEANUP\_DONE@{SCENE1\_CLEANUP\_DONE}!StateManager@{StateManager}}\index{StateManager@{StateManager}!SCENE1\_CLEANUP\_DONE@{SCENE1\_CLEANUP\_DONE}}}\mbox{\Hypertarget{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a37488e30c95988add96991b61c7d4788}\label{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a37488e30c95988add96991b61c7d4788}} 
+SCENE1\+\_\+\+CLEANUP\+\_\+\+DONE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCENE1\_\_NOT\_DRESSED@{SCENE1\_\_NOT\_DRESSED}!StateManager@{StateManager}}\index{StateManager@{StateManager}!SCENE1\_\_NOT\_DRESSED@{SCENE1\_\_NOT\_DRESSED}}}\mbox{\Hypertarget{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a7751fa9aca58c9ad0b70ae8d8115d6e2}\label{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a7751fa9aca58c9ad0b70ae8d8115d6e2}} 
+SCENE1\+\_\+\+\_\+\+NOT\+\_\+\+DRESSED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCENE1\_COMPLETED@{SCENE1\_COMPLETED}!StateManager@{StateManager}}\index{StateManager@{StateManager}!SCENE1\_COMPLETED@{SCENE1\_COMPLETED}}}\mbox{\Hypertarget{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7ae6ef4ec29720afbdddbcf667d0516da3}\label{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7ae6ef4ec29720afbdddbcf667d0516da3}} 
+SCENE1\+\_\+\+COMPLETED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCENE2@{SCENE2}!StateManager@{StateManager}}\index{StateManager@{StateManager}!SCENE2@{SCENE2}}}\mbox{\Hypertarget{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7af755a43883c71f3666ade8599a2bb0c4}\label{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7af755a43883c71f3666ade8599a2bb0c4}} 
+SCENE2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCENE2\_COMPLETED@{SCENE2\_COMPLETED}!StateManager@{StateManager}}\index{StateManager@{StateManager}!SCENE2\_COMPLETED@{SCENE2\_COMPLETED}}}\mbox{\Hypertarget{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7aa78a5d7cabe95fc260314ad85ec45158}\label{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7aa78a5d7cabe95fc260314ad85ec45158}} 
+SCENE2\+\_\+\+COMPLETED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCENE3@{SCENE3}!StateManager@{StateManager}}\index{StateManager@{StateManager}!SCENE3@{SCENE3}}}\mbox{\Hypertarget{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a61d61f16714fee69b9da4c732ca192c6}\label{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a61d61f16714fee69b9da4c732ca192c6}} 
+SCENE3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCENE3\_OUTRO@{SCENE3\_OUTRO}!StateManager@{StateManager}}\index{StateManager@{StateManager}!SCENE3\_OUTRO@{SCENE3\_OUTRO}}}\mbox{\Hypertarget{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a8ddb79a681e7184bf617c5ad493a44e5}\label{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a8ddb79a681e7184bf617c5ad493a44e5}} 
+SCENE3\+\_\+\+OUTRO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCENE3\_OUTRO\_DONE@{SCENE3\_OUTRO\_DONE}!StateManager@{StateManager}}\index{StateManager@{StateManager}!SCENE3\_OUTRO\_DONE@{SCENE3\_OUTRO\_DONE}}}\mbox{\Hypertarget{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7ab293a9df5ab0d567f969c7577f44f572}\label{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7ab293a9df5ab0d567f969c7577f44f572}} 
+SCENE3\+\_\+\+OUTRO\+\_\+\+DONE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCENE4\_INTRO@{SCENE4\_INTRO}!StateManager@{StateManager}}\index{StateManager@{StateManager}!SCENE4\_INTRO@{SCENE4\_INTRO}}}\mbox{\Hypertarget{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a9ab340cd8469dd9d082f6eb462167c33}\label{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a9ab340cd8469dd9d082f6eb462167c33}} 
+SCENE4\+\_\+\+INTRO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCENE4@{SCENE4}!StateManager@{StateManager}}\index{StateManager@{StateManager}!SCENE4@{SCENE4}}}\mbox{\Hypertarget{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7aa7a98f2e572043c9d800f40164f2d983}\label{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7aa7a98f2e572043c9d800f40164f2d983}} 
+SCENE4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCENE4\_GHOST\_APPEAR@{SCENE4\_GHOST\_APPEAR}!StateManager@{StateManager}}\index{StateManager@{StateManager}!SCENE4\_GHOST\_APPEAR@{SCENE4\_GHOST\_APPEAR}}}\mbox{\Hypertarget{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7ae4b2ae8da1a22c31dcbbaaab7db9ac6b}\label{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7ae4b2ae8da1a22c31dcbbaaab7db9ac6b}} 
+SCENE4\+\_\+\+GHOST\+\_\+\+APPEAR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCENE5@{SCENE5}!StateManager@{StateManager}}\index{StateManager@{StateManager}!SCENE5@{SCENE5}}}\mbox{\Hypertarget{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a031c43f11d2e4fa06103c7bcf581c2f2}\label{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a031c43f11d2e4fa06103c7bcf581c2f2}} 
+SCENE5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ESCAPE\_MENU@{ESCAPE\_MENU}!StateManager@{StateManager}}\index{StateManager@{StateManager}!ESCAPE\_MENU@{ESCAPE\_MENU}}}\mbox{\Hypertarget{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a835fc24fd00dc504bf99d1a6a4035155}\label{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7a835fc24fd00dc504bf99d1a6a4035155}} 
+ESCAPE\+\_\+\+MENU&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStateManager_aea7bc526e5bf8432b079bfbd6edbb001}\label{classStateManager_aea7bc526e5bf8432b079bfbd6edbb001}} 
+\index{StateManager@{StateManager}!changeOutfit@{changeOutfit}}
+\index{changeOutfit@{changeOutfit}!StateManager@{StateManager}}
+\doxysubsubsection{\texorpdfstring{changeOutfit()}{changeOutfit()}}
+{\footnotesize\ttfamily static void State\+Manager.\+change\+Outfit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classStateManager_a36581a8d2eb654121128a1406271b12d}\label{classStateManager_a36581a8d2eb654121128a1406271b12d}} 
+\index{StateManager@{StateManager}!cleanUp@{cleanUp}}
+\index{cleanUp@{cleanUp}!StateManager@{StateManager}}
+\doxysubsubsection{\texorpdfstring{cleanUp()}{cleanUp()}}
+{\footnotesize\ttfamily static void State\+Manager.\+clean\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classStateManager_a7207c9f42361d4bc797f356234ec63b6}\label{classStateManager_a7207c9f42361d4bc797f356234ec63b6}} 
+\index{StateManager@{StateManager}!ItemsLeftToCleanup@{ItemsLeftToCleanup}}
+\index{ItemsLeftToCleanup@{ItemsLeftToCleanup}!StateManager@{StateManager}}
+\doxysubsubsection{\texorpdfstring{ItemsLeftToCleanup()}{ItemsLeftToCleanup()}}
+{\footnotesize\ttfamily static bool State\+Manager.\+Items\+Left\+To\+Cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classStateManager_a0059a3aed67fab0a475c54d4b4a23329}\label{classStateManager_a0059a3aed67fab0a475c54d4b4a23329}} 
+\index{StateManager@{StateManager}!outfitChanged@{outfitChanged}}
+\index{outfitChanged@{outfitChanged}!StateManager@{StateManager}}
+\doxysubsubsection{\texorpdfstring{outfitChanged()}{outfitChanged()}}
+{\footnotesize\ttfamily static bool State\+Manager.\+outfit\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classStateManager_a6564634c686f41addc91e3ee340d8a55}\label{classStateManager_a6564634c686f41addc91e3ee340d8a55}} 
+\index{StateManager@{StateManager}!scene1Complete@{scene1Complete}}
+\index{scene1Complete@{scene1Complete}!StateManager@{StateManager}}
+\doxysubsubsection{\texorpdfstring{scene1Complete()}{scene1Complete()}}
+{\footnotesize\ttfamily static bool State\+Manager.\+scene1\+Complete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classStateManager_ae77f30e726c1d89528b19ba4b41eed2e}\label{classStateManager_ae77f30e726c1d89528b19ba4b41eed2e}} 
+\index{StateManager@{StateManager}!Start@{Start}}
+\index{Start@{Start}!StateManager@{StateManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void State\+Manager.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classStateManager_a9319e3154ac064718a041bc15153504c}\label{classStateManager_a9319e3154ac064718a041bc15153504c}} 
+\index{StateManager@{StateManager}!startScene1@{startScene1}}
+\index{startScene1@{startScene1}!StateManager@{StateManager}}
+\doxysubsubsection{\texorpdfstring{startScene1()}{startScene1()}}
+{\footnotesize\ttfamily static void State\+Manager.\+start\+Scene1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classStateManager_a60e55d64c8d4d45ecd700bb26cb1a97e}\label{classStateManager_a60e55d64c8d4d45ecd700bb26cb1a97e}} 
+\index{StateManager@{StateManager}!stopIntroAnimation@{stopIntroAnimation}}
+\index{stopIntroAnimation@{stopIntroAnimation}!StateManager@{StateManager}}
+\doxysubsubsection{\texorpdfstring{stopIntroAnimation()}{stopIntroAnimation()}}
+{\footnotesize\ttfamily static void State\+Manager.\+stop\+Intro\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classStateManager_a476a1df0e7fd5062cbb78142efa82f90}\label{classStateManager_a476a1df0e7fd5062cbb78142efa82f90}} 
+\index{StateManager@{StateManager}!StopIntroAnimationScene4@{StopIntroAnimationScene4}}
+\index{StopIntroAnimationScene4@{StopIntroAnimationScene4}!StateManager@{StateManager}}
+\doxysubsubsection{\texorpdfstring{StopIntroAnimationScene4()}{StopIntroAnimationScene4()}}
+{\footnotesize\ttfamily static void State\+Manager.\+Stop\+Intro\+Animation\+Scene4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classStateManager_a077d6d14d27c5b0d5758b1a2aff45f35}\label{classStateManager_a077d6d14d27c5b0d5758b1a2aff45f35}} 
+\index{StateManager@{StateManager}!UpdateGameState@{UpdateGameState}}
+\index{UpdateGameState@{UpdateGameState}!StateManager@{StateManager}}
+\doxysubsubsection{\texorpdfstring{UpdateGameState()}{UpdateGameState()}}
+{\footnotesize\ttfamily void State\+Manager.\+Update\+Game\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSaveData}{Save\+Data}}}]{new\+Game\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classStateManager_aa7e8175f97e81597457eac1cc63f3732}\label{classStateManager_aa7e8175f97e81597457eac1cc63f3732}} 
+\index{StateManager@{StateManager}!currentGameState@{currentGameState}}
+\index{currentGameState@{currentGameState}!StateManager@{StateManager}}
+\doxysubsubsection{\texorpdfstring{currentGameState}{currentGameState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSaveData}{Save\+Data}} State\+Manager.\+current\+Game\+State}
+
+\mbox{\Hypertarget{classStateManager_a44d5226b6f941bc948dc920c70107aa4}\label{classStateManager_a44d5226b6f941bc948dc920c70107aa4}} 
+\index{StateManager@{StateManager}!state@{state}}
+\index{state@{state}!StateManager@{StateManager}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7}{State}} State\+Manager.\+state = \mbox{\hyperlink{classStateManager_a1a650ed14183aa435fe44a0dcb95d4e7abd6c32082cbe316f4b68c458a877c7fd}{State.\+SCENE1\+\_\+\+INTRO\+\_\+\+ANIMATION}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classStateManager_ace689b5e03905c0b85079965ac096e57}\label{classStateManager_ace689b5e03905c0b85079965ac096e57}} 
+\index{StateManager@{StateManager}!CleanedItems@{CleanedItems}}
+\index{CleanedItems@{CleanedItems}!StateManager@{StateManager}}
+\doxysubsubsection{\texorpdfstring{CleanedItems}{CleanedItems}}
+{\footnotesize\ttfamily int State\+Manager.\+Cleaned\+Items = cleaned\+Items\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{classStateManager_a4452ff456bd2a29e8e9303fbe64540da}\label{classStateManager_a4452ff456bd2a29e8e9303fbe64540da}} 
+\index{StateManager@{StateManager}!Instance@{Instance}}
+\index{Instance@{Instance}!StateManager@{StateManager}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStateManager}{State\+Manager}} State\+Manager.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{classStateManager_a46fd5966d1ddc7b397efb3fc0498a765}\label{classStateManager_a46fd5966d1ddc7b397efb3fc0498a765}} 
+\index{StateManager@{StateManager}!Intro4Toggle@{Intro4Toggle}}
+\index{Intro4Toggle@{Intro4Toggle}!StateManager@{StateManager}}
+\doxysubsubsection{\texorpdfstring{Intro4Toggle}{Intro4Toggle}}
+{\footnotesize\ttfamily bool State\+Manager.\+Intro4\+Toggle = intro4\+Toggle\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{classStateManager_af8713acf3e4f222938a5f5c7e7cbf5b0}\label{classStateManager_af8713acf3e4f222938a5f5c7e7cbf5b0}} 
+\index{StateManager@{StateManager}!IntroToggle@{IntroToggle}}
+\index{IntroToggle@{IntroToggle}!StateManager@{StateManager}}
+\doxysubsubsection{\texorpdfstring{IntroToggle}{IntroToggle}}
+{\footnotesize\ttfamily bool State\+Manager.\+Intro\+Toggle = intro\+Toggle\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{classStateManager_a6d6abe952965248f7e3bbedfaeaedd87}\label{classStateManager_a6d6abe952965248f7e3bbedfaeaedd87}} 
+\index{StateManager@{StateManager}!Outfit@{Outfit}}
+\index{Outfit@{Outfit}!StateManager@{StateManager}}
+\doxysubsubsection{\texorpdfstring{Outfit}{Outfit}}
+{\footnotesize\ttfamily bool State\+Manager.\+Outfit = outfit\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Story\+State\+Manager/State\+Manager.\+cs\end{DoxyCompactItemize}
+Story\+State\+Manager/\mbox{\hyperlink{StateManager_8cs}{State\+Manager.\+cs}}\end{DoxyCompactItemize}

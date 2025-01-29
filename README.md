@@ -1,4 +1,4 @@
-# GetOut - A psychological horror game
+# Kenopsia - A psychological horror game
 The story of Steve is a story-driven psychological horror game that is as close to reality as possible, putting the player in the role of Steve - a man in the midst of a personal crisis. Accompanied through the day and his nightmarish experiences, the player delves deep into Steve's reality and his fragile psyche.
 The working name of the game is “GetOut”  
 

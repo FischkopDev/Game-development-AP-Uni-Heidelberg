@@ -1,5 +1,12 @@
 var searchData=
 [
-  ['interact_87',['Interact',['../classBed__Interactor.html#a574b6b550330118f047cafcbd916fa82',1,'Bed_Interactor.Interact()'],['../classCleanup__Interactor.html#a3808313b3ca7e66b72ea9870d269a499',1,'Cleanup_Interactor.Interact()'],['../classCloth__Interactor.html#a5059f0250a033bca0c615c0a4cafe2e6',1,'Cloth_Interactor.Interact()'],['../classComputer__Interactor.html#a8f794a4ac1ab6c4c8c8e470f6ecc9f74',1,'Computer_Interactor.Interact()'],['../classLetter__Interactor.html#ab95cc3001d482e3d2b7a46e8eecaa0bf',1,'Letter_Interactor.Interact()'],['../classSleep__Interactor.html#aa3753c7e2f0ded769b613a1ea3b55bd1',1,'Sleep_Interactor.Interact()']]],
-  ['isaccessable_88',['IsAccessable',['../classBed__Interactor.html#a1f65611dc20926636ac2c74e06bdfe1a',1,'Bed_Interactor.IsAccessable()'],['../classCleanup__Interactor.html#a95e5cba5d9966d8cdc3e928d6c0f4d4a',1,'Cleanup_Interactor.IsAccessable()'],['../classCloth__Interactor.html#a90b1d8b14622d832ab6be9a88c425d30',1,'Cloth_Interactor.IsAccessable()'],['../classComputer__Interactor.html#a8348383578cb217b0a0642539c2536fa',1,'Computer_Interactor.IsAccessable()'],['../classLetter__Interactor.html#a3a4d55d1e198a5a2583d857461b1f2bd',1,'Letter_Interactor.IsAccessable()'],['../classSleep__Interactor.html#a3a7e7140e0f505cc89e5d036e7c7447a',1,'Sleep_Interactor.IsAccessable()']]]
+  ['getglobalvariable_247',['GetGlobalVariable',['../classSaveLoadManager.html#a58273d92553e69d56bc3d333c0b2fc5b',1,'SaveLoadManager']]],
+  ['getgravity_248',['GetGravity',['../classPlayerMovement.html#ac869969af2c4230ae34db9eb8960bc0f',1,'PlayerMovement']]],
+  ['getinteractor_249',['GetInteractor',['../classInteractionComponent.html#a73ce07fe5f5a8e8ae6a0be0d3ff89756',1,'InteractionComponent']]],
+  ['getinteractrange_250',['GetInteractRange',['../classInteractionComponent.html#a006259b18f3569a99bcf80625dba32a2',1,'InteractionComponent']]],
+  ['getmousesensitivity_251',['GetMouseSensitivity',['../classPlayerMovement.html#a0cf2d442c63aabed149844de2c1ece86',1,'PlayerMovement']]],
+  ['getrunmultiplier_252',['GetRunMultiplier',['../classPlayerMovement.html#a399d6f19c793fc0f99857b8c79b94059',1,'PlayerMovement']]],
+  ['getspeed_253',['GetSpeed',['../classPlayerMovement.html#a670b9d12a24c01e152ac874bcdc34799',1,'PlayerMovement']]],
+  ['getvelocity_254',['GetVelocity',['../classPlayerMovement.html#a633f8b0611e1b3214a4a7f3e40938b79',1,'PlayerMovement']]],
+  ['gravity_5fappliedcorrectly_255',['Gravity_AppliedCorrectly',['../classPlayerMovementTests.html#a951d014ddaf14410bd38c2331aa79444',1,'PlayerMovementTests']]]
 ];

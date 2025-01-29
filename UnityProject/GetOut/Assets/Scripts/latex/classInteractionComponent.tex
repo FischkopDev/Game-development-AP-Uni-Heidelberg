@@ -23,25 +23,19 @@ Collaboration diagram for Interaction\+Component\+:\nopagebreak
 \item 
 bool \mbox{\hyperlink{classInteractionComponent_a6494c14e072762dc3801455bbb6f9bfc}{Check\+Interaction}} (Ray directed\+Ray)
 \begin{DoxyCompactList}\small\item\em Checks if the directed ray intersects with an interactable object. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classInteractionComponent_a73ce07fe5f5a8e8ae6a0be0d3ff89756}\label{classInteractionComponent_a73ce07fe5f5a8e8ae6a0be0d3ff89756}} 
-Transform {\bfseries Get\+Interactor} ()
+Transform \mbox{\hyperlink{classInteractionComponent_a73ce07fe5f5a8e8ae6a0be0d3ff89756}{Get\+Interactor}} ()
 \item 
-\mbox{\Hypertarget{classInteractionComponent_a947fc05b2e86db31e8d0ca5faf00656f}\label{classInteractionComponent_a947fc05b2e86db31e8d0ca5faf00656f}} 
-void {\bfseries Set\+Interactor} (Transform value)
+void \mbox{\hyperlink{classInteractionComponent_a947fc05b2e86db31e8d0ca5faf00656f}{Set\+Interactor}} (Transform value)
 \item 
-\mbox{\Hypertarget{classInteractionComponent_a006259b18f3569a99bcf80625dba32a2}\label{classInteractionComponent_a006259b18f3569a99bcf80625dba32a2}} 
-float {\bfseries Get\+Interact\+Range} ()
+float \mbox{\hyperlink{classInteractionComponent_a006259b18f3569a99bcf80625dba32a2}{Get\+Interact\+Range}} ()
 \item 
-\mbox{\Hypertarget{classInteractionComponent_a790a364ce2228e656d4486f12f2aecce}\label{classInteractionComponent_a790a364ce2228e656d4486f12f2aecce}} 
-void {\bfseries Set\+Interact\+Range} (float value)
+void \mbox{\hyperlink{classInteractionComponent_a790a364ce2228e656d4486f12f2aecce}{Set\+Interact\+Range}} (float value)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classInteractionComponent_acabe1e0c95db78b1b73b77b0c3bcec1b}\label{classInteractionComponent_acabe1e0c95db78b1b73b77b0c3bcec1b}} 
 Transform \mbox{\hyperlink{classInteractionComponent_acabe1e0c95db78b1b73b77b0c3bcec1b}{interactor}}
 \begin{DoxyCompactList}\small\item\em The Transform of the camera or the head where the raycast should start. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classInteractionComponent_a116f33f4bd5b0a5a0952599e34d110e6}\label{classInteractionComponent_a116f33f4bd5b0a5a0952599e34d110e6}} 
 float \mbox{\hyperlink{classInteractionComponent_a116f33f4bd5b0a5a0952599e34d110e6}{interact\+Range}} = 5f
 \begin{DoxyCompactList}\small\item\em The maximum range within which the player can interact with objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -62,8 +56,55 @@ Checks if the directed ray intersects with an interactable object.
 {\em directed\+Ray} & The ray cast from the interactor to check for interactions.\\
 \hline
 \end{DoxyParams}
-This method uses a raycast to detect if any objects within the interaction range are interactable. If an interactable object is detected, the interaction method on that object is called. 
+This method uses a raycast to detect if any objects within the interaction range are interactable. If an interactable object is detected, the interaction method on that object is called. \mbox{\Hypertarget{classInteractionComponent_a73ce07fe5f5a8e8ae6a0be0d3ff89756}\label{classInteractionComponent_a73ce07fe5f5a8e8ae6a0be0d3ff89756}} 
+\index{InteractionComponent@{InteractionComponent}!GetInteractor@{GetInteractor}}
+\index{GetInteractor@{GetInteractor}!InteractionComponent@{InteractionComponent}}
+\doxysubsubsection{\texorpdfstring{GetInteractor()}{GetInteractor()}}
+{\footnotesize\ttfamily Transform Interaction\+Component.\+Get\+Interactor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInteractionComponent_a006259b18f3569a99bcf80625dba32a2}\label{classInteractionComponent_a006259b18f3569a99bcf80625dba32a2}} 
+\index{InteractionComponent@{InteractionComponent}!GetInteractRange@{GetInteractRange}}
+\index{GetInteractRange@{GetInteractRange}!InteractionComponent@{InteractionComponent}}
+\doxysubsubsection{\texorpdfstring{GetInteractRange()}{GetInteractRange()}}
+{\footnotesize\ttfamily float Interaction\+Component.\+Get\+Interact\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInteractionComponent_a947fc05b2e86db31e8d0ca5faf00656f}\label{classInteractionComponent_a947fc05b2e86db31e8d0ca5faf00656f}} 
+\index{InteractionComponent@{InteractionComponent}!SetInteractor@{SetInteractor}}
+\index{SetInteractor@{SetInteractor}!InteractionComponent@{InteractionComponent}}
+\doxysubsubsection{\texorpdfstring{SetInteractor()}{SetInteractor()}}
+{\footnotesize\ttfamily void Interaction\+Component.\+Set\+Interactor (\begin{DoxyParamCaption}\item[{Transform}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classInteractionComponent_a790a364ce2228e656d4486f12f2aecce}\label{classInteractionComponent_a790a364ce2228e656d4486f12f2aecce}} 
+\index{InteractionComponent@{InteractionComponent}!SetInteractRange@{SetInteractRange}}
+\index{SetInteractRange@{SetInteractRange}!InteractionComponent@{InteractionComponent}}
+\doxysubsubsection{\texorpdfstring{SetInteractRange()}{SetInteractRange()}}
+{\footnotesize\ttfamily void Interaction\+Component.\+Set\+Interact\+Range (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classInteractionComponent_acabe1e0c95db78b1b73b77b0c3bcec1b}\label{classInteractionComponent_acabe1e0c95db78b1b73b77b0c3bcec1b}} 
+\index{InteractionComponent@{InteractionComponent}!interactor@{interactor}}
+\index{interactor@{interactor}!InteractionComponent@{InteractionComponent}}
+\doxysubsubsection{\texorpdfstring{interactor}{interactor}}
+{\footnotesize\ttfamily Transform Interaction\+Component.\+interactor}
+
+
+
+The Transform of the camera or the head where the raycast should start. 
+
+\mbox{\Hypertarget{classInteractionComponent_a116f33f4bd5b0a5a0952599e34d110e6}\label{classInteractionComponent_a116f33f4bd5b0a5a0952599e34d110e6}} 
+\index{InteractionComponent@{InteractionComponent}!interactRange@{interactRange}}
+\index{interactRange@{interactRange}!InteractionComponent@{InteractionComponent}}
+\doxysubsubsection{\texorpdfstring{interactRange}{interactRange}}
+{\footnotesize\ttfamily float Interaction\+Component.\+interact\+Range = 5f}
+
+
+
+The maximum range within which the player can interact with objects. 
+
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Interaction/Player\+Interaction\+Component.\+cs\end{DoxyCompactItemize}
+Interaction/\mbox{\hyperlink{PlayerInteractionComponent_8cs}{Player\+Interaction\+Component.\+cs}}\end{DoxyCompactItemize}
